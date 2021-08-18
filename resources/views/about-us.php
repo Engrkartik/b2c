@@ -2,7 +2,7 @@
 include('includes/header.php');
 ?>
 
-    <div class="page-content-wrapper py-3">
+    <div class="page-content-wraper py-3">
       <div class="container">
         <div class="card">
           <div class="card-body">
