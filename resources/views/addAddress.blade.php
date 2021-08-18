@@ -2,7 +2,7 @@
 @section('content')
 
 <style>
-.register-form span{
+.register-form spn{
   padding-left: 0px;
 }
 #addaddress{display: none;}
