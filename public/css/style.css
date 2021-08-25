@@ -2809,6 +2809,10 @@ float:none; }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
 
+  
+.widget .form-check-label {
+  font-size: 11px; }
+
 #cart-desktop{display:none;}
 #sidebarbtn{
 margin-top:7rem;
@@ -4002,6 +4006,9 @@ text-decoration:line-through; }
 @media(width:320px)
 {
 
+  .widget .form-check-label {
+    font-size: 11px; }
+
 .top-product-card .btn{ left:2%;}
 
 .single-payment-method a {
@@ -4072,6 +4079,9 @@ text-decoration:line-through; }
 
 @media(min-width: 220px) and (max-width: 310px)
 {
+
+  .widget .form-check-label {
+    font-size: 11px; }
 
 .single-order-status .order-text span {
     font-size: 9px;

@@ -56,8 +56,7 @@
                 <div class="product-description">
                   <a class="product-title d-block">Levi's Jeans</a>
                    <span>Product Description</span>
-                   <br>
-                   <span>Size: S</span> 
+                   
               </div>
               </div>
               <div class="order-btn">
@@ -94,8 +93,7 @@
                 <div class="product-description">
                   <a class="product-title d-block">Levi's Jeans</a>
                    <span>Product Description</span>
-                   <br>
-                   <span>Size: S</span> 
+                  
               </div>
               </div>
               <div class="order-btn">
@@ -132,8 +130,7 @@
                 <div class="product-description">
                   <a class="product-title d-block">Levi's Jeans</a>
                    <span>Product Description</span>
-                   <br>
-                   <span>Size: S</span>
+                 
               </div>
               </div>
           <div class="ratings-submit-form bg-white pt-2 pb-3 px-3">
@@ -189,8 +186,7 @@
                 <div class="product-description">
                   <a class="product-title d-block">Levi's Jeans</a>
                    <span>Product Description</span>
-                   <br>
-                   <span>Size: S</span>
+                
               </div>
               </div>
               <ul>
@@ -246,8 +242,7 @@
                 <div class="product-description">
                   <a class="product-title d-block">Levi's Jeans</a>
                    <span>Product Description</span>
-                   <br>
-                   <span>Size: S</span>
+                  
               </div>
               </div>
 
@@ -283,8 +278,7 @@
                 <div class="product-description">
                   <a class="product-title d-block">Levi's Jeans</a>
                    <span>Product Description</span>
-                   <br>
-                   <span>Size: S</span>
+                 
               </div>
               </div>
 
@@ -321,8 +315,7 @@
                 <div class="product-description">
                   <a class="product-title d-block">Levi's Jeans</a>
                    <span>Product Description</span>
-                   <br>
-                   <span>Size: S</span>
+              
               </div>
               </div>
 
@@ -358,8 +351,7 @@
                 <div class="product-description">
                   <a class="product-title d-block">Levi's Jeans</a>
                    <span>Product Description</span>
-                   <br>
-                   <span>Size: S</span>
+               
               </div>
               </div>
               <div class="order-btn">
@@ -395,8 +387,7 @@
                 <div class="product-description">
                   <a class="product-title d-block">Levi's Jeans</a>
                    <span>Product Description</span>
-                   <br>
-                   <span>Size: S</span>
+               
               </div>
               </div>
               <div class="order-btn" style="display: flex;">
@@ -433,8 +424,7 @@
                 <div class="product-description">
                   <a class="product-title d-block">Levi's Jeans</a>
                    <span>Product Description</span>
-                   <br>
-                   <span>Size: S</span>
+                  
               </div>
               </div>
                <div class="ratings-submit-form bg-white pt-2 pb-3 px-3">
@@ -491,8 +481,7 @@
                 <div class="product-description">
                   <a class="product-title d-block">Levi's Jeans</a>
                    <span>Product Description</span>
-                   <br>
-                   <span>Size: S</span>
+               
               </div>
               </div>
               <div class="order-btn">
@@ -530,8 +519,7 @@
                 <div class="product-description">
                   <a class="product-title d-block">Levi's Jeans</a>
                    <span>Product Description</span>
-                   <br>
-                   <span>Size: S</span>
+              
               </div>
               </div>
               <div class="order-btn">
@@ -569,8 +557,7 @@
                 <div class="product-description">
                   <a class="product-title d-block">Levi's Jeans</a>
                    <span>Product Description</span>
-                   <br>
-                   <span>Size: S</span>
+                
               </div>
               </div>
               <div class="order-btn">
@@ -608,8 +595,7 @@
                 <div class="product-description">
                   <a class="product-title d-block">Levi's Jeans</a>
                    <span>Product Description</span>
-                   <br>
-                   <span>Size: S</span>
+                
               </div>
               </div>
               <div class="order-btn">
@@ -647,8 +633,7 @@
                 <div class="product-description">
                   <a class="product-title d-block">Levi's Jeans</a>
                    <span>Product Description</span>
-                   <br>
-                   <span>Size: S</span>
+               
               </div>
               </div>
               <div class="order-btn">
@@ -686,8 +671,7 @@
                 <div class="product-description">
                   <a class="product-title d-block">Levi's Jeans</a>
                    <span>Product Description</span>
-                   <br>
-                   <span>Size: S</span>
+                
               </div>
               </div>
               <ul>
@@ -746,8 +730,7 @@
                 <div class="product-description">
                   <a class="product-title d-block">Levi's Jeans</a>
                    <span>Product Description</span>
-                   <br>
-                   <span>Size: S</span>
+                 
               </div>
               </div>
 
@@ -783,8 +766,7 @@
                 <div class="product-description">
                   <a class="product-title d-block">Levi's Jeans</a>
                    <span>Product Description</span>
-                   <br>
-                   <span>Size: S</span>
+                
               </div>
               </div>
 
@@ -821,8 +803,7 @@
                 <div class="product-description">
                   <a class="product-title d-block">Levi's Jeans</a>
                    <span>Product Description</span>
-                   <br>
-                   <span>Size: S</span>
+                
               </div>
               </div>
 
@@ -859,8 +840,7 @@
                 <div class="product-description">
                   <a class="product-title d-block">Levi's Jeans</a>
                    <span>Product Description</span>
-                   <br>
-                   <span>Size: S</span>
+                 
               </div>
               </div>
 
@@ -897,8 +877,7 @@
                 <div class="product-description">
                   <a class="product-title d-block">Levi's Jeans</a>
                    <span>Product Description</span>
-                   <br>
-                   <span>Size: S</span>
+                   
               </div>
               </div>
 

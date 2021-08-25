@@ -99,7 +99,7 @@
                   
       </ul>
     <!-- <a class="btn btn-lg btn-success" href="login" id="sidebarbtn"><i class="lni lni-power-switch" style="padding-right: 9px;"></i>Sign In</a> -->
-    <a class="btn btn-lg btn-danger" href="/quickWebsite/b2c/public/logout" id="sidebarbtn"><i class="lni lni-power-switch" style="padding-right: 9px;"></i>Sign Out</a>
+    <a class="btn btn-lg btn-danger" href="logout" id="sidebarbtn"><i class="lni lni-power-switch" style="padding-right: 9px;"></i>Sign Out</a>
        
         <!-- <li><a href="feedback"><i class="lni lni-comments"></i>Feedback Us</a></li> -->
          <!-- <li><a class="btn btn-warning" href="login"><i class="lni lni-power-switch"></i>Sign In</a></li> -->

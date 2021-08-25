@@ -121,7 +121,7 @@
     // console.log('ehlo');
     $.ajax({
       type: 'POST',
-      url: '/quickWebsite/b2c/public/check_login',
+      url: 'check_login',
       data: {
         'mobile': mobile
       },
@@ -200,7 +200,7 @@
 
         $.ajax({
           type: 'POST',
-          url: '/quickWebsite/b2c/public/chk_otp',
+          url: 'chk_otp',
           data: {
             'mobile': mobile,
             'otp': otp
@@ -214,14 +214,16 @@
             if (result == "success") {
               // window.location.reload();
               if(urlvalue==''){
-                window.location.href = "http://34.72.9.224/quickWebsite/b2c/public/";
+                window.location.href = "{{url('/')}}";
+               // window.location.href = "http://34.72.9.224/quickWebsite/b2c/public/";
                 // window.history.back();
               }
               else{
                 window.location.href = urlvalue;
               }
             }else if(result == "register"){
-              window.location.href = "http://34.72.9.224/quickWebsite/b2c/public/register";
+              //window.location.href = "http://34.72.9.224/quickWebsite/b2c/public/register";
+              window.location.href = "{{url('/register')}}";
             }
              else {
               alert("OTP did not match");

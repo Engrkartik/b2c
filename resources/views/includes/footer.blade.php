@@ -5,11 +5,11 @@
       <div class="container h-100 px-0">
         <div class="suha-footer-nav h-100">
           <ul class="h-100 d-flex align-items-center justify-content-between ps-0">
-            <li><a href="/quickWebsite/b2c/public/"><i class="lni lni-home"></i>Home</a></li>
-            <li><a href="/quickWebsite/b2c/public/orders"><i class="lni lni-package"></i><!-- <img src="{{ asset('img/icons/icon-orders.jpg') }}" width="38" height="181"> -->Orders</a></li>
-            <li><a href="/quickWebsite/b2c/public/cart"><i class="lni lni-shopping-basket"></i>Bag</a></li>
-            <li><a href="/quickWebsite/b2c/public/wishlist-grid"><i class="lni lni-heart"></i>Wishlist</a></li>
-            <li><a href="/quickWebsite/b2c/public/edit-profile"><i class="lni lni-user"></i>Profile</a></li>
+            <li><a href="{{url('/')}}"><i class="lni lni-home"></i>Home</a></li>
+            <li><a href="{{url('/orders')}}"><i class="lni lni-package"></i><!-- <img src="{{ asset('img/icons/icon-orders.jpg') }}" width="38" height="181"> -->Orders</a></li>
+            <li><a href="{{url('/cart')}}"><i class="lni lni-shopping-basket"></i>Bag</a></li>
+            <li><a href="{{url('/wishlist-grid')}}"><i class="lni lni-heart"></i>Wishlist</a></li>
+            <li><a href="{{url('/edit-profile')}}"><i class="lni lni-user"></i>Profile</a></li>
           </ul>
         </div>
       </div>
