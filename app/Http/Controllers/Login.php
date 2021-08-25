@@ -109,13 +109,13 @@ class Login extends Controller
               <li><a href="about-us">About Us</a></li>
               <li><a href="#">Term of Use</a></li>
               <li><a href="#">Privacy Policy</a></li>
-              <li><a class="btn btn-danger" href="/quickWebsite/b2c/public/logout" id="sidebarbtn"><i class="lni lni-power-switch" style="padding-right: 9px;"></i>Log Out</a></li>
+              <li><a class="btn btn-danger" href="logout" id="sidebarbtn"><i class="lni lni-power-switch" style="padding-right: 9px;"></i>Log Out</a></li>
 
 
                 <!-- <li><a href="/quickWebsite/b2c/public/"><i class="lni lni-home"></i>Home</a></li>
 		        <li><a href="profile"><i class="lni lni-user"></i>My Profile</a></li>
 		        <li><a href="feedback"><i class="lni lni-comments"></i>Feedback Us</a></li>-->
-		         <li><a class="btn btn-danger" href="/quickWebsite/b2c/public/logout" id="sidebarbtn"><i class="lni lni-power-switch" style="padding-right: 9px;"></i>Sign Out</a></li>
+		         <li><a class="btn btn-danger" href="logout" id="sidebarbtn"><i class="lni lni-power-switch" style="padding-right: 9px;"></i>Sign Out</a></li>
 
 		      </ul>
 		      <!-- <div class="go-home-btn" id="goHomeBtn"><i class="lni lni-arrow-left"></i></div>-->';

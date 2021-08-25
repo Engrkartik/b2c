@@ -83,12 +83,16 @@
         <div class="apply-filter-btn"><a class="btn btn-success" href="">Apply</a></div>
         <!-- barnds-->
          <div class="widget color">
+           
           <a class="widget-title accordion">Order Status <!-- (<small class="counter"></small>) --></a>
+
           <div class="widget-desc panel">
-             <div class="form-check">
-              <input class="form-check-input brands" id="selectAll" type="checkbox" onclick="selectAll()">
-              <label class="form-check-label font-weight-bold" for="selectAll">All Orders</label>
+            <!-- Single Checkbox-->
+           <div class="form-check">
+              <input class="form-check-input brands" id="allOrders" type="checkbox" name="brands[]">
+              <label class="form-check-label font-weight-bold" for="allOrders">All Orders</label>
             </div>
+             
             <!-- Single Checkbox-->
             <div class="form-check">
               <input class="form-check-input brands" id="zara" type="checkbox" name="brands[]">
@@ -113,6 +117,11 @@
             <div class="form-check">
               <input class="form-check-input brands" id="Nike" type="checkbox" name="brands[]">
               <label class="form-check-label font-weight-bold" for="Nike">Cancelled by seller</label>
+            </div>
+             <!-- Single Checkbox-->
+             <div class="form-check">
+              <input class="form-check-input brands" id="Nike" type="checkbox" name="brands[]">
+              <label class="form-check-label font-weight-bold" for="Nike">Cancelled by self</label>
             </div>
               <!-- Single Checkbox-->
             <div class="form-check">
@@ -198,29 +207,29 @@
           <div class="widget-desc panel">
           
             <!-- Single Checkbox-->
-            <div class="form-check">
-              <input class="form-check-input color" id="Purple" type="checkbox">
-              <label class="form-check-label font-weight-bold" for="Purple">Last 30 days</label>
+            <div class="">
+             <input type="radio" id="Last 30 days" name="timeline" value="">
+            <label for="Last 30 days">Last 30 days</label><br>
             </div>
             <!-- Single Checkbox-->
-            <div class="form-check">
-              <input class="form-check-input color" id="Black" type="checkbox">
-              <label class="form-check-label font-weight-bold" for="Black">Last 3 months</label>
+            <div class="">
+            <input type="radio" id="Last 3 months" name="timeline" value="">
+            <label for="Last 3 months">Last 3 months</label><br>
             </div>
             <!-- Single Checkbox-->
-            <div class="form-check">
-              <input class="form-check-input color" id="White" type="checkbox">
-              <label class="form-check-label font-weight-bold" for="White">Last 6 months</label>
+            <div class="">
+            <input type="radio" id="Last 6 months" name="timeline" value="">
+            <label for="Last 6 months">Last 6 months</label><br>
             </div>
             <!-- Single Checkbox-->
-            <div class="form-check">
-              <input class="form-check-input color" id="Red" type="checkbox">
-              <label class="form-check-label font-weight-bold" for="Red">Last 1 year</label>
+            <div class="">
+            <input type="radio" id="Last 1 Year" name="timeline" value="">
+            <label for="Last 1 Year">Last 1 Year</label><br>
             </div>
             <!-- Single Checkbox-->
-            <div class="form-check">
-              <input class="form-check-input color" id="Pink" type="checkbox">
-              <label class="form-check-label font-weight-bold" for="Pink">2020</label>
+            <div class="">
+            <input type="radio" id="2020" name="timeline" value="">
+            <label for="2020">2020</label><br>
             </div>
           </div>
         </div>
@@ -300,7 +309,7 @@ for (i = 0; i < acc.length; i++) {
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
     } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
+      panel.style.maxHeight = panel.scrollHeight + "150px";
     } 
   });
 }
