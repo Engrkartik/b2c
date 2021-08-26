@@ -88,9 +88,9 @@
 
           <div class="widget-desc panel">
             <!-- Single Checkbox-->
-           <div class="form-check">
-              <input class="form-check-input brands" id="allOrders" type="checkbox" name="brands[]">
-              <label class="form-check-label font-weight-bold" for="allOrders">All Orders</label>
+           <div class="form-check" style="border-bottom:1px solid #ccc;padding-bottom:8px;">
+              <input class="form-check-input brands" id="selectAll" type="checkbox" onclick="selectAll()">
+              <label class="form-check-label font-weight-bold" for="selectAll">All Orders</label>
             </div>
              
             <!-- Single Checkbox-->
@@ -223,8 +223,8 @@
             </div>
             <!-- Single Checkbox-->
             <div class="">
-            <input type="radio" id="Last 1 Year" name="timeline" value="">
-            <label for="Last 1 Year">Last 1 Year</label><br>
+            <input type="radio" id="Last Year" name="timeline" value="">
+            <label for="Last Year">Last Year</label><br>
             </div>
             <!-- Single Checkbox-->
             <div class="">

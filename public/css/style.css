@@ -953,13 +953,13 @@ font-size: 15px;  }
   width: 100%;
   z-index: 999999;
   top: 0;
-  left: -250px;
+  left: -350px;
   height: 100%;
   background: #fff;
   /*background: -webkit-gradient(linear, right top, left top, from(#100DD1), to(#0d3bd1));
   background: linear-gradient(to left, #00A79D, #005651);*/
   overflow-y: auto;
-  width: 240px; }
+  width: 340px; }
   .suha-sidenav-wrapper .go-home-btn {
     -webkit-transition-duration: 400ms;
      transition-duration: 400ms;
@@ -984,11 +984,10 @@ font-size: 15px;  }
      transition-duration: 400ms;
      position: fixed;
      top: 3px;
-     left: 159px;
+     left: 239px;
     background-color: #fff; 
      width: 0px;
      height: 40px;
-    
      text-align: center;
      color: #ffffff;
      line-height: 42px;
