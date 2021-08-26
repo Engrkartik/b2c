@@ -5,6 +5,8 @@
   .card{
     border: 1px solid #e0dddd !important;
   }
+  #filter{border:0;}
+  #suhaNavbarToggler{border:0;}
 </style>
 
  <div class="page-content-wrapper">
@@ -13,12 +15,12 @@
         <div class="container">
              
           <div class="section-heading d-flex align-items-center justify-content">
-           <div class="card cart-amount-area" style="width:34%;">
+           <div class="card cart-amount-area" style="width:34%;" id="filter">
             <div class="card-body d-flex align-items-center justify-content-center"> 
             <p id="order-sort">Showing: <strong>All Orders</strong></p>
              </div>
            </div>
-             <div class="card cart-amount-area" style="width:35%;">
+             <div class="card cart-amount-area" style="width:35%;" id="filter">
             <div class="card-body d-flex align-items-center justify-content-center">
               <p id="order-sort">Within:<strong>Last 6 Months</strong></p>
              </div>
@@ -33,7 +35,7 @@
           </div>
           <!-- orders cards-->
 
-            <div class="card w-100">
+            <div class="card w-100" id="orderCard">
           <div class="card-body p-4">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">    
@@ -68,7 +70,7 @@
           </div>
            <!-- card ends-->
 
-           <div class="card w-100">
+           <div class="card w-100" id="orderCard">
           <div class="card-body p-4">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
@@ -105,7 +107,7 @@
         </div>
         <!-- card ends-->
 
-            <div class="card w-100">
+            <div class="card w-100" id="orderCard">
           <div class="card-body p-4">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
@@ -161,7 +163,7 @@
         </div>
         <!-- card ends-->
 
-          <div class="card w-100">
+          <div class="card w-100" id="orderCard">
           <div class="card-body p-4">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
@@ -217,7 +219,7 @@
          
         </div>
         <!-- card ends-->
-         <div class="card w-100">
+         <div class="card w-100" id="orderCard">
           <div class="card-body p-4">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
@@ -253,7 +255,7 @@
         </div>
  <!-- card ends-->
           <a href="order-returned">
-          <div class="card w-100">
+          <div class="card w-100" id="orderCard">
           <div class="card-body p-4">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
@@ -290,7 +292,7 @@
         </a>
  <!-- card ends-->
 
-          <div class="card w-100">
+          <div class="card w-100" id="orderCard">
           <div class="card-body p-4">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
@@ -326,7 +328,7 @@
         </div>
  <!-- card ends-->
 
-          <div class="card w-100">
+          <div class="card w-100" id="orderCard">
           <div class="card-body p-4">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
@@ -362,7 +364,7 @@
           </div>   
         </div>
         <!-- card ends-->
-          <div class="card w-100">
+          <div class="card w-100" id="orderCard">
           <div class="card-body p-4">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
@@ -399,7 +401,7 @@
           </div>   
         </div>
         <!-- card ends-->
-         <div class="card w-100">
+         <div class="card w-100" id="orderCard">
           <div class="card-body p-4">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
@@ -456,7 +458,7 @@
         </div>
         <!-- card ends-->
         <a href="order-exchange">
-          <div class="card w-100">
+          <div class="card w-100" id="orderCard">
           <div class="card-body p-4">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
@@ -494,7 +496,7 @@
       </a>
         <!-- card ends-->
         <a href="order-return">
-        <div class="card w-100">
+        <div class="card w-100" id="orderCard">
           <div class="card-body p-4">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
@@ -532,7 +534,7 @@
         </a>
         <!-- card ends-->
         <a href="exchange-accepted">
-          <div class="card w-100">
+          <div class="card w-100" id="orderCard">
           <div class="card-body p-4">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
@@ -570,7 +572,7 @@
       </a>
       <!--card end-->
         <a href="exchange-rejected">
-          <div class="card w-100">
+          <div class="card w-100" id="orderCard">
           <div class="card-body p-4">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
@@ -608,7 +610,7 @@
       </a>
       <!--card end-->
         <a href="refund-rejected">
-          <div class="card w-100">
+          <div class="card w-100" id="orderCard">
           <div class="card-body p-4">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
@@ -646,7 +648,7 @@
       </a>
       <!--card end-->
       <a href="exchanged-order">
-        <div class="card w-100">
+        <div class="card w-100" id="orderCard">
           <div class="card-body p-4">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
@@ -706,7 +708,7 @@
         </a>
         <!-- card ends-->
         <a href="undelivered-order">
-          <div class="card w-100">
+          <div class="card w-100" id="orderCard">
           <div class="card-body p-4">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
@@ -742,7 +744,7 @@
         </a>
  <!-- card ends-->
          <a href="refund-completed">
-          <div class="card w-100">
+          <div class="card w-100" id="orderCard">
           <div class="card-body p-4">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
@@ -779,7 +781,7 @@
    <!-- card ends-->
 
          <a href="refund-accepted">
-          <div class="card w-100">
+          <div class="card w-100" id="orderCard">
           <div class="card-body p-4">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
@@ -816,7 +818,7 @@
    <!-- card ends-->
 
        <a href="refund-initiated">
-          <div class="card w-100">
+          <div class="card w-100" id="orderCard">
           <div class="card-body p-4">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
@@ -853,7 +855,7 @@
    <!-- card ends-->
 
           <a href="return-accepted">
-          <div class="card w-100">
+          <div class="card w-100" id="orderCard">
           <div class="card-body p-4">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
