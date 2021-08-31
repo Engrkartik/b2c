@@ -3,7 +3,7 @@
 
 <style>
   .card{
-    border: 1px solid #e0dddd !important;
+    border: 1px solid #e0dddd ;
   }
   #filter{border:0;}
   #suhaNavbarToggler{border:0;}
@@ -62,7 +62,7 @@
               </div>
               </div>
               <div class="order-btn">
-               <a class="btn w-100" href="#">Cancel</a>
+               <a class="btn w-100" href="order-cancel">Cancel</a>
              </div>
               </div>
             </div>
@@ -99,7 +99,7 @@
               </div>
               </div>
               <div class="order-btn">
-               <a class="btn w-100" href="#">Cancel</a>
+               <a class="btn w-100" href="order-cancel">Cancel</a>
              </div>
               </div>
             </div>
@@ -155,7 +155,7 @@
           </div>
         </div>
               <div class="order-btn">
-               <a class="btn w-100" href="#">Return</a>
+               <a class="btn w-100" href="order-returnD">Return</a>
              </div>
               </div>
             </div>
@@ -357,7 +357,7 @@
               </div>
               </div>
               <div class="order-btn">
-               <a class="btn w-100" href="#">Cancel</a>
+               <a class="btn w-100" href="order-cancel">Cancel</a>
              </div>
               </div>
             </div>
@@ -525,7 +525,7 @@
               </div>
               </div>
               <div class="order-btn">
-               <a class="btn w-100" href="#">Cancel</a>
+               <a class="btn w-100" href="order-cancel">Cancel</a>
              </div>
               </div>
             </div>
@@ -563,7 +563,7 @@
               </div>
               </div>
               <div class="order-btn">
-               <a class="btn w-100" href="">Cancel</a>
+               <a class="btn w-100" href="order-cancel">Cancel</a>
              </div>
               </div>
             </div>

@@ -39,6 +39,8 @@
                    <span>Size: S</span>
                    <br>
                    <span>Order ID: OD10000026</span>
+                   <br>
+                   <p style="color:green;font-size: 12px;">Download Invoice</p>
               </div>
               </div>
           

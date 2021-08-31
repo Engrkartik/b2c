@@ -39,16 +39,18 @@
                    <span>Size: S</span>
                    <br>
                   <span>Order ID: OD10000026</span>
+                  <br>
+                  <p style="color:green;font-size: 12px;">Download Invoice</p>
               </div>
               
              <div class="single-order-status active" id="order-head">
-              <div class="order-text">    
+              <!-- <div class="order-text">    
               <p>Eligible for Return/Exchange till 29 Jul 2021</p>      
-              </div>
+              </div> -->
             </div>
-             <div style="float: right;">
-               <p style="color:red;font-size: 12px;">Policy</p>
-              </div>
+             <!-- <div style="float: right;">
+               <p style="color:green;font-size: 12px;">Download Invoice</p>
+              </div> -->
               </div>
 
               </div>
