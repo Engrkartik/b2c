@@ -105,6 +105,17 @@
             	 <p class="sale-price mb-0" style="font-size: 20px;">₹{{$value->sale_price}}
             	 	<span style="color: #777474;">₹{{$value->mrp}}</span>
             	 </p>
+               <br>
+               <div class="row" style="width: 236%;">
+              <div class="col-12">
+             <span class="ps-0">Cash On Delivery Available.</span>
+              </div>
+              <div class="col-12">
+             <span class="ps-0">Shipment Charges: </span>
+              </div>
+               
+            </div>
+            <br>
              <div class="row" style="width: 236%;">
               <div class="col-6">
                <div class="product-rating">
@@ -112,7 +123,7 @@
                 </div>
                 </div>
                <div class="col-6">
-               <span class="ps-3">View All Ratings</span>
+               <a href="#ratingBox"><span class="ps-3">View All Ratings</span></a>
               </div>
             </div>
             <br>
@@ -310,7 +321,7 @@
 
   </main>
   <hr>
-        <div class="rating-and-review-wrapper bg-white py-3 mb-3 px-3">
+        <div class="rating-and-review-wrapper bg-white py-3 mb-3 px-3" id="ratingBox">
           <div class="container">
             <h6>Ratings &amp; Reviews</h6>
             <div class="rating-review-content">

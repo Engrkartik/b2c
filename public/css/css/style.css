@@ -98,6 +98,8 @@ text-align:center;
 
 .edit-profile-btn{margin-left: 40%;margin-bottom:1rem;}
 
+.order-btn{padding: 10px;}
+
 .order-btn .btn {
 border:1px solid #00a79d;
 color: #00a79d;}
@@ -383,6 +385,8 @@ font-size: 23px;  }
 @media(width:320px)
 {
 
+  .weekly-product-card .product-thumbnail-side .wishlist-btn{right:-8.5rem !important;}
+  
 #filter-order{padding:0.50rem;}
 
 #summary-img{height:130px;}
@@ -508,6 +512,8 @@ right: -9rem;
 
 @media(min-width:220px ) and (max-width: 310px)
 {
+
+  .weekly-product-card .product-thumbnail-side .wishlist-btn{right:-7.5rem !important;}
 
 #filter-order{padding:0.50rem;}
 
@@ -652,6 +658,10 @@ right: -8.5rem !important;
 
 
 @media(min-width:330px ) and (max-width: 780px) {
+
+  .weekly-product-card .product-thumbnail-side .wishlist-btn{
+    right:-9.5rem !important;
+  }
 
 #button{ padding-top:30%; }
 

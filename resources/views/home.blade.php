@@ -36,40 +36,20 @@
             <!-- there will be 5-6 banners-->
             <a href="single-product">
             <div class="single-hero-slide" style="background-image: url('img/bg-img/1.jpg')">
-              <div class="slide-content h-100 d-flex align-items-center">
-                <div class="slide-text">
-                  <h4 class="text-white mb-0" data-animation="fadeInUp" data-delay="100ms" data-wow-duration="1000ms">Amazon Echo</h4>
-                  <p class="text-white" data-animation="fadeInUp" data-delay="400ms" data-wow-duration="1000ms">3rd Generation, Charcoal</p>
-                </div>
-              </div>
+              
             </div>
             </a>
                <!-- Single Hero Slide-->
             <div class="single-hero-slide" style="background-image: url('img/bg-img/3.jpg')">
-              <div class="slide-content h-100 d-flex align-items-center">
-                <div class="slide-text">
-                  <h4 class="text-white mb-0" data-animation="fadeInUp" data-delay="100ms" data-wow-duration="1000ms">Dummy Text</h4>
-                  <p class="text-white" data-animation="fadeInUp" data-delay="400ms" data-wow-duration="1000ms">Dummy Text</p>
-                </div>
-              </div>
+              
             </div>
             <!-- Single Hero Slide-->
             <div class="single-hero-slide" style="background-image: url('img/bg-img/2.jpg')">
-              <div class="slide-content h-100 d-flex align-items-center">
-                <div class="slide-text">
-                  <h4 class="text-white mb-0" data-animation="fadeInUp" data-delay="100ms" data-wow-duration="1000ms">Light Candle</h4>
-                  <p class="text-white" data-animation="fadeInUp" data-delay="400ms" data-wow-duration="1000ms">Now only $22</p>
-                </div>
-              </div>
+              
             </div>
             <!-- Single Hero Slide-->
             <div class="single-hero-slide" style="background-image: url('img/bg-img/3.jpg')">
-              <div class="slide-content h-100 d-flex align-items-center">
-                <div class="slide-text">
-                  <h4 class="text-white mb-0" data-animation="fadeInUp" data-delay="100ms" data-wow-duration="1000ms">Best Furniture</h4>
-                  <p class="text-white" data-animation="fadeInUp" data-delay="400ms" data-wow-duration="1000ms">3 years warranty</p>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -87,7 +67,7 @@
             
               <!-- Single Catagory Card-->
               @foreach($data as $key=>$value)
-              <div class="col-4">
+              <div class="col-3">
                 <div class="card top-product-card">
                 <a class="product-thumbnail d-block" href="category/{{$value->id}}">
                   <img class="mb-2" id="cat" src="http://34.72.9.224/quickcell/{{$value->img}}" alt="">
@@ -269,8 +249,9 @@
          @foreach($discount as $key=>$val3)
            <div class="cta-text p-4 p-lg-5" style="background-image: url(http://34.72.9.224/quickWebsite/b2c_admin/{{$val3->img}})">
           @endforeach  
-            <h4>End of season sale</h4>
-            <p>For a multibrand, creative &amp; <br>modern products</p><a class="btn btn-danger" href="shop-list">Shop Today</a>
+            <!-- <h4>End of season sale</h4>
+            <p>For a multibrand, creative &amp; <br>modern products</p> -->
+            <a class="btn btn-danger" href="shop-list">Shop Today</a>
           </div>
         </div>
       </div>
