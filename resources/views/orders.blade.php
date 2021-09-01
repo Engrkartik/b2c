@@ -15,10 +15,23 @@
         <div class="container">
              
           <div class="section-heading d-flex align-items-center justify-content">
-           <div class="card cart-amount-area" style="width:34%;" id="filter">
+            <!-- <div class="row">
+              <div class="col-4">
+              <p id="order-sort">Showing: <strong>All Orders</strong></p>
+              </div>
+              <div class="col-4">
+              <p id="order-sort">Within:<strong>Last 6 Months</strong></p>
+              </div>
+              <div class="col-4 d-flex" id="suhaNavbarToggler">
+              <i class="fa fa-filter" id="sortIcons"></i>
+               <p>Filter</p>
+              </div>
+            </div> -->
+           <div class="card cart-amount-area" style="width:35%" id="filter">
             <div class="card-body d-flex align-items-center justify-content-center"> 
             <p id="order-sort">Showing: <strong>All Orders</strong></p>
              </div>
+            
            </div>
              <div class="card cart-amount-area" style="width:35%;" id="filter">
             <div class="card-body d-flex align-items-center justify-content-center">
@@ -26,20 +39,20 @@
              </div>
            </div>
 
-           <div class="card cart-amount-area" style="width:30%;" id="suhaNavbarToggler">
+          <div class="card cart-amount-area" style="width:30%;" id="suhaNavbarToggler">
             <div class="card-body d-flex align-items-center justify-content-center" id="filter-order">
               <i class="fa fa-filter" id="sortIcons"></i>
             <p>Filter</p>
              </div>
-           </div>
+           </div> 
           </div>
           <!-- orders cards-->
 
             <div class="card w-100" id="orderCard">
-          <div class="card-body p-4">
+          <div class="card-body p-2">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">    
-              <h6>Order Placed</h6><span>Your order will be confirmed shortly.</span>       
+              <h6>Order Placed</h6><span>Your order will be confirmed shortly.</span><span>Order Id: 1234.</span>       
               </div>        
             </div>
               <div style="float: right;">
@@ -71,10 +84,10 @@
            <!-- card ends-->
 
            <div class="card w-100" id="orderCard">
-          <div class="card-body p-4">
+          <div class="card-body p-2">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
-              <h6>Order Accepted</h6><span>Arriving by 30 Jul 2021.</span>
+              <h6>Order Accepted</h6><span>Arriving by 30 Jul 2021.</span><span>Order Id: 12345</span>
               </div>
             
             </div>
@@ -108,10 +121,10 @@
         <!-- card ends-->
 
             <div class="card w-100" id="orderCard">
-          <div class="card-body p-4">
+          <div class="card-body p-2">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
-              <h6>Delivered</h6><span>On 24 Jul 2021.</span>
+              <h6>Delivered</h6><span>On 24 Jul 2021.</span><span>Order Id: 12345</span>
               </div>
                
             </div>
@@ -164,10 +177,10 @@
         <!-- card ends-->
 
           <div class="card w-100" id="orderCard">
-          <div class="card-body p-4">
+          <div class="card-body p-2">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
-              <h6>Delivered</h6><span>On 24 Jun 2021.</span>
+              <h6>Delivered</h6><span>On 24 Jun 2021.</span><span>Order Id: 12345</span>
               </div>
                
             </div>
@@ -220,10 +233,10 @@
         </div>
         <!-- card ends-->
          <div class="card w-100" id="orderCard">
-          <div class="card-body p-4">
+          <div class="card-body p-2">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
-              <h6 id="cancelled">Cancelled</h6><span>On 10 May 2021 by You.</span>
+              <h6 id="cancelled">Cancelled</h6><span>On 10 May 2021 by You.</span><span>Order Id: 12345</span>
               </div>
                
             </div>
@@ -256,10 +269,10 @@
  <!-- card ends-->
           <a href="order-returned">
           <div class="card w-100" id="orderCard">
-          <div class="card-body p-4">
+          <div class="card-body p-2">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
-              <h6 id="cancelled">Returned</h6><span>On 10 Jul 2021 by You.</span>
+              <h6 id="cancelled">Returned</h6><span>On 10 Jul 2021 by You.</span><span>Order Id: 12345</span>
               </div>
                
             </div>
@@ -293,10 +306,10 @@
  <!-- card ends-->
 
           <div class="card w-100" id="orderCard">
-          <div class="card-body p-4">
+          <div class="card-body p-2">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
-              <h6 id="cancelled">Cancelled</h6><span>On 8 May 2021.</span>
+              <h6 id="cancelled">Cancelled</h6><span>On 8 May 2021.</span><span>Order Id: 12345</span>
               </div>
                
             </div>
@@ -329,10 +342,10 @@
  <!-- card ends-->
 
           <div class="card w-100" id="orderCard">
-          <div class="card-body p-4">
+          <div class="card-body p-2">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
-              <h6>Ready to ship</h6><span>Will be shipped by 30 Jul 2021.</span>
+              <h6>Ready to ship</h6><span>Will be shipped by 30 Jul 2021.</span><span>Order Id: 12345</span>
               </div>
                
             </div>
@@ -365,10 +378,10 @@
         </div>
         <!-- card ends-->
           <div class="card w-100" id="orderCard">
-          <div class="card-body p-4">
+          <div class="card-body p-2">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
-              <h6>Shipped</h6><span>On 31 Jul 2021 – Estd. Delivery 2 Aug 2021.</span>
+              <h6>Shipped</h6><span>On 31 Jul 2021 – Estd. Delivery 2 Aug 2021.</span><span>Order Id: 12345</span>
               </div>
                
             </div>
@@ -402,10 +415,10 @@
         </div>
         <!-- card ends-->
          <div class="card w-100" id="orderCard">
-          <div class="card-body p-4">
+          <div class="card-body p-2">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
-              <h6>Delivered</h6><span>On 21 Jul 2021</span>
+              <h6>Delivered</h6><span>On 21 Jul 2021</span><span>Order Id: 12345</span>
               </div>
                
             </div>
@@ -459,10 +472,10 @@
         <!-- card ends-->
         <a href="order-exchange">
           <div class="card w-100" id="orderCard">
-          <div class="card-body p-4">
+          <div class="card-body p-2">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
-              <h6 id="exchange">Exchange Requested</h6><span>On 2 Aug 2021.</span>
+              <h6 id="exchange">Exchange Requested</h6><span>On 2 Aug 2021.</span><span>Order Id: 12345</span>
               </div>
                
             </div>
@@ -497,10 +510,10 @@
         <!-- card ends-->
         <a href="order-return">
         <div class="card w-100" id="orderCard">
-          <div class="card-body p-4">
+          <div class="card-body p-2">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
-              <h6 id="exchange">Return Requested</h6><span>On 3 Aug 2021.</span>
+              <h6 id="exchange">Return Requested</h6><span>On 3 Aug 2021.</span><span>Order Id: 12345</span>
               </div>
                
             </div>
@@ -535,10 +548,10 @@
         <!-- card ends-->
         <a href="exchange-accepted">
           <div class="card w-100" id="orderCard">
-          <div class="card-body p-4">
+          <div class="card-body p-2">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
-              <h6>Exchange Accepted</h6><span>On 2 Aug 2021.</span>
+              <h6>Exchange Accepted</h6><span>On 2 Aug 2021.</span><span>Order Id: 12345</span>
               </div>
                
             </div>
@@ -573,10 +586,10 @@
       <!--card end-->
         <a href="exchange-rejected">
           <div class="card w-100" id="orderCard">
-          <div class="card-body p-4">
+          <div class="card-body p-2">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
-              <h6 id="cancelled">Exchange Rejected</h6><span>On 2 Aug 2021.</span>
+              <h6 id="cancelled">Exchange Rejected</h6><span>On 2 Aug 2021.</span><span>Order Id: 12345</span>
               </div>
                
             </div>
@@ -611,10 +624,10 @@
       <!--card end-->
         <a href="refund-rejected">
           <div class="card w-100" id="orderCard">
-          <div class="card-body p-4">
+          <div class="card-body p-2">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
-              <h6 id="cancelled">Refund Rejected</h6><span>On 2 Aug 2021.</span>
+              <h6 id="cancelled">Refund Rejected</h6><span>On 2 Aug 2021.</span><span>Order Id: 12345</span>
               </div>
                
             </div>
@@ -649,10 +662,10 @@
       <!--card end-->
       <a href="exchanged-order">
         <div class="card w-100" id="orderCard">
-          <div class="card-body p-4">
+          <div class="card-body p-2">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
-              <h6>Exchanged</h6><span>On 24 Jul 2021.</span>
+              <h6>Exchanged</h6><span>On 24 Jul 2021.</span><span>Order Id: 12345</span>
               </div>
                
             </div>
@@ -709,10 +722,10 @@
         <!-- card ends-->
         <a href="undelivered-order">
           <div class="card w-100" id="orderCard">
-          <div class="card-body p-4">
+          <div class="card-body p-2">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
-              <h6 id="cancelled">Undelivered</h6><span>On 10 May 2021 by You.</span>
+              <h6 id="cancelled">Undelivered</h6><span>On 10 May 2021 by You.</span><span>Order Id: 12345</span>
               </div>
                
             </div>
@@ -745,10 +758,10 @@
  <!-- card ends-->
          <a href="refund-completed">
           <div class="card w-100" id="orderCard">
-          <div class="card-body p-4">
+          <div class="card-body p-2">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
-              <h6>Refund Completed</h6><span>On 10 Jul 2021</span>
+              <h6>Refund Completed</h6><span>On 10 Jul 2021</span><span>Order Id: 12345</span>
               </div>
                
             </div>
@@ -782,10 +795,10 @@
 
          <a href="refund-accepted">
           <div class="card w-100" id="orderCard">
-          <div class="card-body p-4">
+          <div class="card-body p-2">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
-              <h6>Refund Accepted</h6><span>On 10 Jul 2021</span>
+              <h6>Refund Accepted</h6><span>On 10 Jul 2021</span><span>Order Id: 12345</span>
               </div>
                
             </div>
@@ -819,10 +832,10 @@
 
        <a href="refund-initiated">
           <div class="card w-100" id="orderCard">
-          <div class="card-body p-4">
+          <div class="card-body p-2">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
-              <h6>Refund Initiated</h6><span>On 10 Jul 2021</span>
+              <h6>Refund Initiated</h6><span>On 10 Jul 2021</span><span>Order Id: 12345</span>
               </div>
                
             </div>
@@ -856,10 +869,10 @@
 
           <a href="return-accepted">
           <div class="card w-100" id="orderCard">
-          <div class="card-body p-4">
+          <div class="card-body p-2">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">
-              <h6>Refund Accepted</h6><span>On 10 Jul 2021</span>
+              <h6>Refund Accepted</h6><span>On 10 Jul 2021</span><span>Order Id: 12345</span>
               </div>
                
             </div>
