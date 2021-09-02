@@ -23,7 +23,7 @@
               <div class="card top-product-card">
                 
                   <a class="product-thumbnail d-block" href="shop-product/{{$value->id}}">
-                  <img class="mb-2" id="cat" src="http://34.72.9.224/quickcell/{{$value->img}}" alt="">
+                  <img class="mb-0" id="cat" src="http://34.72.9.224/quickcell/{{$value->img}}" alt="">
                
                 <span id="catSpan">{{$value->title}}</span>
                   <!-- <p class="sale-price">{{$value->title}}<span>{{$value->mrp}}</span></p> -->

@@ -98,7 +98,7 @@ text-align:center;
 
 .edit-profile-btn{margin-left: 40%;margin-bottom:1rem;}
 
-.order-btn{padding: 10px;}
+.order-btn{padding: 0 10px 10px 10px;}
 
 .order-btn .btn {
 border:1px solid #00a79d;
@@ -117,9 +117,20 @@ color: #00a79d;}
       z-index: 11;
       font-size: 1.25rem; }
 
+      .weekly-product-card .product-thumbnail-side .help-btn {
+        position: absolute;
+         top: -0.5rem ;
+        right: -44.5rem;
+        color: #020554;
+        line-height: 1;
+        z-index: 11;
+        font-size: 1.25rem; }
+
 #image-side{flex: 0 0 20%;}
 
 #cart-img{top:-22px;}
+
+#order-img{top:-7px;}
 
 #estimated{font-size:12px;}
 
@@ -137,6 +148,8 @@ color: #00a79d;}
 #stockOut-p{color:red;font-size:12px;}
 
 #cart-img img{height:183px;}
+
+#order-img img{height:183px;}
 
 #cart-p{font-size:12px; line-height:20px;}
 
@@ -451,6 +464,11 @@ top:-1rem;
 right: -11rem !important;
 }
 
+.weekly-product-card .product-thumbnail-side .help-btn{
+  top:-1rem;
+  right: -11rem !important;
+  }
+
 #leftregg{width:50% !important;}
 
 #leftreggg{width:50% !important;}
@@ -496,6 +514,11 @@ top:-1rem;
 right: -9rem;
 }
 
+.weekly-product-card .product-thumbnail-side .help-btn{
+  top:-1rem;
+  right: -9rem;
+  }
+
 #cart-p{ font-size:10px; line-height:13px !important;}
 #cart-container{ margin-bottom:7px;}
 .choose-color-radio {font-size:10px;}
@@ -522,6 +545,8 @@ right: -9rem;
 #imgCart{max-width:44%;}
 
 #cart-img{top:-14px;}
+
+#order-img{top:-5px;}
 
 #sort {
     border: 0;
@@ -612,6 +637,11 @@ top:-1rem;
 right: -8.5rem !important;
 }
 
+.weekly-product-card .product-thumbnail-side .help-btn{
+  top:-1rem;
+  right: -8.5rem !important;
+  }
+
 #cart-p{ font-size:10px!important; line-height:7px!important;}
 #cart-container{ margin-bottom:7px;}
 .choose-color-radio {font-size:14px;}
@@ -668,6 +698,8 @@ right: -8.5rem !important;
 #filter-order{padding:0.50rem;}
 
 #cart-img{ top:-9px;}
+
+#order-img{ top:-6px;}
 
 .payNow{margin-left:-3%;bottom:7%; width:100%;}
 
@@ -791,6 +823,12 @@ right:-156%;
 top:-1rem;
 
 }
+
+.weekly-product-card .product-thumbnail-side .help-btn{ 
+  right:-156%; 
+  top:0rem;
+  
+  }
 
 .edit-profile-btn{margin-left: 30%; }
 
