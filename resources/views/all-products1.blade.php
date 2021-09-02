@@ -77,8 +77,12 @@
                   @if($value->wishlist=="false")<i class="lni lni-heart"></i>
                   @else<i class="lni lni-heart-filled"></i>@endif
                   @else<i class="lni lni-heart"></i>@endif
-                </a><a class="product-thumbnail d-block" href="single-product/{{$value->id}}"><img src="http://34.72.9.224/quickWebsite/b2c_admin/{{$value->img_url}}" alt=""></a></div>
-                     <div class="product-description"><a class="product-title d-block" href="single-product/{{$value->id}}">{{$value->item_name}}
+                </a>
+                <a class="product-thumbnail d-block" href="single-product/{{$value->id}}">
+                <img src="http://34.72.9.224/quickWebsite/b2c_admin/{{$value->img_url}}" alt=""></a>
+              </div>
+                     <div class="product-description">
+                       <a class="product-title d-block" href="single-product/{{$value->id}}">{{$value->item_name}}
                     <p class="sale-price"><i class="lni lni-rupee"></i>{{$value->sale_price}}&nbsp;&nbsp;<span>₹{{$value->mrp}}</span></p></a>
                     <input type="text" value="{{$value->id}}" id="product{{$value->id}}" name="product-id" hidden="">
                     <div class="product-rating"><i class="lni lni-star-filled"></i><i class="lni lni-star-filled"></i><i class="lni lni-star-filled"></i><i class="lni lni-star-filled"></i><i class="lni lni-star"></i></div>

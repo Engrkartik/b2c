@@ -70,7 +70,7 @@
               <div class="col-3">
                 <div class="card top-product-card">
                 <a class="product-thumbnail d-block" href="category/{{$value->id}}">
-                  <img class="mb-2" id="cat" src="http://34.72.9.224/quickcell/{{$value->img}}" alt="">
+                  <img class="mb-0" id="cat" src="http://34.72.9.224/quickcell/{{$value->img}}" alt="">
                   <span id="catSpan">{{$value->title}}</span>
                 </a>
                   
@@ -121,7 +121,8 @@
                   <div class="weekly-product-card">
             <div class="product-description">
               <div class="product-rating">
-            <i class="lni lni-star-filled"></i><i class="lni lni-star-filled"></i><i class="lni lni-star-filled"></i><i class="lni lni-star-filled" id="emptyStar"></i><i class="lni lni-star-filled" id="emptyStar"></i>
+            <i class="lni lni-star-filled"></i><i class="lni lni-star-filled"></i><i class="lni lni-star-filled"></i><i class="lni lni-star-filled" id="emptyStar"></i>
+            <i class="lni lni-star-filled" id="emptyStar"></i>
           </div>
          
             </div>

@@ -5,7 +5,7 @@
   .card{
     border: 1px solid #e0dddd ;
   }
-  #filter{border:0;}
+ 
   #suhaNavbarToggler{border:0;}
 </style>
 
@@ -15,31 +15,20 @@
         <div class="container">
              
           <div class="section-heading d-flex align-items-center justify-content">
-            <!-- <div class="row">
-              <div class="col-4">
-              <p id="order-sort">Showing: <strong>All Orders</strong></p>
-              </div>
-              <div class="col-4">
-              <p id="order-sort">Within:<strong>Last 6 Months</strong></p>
-              </div>
-              <div class="col-4 d-flex" id="suhaNavbarToggler">
-              <i class="fa fa-filter" id="sortIcons"></i>
-               <p>Filter</p>
-              </div>
-            </div> -->
-           <div class="card cart-amount-area" style="width:35%" id="filter">
+           
+           <div class="card cart-amount-area" style="width:35%; border-radius:0;" id="filter">
             <div class="card-body d-flex align-items-center justify-content-center"> 
             <p id="order-sort">Showing: <strong>All Orders</strong></p>
              </div>
             
            </div>
-             <div class="card cart-amount-area" style="width:35%;" id="filter">
+             <div class="card cart-amount-area" style="width:35%;border-radius:0;" id="filter">
             <div class="card-body d-flex align-items-center justify-content-center">
               <p id="order-sort">Within:<strong>Last 6 Months</strong></p>
              </div>
            </div>
 
-          <div class="card cart-amount-area" style="width:30%;" id="suhaNavbarToggler">
+          <div class="card cart-amount-area" style="width:30%;border-radius:0;" id="suhaNavbarToggler">
             <div class="card-body d-flex align-items-center justify-content-center" id="filter-order">
               <i class="fa fa-filter" id="sortIcons"></i>
             <p>Filter</p>
@@ -47,6 +36,82 @@
            </div> 
           </div>
           <!-- orders cards-->
+
+      <div class="weekly-best-seller-area pt-3 mb-2">
+        
+        <div class="row g-3">
+            <div class="col-12 col-md-12">
+             
+              <div class="card weekly-product-card" id="cart-card">
+                 
+                <div class="card-body d-flex align-items-center">
+                  <div class="product-thumbnail-side" id="image-side">
+                    <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
+                    <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+                      <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
+                  </div>
+                  <div class="product-description" id="cartDescription">
+               <div class="single-order-status active">
+              <div class="order-text">    
+              <h6>Order Placed</h6><span>Your order will be confirmed shortly.</span>
+              <br>
+              <span>Order Id: 1234.</span>
+              <br>       
+              </div>        
+            </div>
+            <a class="product-title d-block">Levi's Jeans</a>
+              <span>Product Description</span>
+          </div>
+        </div>
+        <div class="order-btn">
+         <a class="btn w-100" href="order-cancel">Cancel</a>
+       </div>         
+      </div>   
+    </div>
+  </div>
+  <!-- row end-->
+
+</div>
+
+          <!-- new design end-->
+
+          
+          <div class="card w-100" id="orderCard">
+          
+            <div class="row g-3">
+            <div class="col-12 col-md-12">
+              <div class="card weekly-product-card"> 
+    
+             <div class="card-body d-flex align-items-center">  
+                <div class="product-thumbnail-side" id="image-side">
+                  <a class="product-thumbnail d-block" href=" ">
+                    <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt="">
+                  </a>
+                </div>
+                <div class="product-description">
+               <div class="single-order-status active">
+              <div class="order-text">    
+              <h6>Order cancelled by seller</h6><span>Your order will be confirmed shortly.</span>
+              <br>
+              <span>Order Id: 1234.</span>
+              <br>       
+              </div>        
+            </div>
+            <a class="product-title d-block">Levi's Jeans</a>
+              <span>Product Description</span>
+                   
+              </div>
+              <div style="float: right;">
+                <a href="contact"><i class="lni lni-headphone-alt"></i></a>
+              </div>
+              </div>
+              <div class="order-btn">
+               <a class="btn w-100" href="order-cancel">Cancel</a>
+             </div>
+              </div>
+            </div>
+          </div>
+          </div>
 
             <div class="card w-100" id="orderCard">
           <div class="card-body p-2">
