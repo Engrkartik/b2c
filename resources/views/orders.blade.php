@@ -14,21 +14,20 @@
       <div class="top-products-area py-3">
         <div class="container">
              
-          <div class="section-heading d-flex align-items-center justify-content">
+          <div class="section-heading d-flex align-items-center justify-content" id="suhaNavbarToggler">
            
-           <div class="card cart-amount-area" style="width:35%; border-radius:0;" id="filter">
+           <div class="card cart-amount-area" style="width:35%; border-radius:0;">
             <div class="card-body d-flex align-items-center justify-content-center"> 
             <p id="order-sort">Showing: <strong>All Orders</strong></p>
              </div>
-            
-           </div>
+              </div>
              <div class="card cart-amount-area" style="width:35%;border-radius:0;" id="filter">
             <div class="card-body d-flex align-items-center justify-content-center">
               <p id="order-sort">Within:<strong>Last 6 Months</strong></p>
              </div>
            </div>
 
-          <div class="card cart-amount-area" style="width:30%;border-radius:0;" id="suhaNavbarToggler">
+          <div class="card cart-amount-area" style="width:30%;border-radius:0;">
             <div class="card-body d-flex align-items-center justify-content-center" id="filter-order">
               <i class="fa fa-filter" id="sortIcons"></i>
             <p>Filter</p>
@@ -37,8 +36,7 @@
           </div>
           <!-- orders cards-->
 
-      <div class="weekly-best-seller-area pt-3 mb-2">
-        
+      <div class="weekly-best-seller-area pt-3 mb-2"> 
         <div class="row g-3">
             <div class="col-12 col-md-12">
              
@@ -53,14 +51,16 @@
                   <div class="product-description" id="cartDescription">
                <div class="single-order-status active">
               <div class="order-text">    
-              <h6>Order Placed</h6><span>Your order will be confirmed shortly.</span>
+              <h6>Order Placed</h6><span style="font-size: 9px;">Your order will be confirmed shortly.</span>
               <br>
               <span>Order Id: 1234.</span>
               <br>       
               </div>        
             </div>
-            <a class="product-title d-block">Levi's Jeans</a>
-              <span>Product Description</span>
+            <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+              <span>03 sep 2021</span>
+              <br>
+              <span>₹1595</span>
           </div>
         </div>
         <div class="order-btn">
@@ -74,146 +74,129 @@
 </div>
 
           <!-- new design end-->
-
-          
-          <div class="card w-100" id="orderCard">
-          
-            <div class="row g-3">
+      <div class="weekly-best-seller-area pt-3 mb-2"> 
+        <div class="row g-3">
             <div class="col-12 col-md-12">
-              <div class="card weekly-product-card"> 
-    
-             <div class="card-body d-flex align-items-center">  
-                <div class="product-thumbnail-side" id="image-side">
-                  <a class="product-thumbnail d-block" href=" ">
-                    <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt="">
-                  </a>
-                </div>
-                <div class="product-description">
+             
+              <div class="card weekly-product-card" id="cart-card">
+                 
+                <div class="card-body d-flex align-items-center">
+                  <div class="product-thumbnail-side" id="image-side">
+                    <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
+                    <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+                      <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
+                  </div>
+                  <div class="product-description" id="cartDescription">
                <div class="single-order-status active">
               <div class="order-text">    
-              <h6>Order cancelled by seller</h6><span>Your order will be confirmed shortly.</span>
+              <h6>Order Accepted</h6><span style="font-size: 9px;">Arriving by 6 Sep 2021.</span>
               <br>
               <span>Order Id: 1234.</span>
               <br>       
               </div>        
             </div>
-            <a class="product-title d-block">Levi's Jeans</a>
-              <span>Product Description</span>
-                   
-              </div>
-              <div style="float: right;">
-                <a href="contact"><i class="lni lni-headphone-alt"></i></a>
-              </div>
-              </div>
-              <div class="order-btn">
-               <a class="btn w-100" href="order-cancel">Cancel</a>
-             </div>
-              </div>
-            </div>
+            <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+              <span>03 sep 2021</span>
+              <br>
+              <span>₹1595</span>
           </div>
-          </div>
+        </div>
+        <div class="order-btn">
+         <a class="btn w-100" href="order-cancel">Cancel</a>
+       </div>         
+      </div>   
+    </div>
+  </div>
+  <!-- row end-->
 
-            <div class="card w-100" id="orderCard">
-          <div class="card-body p-2">
-            <div class="single-order-status active" id="order-head">
+</div>
+
+ <div class="weekly-best-seller-area pt-3 mb-2"> 
+        <div class="row g-3">
+            <div class="col-12 col-md-12">
+             
+              <div class="card weekly-product-card" id="cart-card">
+                 
+                <div class="card-body d-flex align-items-center">
+                  <div class="product-thumbnail-side" id="image-side">
+                    <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
+                    <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+                      <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
+                  </div>
+                  <div class="product-description" id="cartDescription">
+               <div class="single-order-status active">
               <div class="order-text">    
-              <h6>Order Placed</h6><span>Your order will be confirmed shortly.</span><span>Order Id: 1234.</span>       
+              <h6>Delivered</h6><span style="font-size: 9px;">On 1 Sep 2021.</span>
+              <br>
+              <span>Order Id: 1234.</span>
+              <br>       
               </div>        
             </div>
-              <div style="float: right;">
-                <a href="contact"><i class="lni lni-headphone-alt"></i></a>
-              </div>
+            <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+              <span>03 sep 2021</span>
+              <br>
+              <span>₹1595</span>
           </div>
-            <div class="row g-3">
-            <div class="col-12 col-md-12">
-              <div class="card weekly-product-card">   
-             <div class="card-body d-flex align-items-center">  
-                <div class="product-thumbnail-side" id="image-side">
-                  <a class="product-thumbnail d-block" href=" ">
-                    <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt="">
-                  </a>
-                </div>
-                <div class="product-description">
-                  <a class="product-title d-block">Levi's Jeans</a>
-                   <span>Product Description</span>
-                   
-              </div>
-              </div>
-              <div class="order-btn">
-               <a class="btn w-100" href="order-cancel">Cancel</a>
-             </div>
-              </div>
-            </div>
-          </div>
-          </div>
-           <!-- card ends-->
-
-           <div class="card w-100" id="orderCard">
-          <div class="card-body p-2">
-            <div class="single-order-status active" id="order-head">
-              <div class="order-text">
-              <h6>Order Accepted</h6><span>Arriving by 30 Jul 2021.</span><span>Order Id: 12345</span>
-              </div>
-            
-            </div>
-             <div style="float: right;">
-                 <a href="contact"><i class="lni lni-headphone-alt"></i></a>
-              </div>
-          </div>
-            <div class="row g-3">
-           
-            <div class="col-12 col-md-12">
-              <div class="card weekly-product-card">   
-             <div class="card-body d-flex align-items-center">  
-                <div class="product-thumbnail-side" id="image-side">
-                  <a class="product-thumbnail d-block" href=" ">
-                    <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt="">
-                  </a>
-                </div>
-                <div class="product-description">
-                  <a class="product-title d-block">Levi's Jeans</a>
-                   <span>Product Description</span>
-                  
-              </div>
-              </div>
-              <div class="order-btn">
-               <a class="btn w-100" href="order-cancel">Cancel</a>
-             </div>
-              </div>
-            </div>
-          </div> 
         </div>
-        <!-- card ends-->
-
-            <div class="card w-100" id="orderCard">
-          <div class="card-body p-2">
-            <div class="single-order-status active" id="order-head">
-              <div class="order-text">
-              <h6>Delivered</h6><span>On 24 Jul 2021.</span><span>Order Id: 12345</span>
-              </div>
-               
-            </div>
-             <div style="float: right;">
-               <a href="contact"><i class="lni lni-headphone-alt"></i></a>
-              </div>
+     <div class="ratings-submit-form bg-white pt-0 pb-1 px-3">
+        <div class="container" style="display:inline-flex;">
+          <p id="rateP">Rate Product</p>
+          <form action="#" method="">
+            <div class="stars">
+              <input class="star-1" type="radio" name="star" id="star1">
+              <label class="star-1" for="star1"></label>
+              <input class="star-2" type="radio" name="star" id="star2">
+              <label class="star-2" for="star2"></label>
+              <input class="star-3" type="radio" name="star" id="star3">
+              <label class="star-3" for="star3"></label>
+              <input class="star-4" type="radio" name="star" id="star4">
+              <label class="star-4" for="star4"></label>
+              <input class="star-5" type="radio" name="star" id="star5">
+              <label class="star-5" for="star5"></label><span></span>
+            </div>     
+            </form>
           </div>
-            <div class="row g-3">
-          
+        </div>
+        <div class="order-btn">
+         <a class="btn w-100" href="order-cancel">Cancel</a>
+       </div>         
+      </div>   
+    </div>
+  </div>
+  <!-- row end-->
+
+</div>
+
+
+
+ <div class="weekly-best-seller-area pt-3 mb-2"> 
+        <div class="row g-3">
             <div class="col-12 col-md-12">
-              <div class="card weekly-product-card">   
-             <div class="card-body d-flex align-items-center">  
-                <div class="product-thumbnail-side" id="image-side">
-                  <a class="product-thumbnail d-block" href=" ">
-                    <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt="">
-                  </a>
-                </div>
-                <div class="product-description">
-                  <a class="product-title d-block">Levi's Jeans</a>
-                   <span>Product Description</span>
+             
+              <div class="card weekly-product-card" id="cart-card">
                  
-              </div>
-              </div>
-          <div class="ratings-submit-form bg-white pt-2 pb-3 px-3">
+                <div class="card-body d-flex align-items-center">
+                  <div class="product-thumbnail-side" id="image-side">
+                    <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
+                    <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+                      <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
+                  </div>
+                  <div class="product-description" id="cartDescription">
+               <div class="single-order-status active">
+              <div class="order-text">    
+              <h6>Delivered</h6><span style="font-size: 9px;">On 1 Sep 2021.</span>
+              <br>
+              <span>Order Id: 1234.</span>
+              <br>       
+              </div>        
+            </div>
+            <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+              <span>03 sep 2021</span>
+              <br>
+              <span>₹1595</span>
+          </div>
+        </div>
+     <div class="ratings-submit-form bg-white pt-0 pb-1 px-3">
         <div class="container" style="display:inline-flex;">
           <p id="rateP">Rate Product</p>
           <form action="#" method="">
@@ -232,531 +215,427 @@
             </form>
           </div>
         </div>
-              <div class="order-btn">
-               <a class="btn w-100" href="order-returnD">Return</a>
-             </div>
-              </div>
-            </div>
-          </div>   
-        </div>
-        <!-- card ends-->
+        <ul>
+          <li style="list-style: disc;">Exchange/Return window closed on 2 Jul</li>
+        </ul>
+      </div>   
+    </div>
+  </div>
+  <!-- row end-->
 
-          <div class="card w-100" id="orderCard">
-          <div class="card-body p-2">
-            <div class="single-order-status active" id="order-head">
-              <div class="order-text">
-              <h6>Delivered</h6><span>On 24 Jun 2021.</span><span>Order Id: 12345</span>
-              </div>
-               
-            </div>
-             <div style="float: right;">
-                <a href="contact"><i class="lni lni-headphone-alt"></i></a>
-              </div>
-          </div>
-            <div class="row g-3">
-          
+</div>
+
+ <div class="weekly-best-seller-area pt-3 mb-2"> 
+        <div class="row g-3">
             <div class="col-12 col-md-12">
-              <div class="card weekly-product-card">   
-             <div class="card-body d-flex align-items-center">  
-                <div class="product-thumbnail-side" id="image-side">
-                  <a class="product-thumbnail d-block" href=" ">
-                    <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt="">
-                  </a>
-                </div>
-                <div class="product-description">
-                  <a class="product-title d-block">Levi's Jeans</a>
-                   <span>Product Description</span>
-                
-              </div>
-              </div>
-              <ul>
-                <li style="list-style: disc;">Exchange/Return window closed on 2 Jul</li>
-              </ul>
-          <div class="ratings-submit-form bg-white pt-2 pb-3 px-3">
-        <div class="container" style="display:inline-flex;">
-          <p id="rateP">Rate Product</p>
-          <form action="#" method="">
-            <div class="stars">
-              <input class="star-1" type="radio" name="star" id="star1">
-              <label class="star-1" for="star1"></label>
-              <input class="star-2" type="radio" name="star" id="star2">
-              <label class="star-2" for="star2"></label>
-              <input class="star-3" type="radio" name="star" id="star3">
-              <label class="star-3" for="star3"></label>
-              <input class="star-4" type="radio" name="star" id="star4">
-              <label class="star-4" for="star4"></label>
-              <input class="star-5" type="radio" name="star" id="star5">
-              <label class="star-5" for="star5"></label><span></span>
-            </div>     
-            </form>
+             
+              <div class="card weekly-product-card" id="cart-card">
+                 
+                <div class="card-body d-flex align-items-center">
+                  <div class="product-thumbnail-side" id="image-side">
+                    <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
+                    <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+                      <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
+                  </div>
+                  <div class="product-description" id="cartDescription">
+               <div class="single-order-status active">
+              <div class="order-text">    
+              <h6 id="cancelled">Cancelled</h6><span style="font-size: 9px;">On 1 Sep 2021.</span>
+              <br>
+              <span>Order Id: 1234.</span>
+              <br>       
+              </div>        
+            </div>
+            <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+              <span>03 sep 2021</span>
+              <br>
+              <span>₹1595</span>
           </div>
         </div>
-      </div>
+      </div>   
+    </div>
+  </div>
+  <!-- row end-->
+
+</div>
+
+ <div class="weekly-best-seller-area pt-3 mb-2"> 
+    <div class="row g-3">
+       <div class="col-12 col-md-12">
+        <div class="card weekly-product-card" id="cart-card">
+         <div class="card-body d-flex align-items-center">
+          <div class="product-thumbnail-side" id="image-side">
+            <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
+            <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+              <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
+          </div>
+          <div class="product-description" id="cartDescription">
+            <a href="order-returned">
+           <div class="single-order-status active">
+          <div class="order-text">    
+          <h6 id="cancelled">Returned</h6><span style="font-size: 9px;">On 1 Sep 2021.</span>
+          <br>
+          <span>Order Id: 1234.</span>
+          <br>       
+          </div>        
+        </div>
+      </a>
+        <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+          <span>03 sep 2021</span>
+          <br>
+          <span>₹1595</span>
       </div>
     </div>
-         
-        </div>
-        <!-- card ends-->
-         <div class="card w-100" id="orderCard">
-          <div class="card-body p-2">
-            <div class="single-order-status active" id="order-head">
-              <div class="order-text">
-              <h6 id="cancelled">Cancelled</h6><span>On 10 May 2021 by You.</span><span>Order Id: 12345</span>
-              </div>
-               
-            </div>
-             <div style="float: right;">
-                <a href="contact"><i class="lni lni-headphone-alt"></i></a>
-              </div>
-          </div>
-            <div class="row g-3">
-          
-            <div class="col-12 col-md-12">
-              <div class="card weekly-product-card">   
-             <div class="card-body d-flex align-items-center">  
-                <div class="product-thumbnail-side" id="image-side">
-                  <a class="product-thumbnail d-block" href=" ">
-                    <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt="">
-                  </a>
-                </div>
-                <div class="product-description">
-                  <a class="product-title d-block">Levi's Jeans</a>
-                   <span>Product Description</span>
-                  
-              </div>
-              </div>
+ 
+      </div>   
+    </div>
+  </div>
+  <!-- row end-->
+</div>
 
-              </div>
-            </div>
-          </div>
-         
-        </div>
- <!-- card ends-->
-          <a href="order-returned">
-          <div class="card w-100" id="orderCard">
-          <div class="card-body p-2">
-            <div class="single-order-status active" id="order-head">
-              <div class="order-text">
-              <h6 id="cancelled">Returned</h6><span>On 10 Jul 2021 by You.</span><span>Order Id: 12345</span>
-              </div>
-               
-            </div>
-             <div style="float: right;">
-               <a href="contact"><i class="lni lni-headphone-alt"></i></a>
-              </div>
-          </div>
 
-            <div class="row g-3">
-            <div class="col-12 col-md-12">
-              <div class="card weekly-product-card">   
-             <div class="card-body d-flex align-items-center">  
-                <div class="product-thumbnail-side" id="image-side">
-                  <a class="product-thumbnail d-block" href=" ">
-                    <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt="">
-                  </a>
-                </div>
-                <div class="product-description">
-                  <a class="product-title d-block">Levi's Jeans</a>
-                   <span>Product Description</span>
-                 
-              </div>
-              </div>
+ <div class="weekly-best-seller-area pt-3 mb-2"> 
+    <div class="row g-3">
+       <div class="col-12 col-md-12">
+        <div class="card weekly-product-card" id="cart-card">
+         <div class="card-body d-flex align-items-center">
+          <div class="product-thumbnail-side" id="image-side">
+            <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
+            <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+              <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
+          </div>
+          <div class="product-description" id="cartDescription">
+           <div class="single-order-status active">
+          <div class="order-text">    
+          <h6>Ready to Ship</h6><span style="font-size: 9px;">Will be shipped by 10 Sep 2021.</span>
+          <br>
+          <span>Order Id: 1234.</span>
+          <br>       
+          </div>        
+        </div>
+        <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+          <span>10 sep 2021</span>
+          <br>
+          <span>₹1595</span>
+      </div>
+    </div>
+    <div class="order-btn">
+     <a class="btn w-100" href="order-cancel">Cancel</a>
+   </div>
+ 
+      </div>   
+    </div>
+  </div>
+  <!-- row end-->
+</div>
 
-              </div>
-            </div>
+ <div class="weekly-best-seller-area pt-3 mb-2"> 
+    <div class="row g-3">
+       <div class="col-12 col-md-12">
+        <div class="card weekly-product-card" id="cart-card">
+         <div class="card-body d-flex align-items-center">
+          <div class="product-thumbnail-side" id="image-side">
+            <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
+            <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+              <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
           </div>
-         
+          <div class="product-description" id="cartDescription">
+           <div class="single-order-status active">
+          <div class="order-text">    
+          <h6>Shipped</h6><span style="font-size: 9px;">On 1 Sep 2021- estd. delivery by 10 sep 2021</span>
+          <br>
+          <span>Order Id: 1234.</span>
+          <br>       
+          </div>        
         </div>
-        </a>
- <!-- card ends-->
+        <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+          <span>10 sep 2021</span>
+          <br>
+          <span>₹1595</span>
+      </div>
+    </div>
+   <div class="order-btn" style="display: flex;">
+     <a class="btn w-50" href="track-order">Track</a>
+     <a class="btn w-50" href="order-cancel">Cancel</a>
+   </div>
+ 
+      </div>   
+    </div>
+  </div>
+  <!-- row end-->
+</div>
 
-          <div class="card w-100" id="orderCard">
-          <div class="card-body p-2">
-            <div class="single-order-status active" id="order-head">
-              <div class="order-text">
-              <h6 id="cancelled">Cancelled</h6><span>On 8 May 2021.</span><span>Order Id: 12345</span>
-              </div>
-               
-            </div>
-             <div style="float: right;">
-                <a href="contact"><i class="lni lni-headphone-alt"></i></a>
-              </div>
+<div class="weekly-best-seller-area pt-3 mb-2"> 
+    <div class="row g-3">
+       <div class="col-12 col-md-12">
+        <div class="card weekly-product-card" id="cart-card">
+         <div class="card-body d-flex align-items-center">
+          <div class="product-thumbnail-side" id="image-side">
+            <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
+            <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+              <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
           </div>
-            <div class="row g-3">
-          
-            <div class="col-12 col-md-12">
-              <div class="card weekly-product-card">   
-             <div class="card-body d-flex align-items-center">  
-                <div class="product-thumbnail-side" id="image-side">
-                  <a class="product-thumbnail d-block" href=" ">
-                    <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt="">
-                  </a>
-                </div>
-                <div class="product-description">
-                  <a class="product-title d-block">Levi's Jeans</a>
-                   <span>Product Description</span>
-              
-              </div>
-              </div>
+          <div class="product-description" id="cartDescription">
+           <div class="single-order-status active">
+          <div class="order-text">    
+          <h6>Delivered</h6><span style="font-size: 9px;">On 1 Sep 2021</span>
+          <br>
+          <span>Order Id: 1234.</span>
+          <br>       
+          </div>
+        </div>
+        <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+          <span>10 sep 2021</span>
+          <br>
+          <span>₹1595</span>
+      </div>
+    </div>
+        <div class="ratings-submit-form bg-white pt-2 pb-3 px-3">
+        <div class="container" style="display:inline-flex;">
+          <p id="rateP">Rate Product</p>
+          <form action="#" method="">
+            <div class="stars">
+              <input class="star-1" type="radio" name="star" id="star1">
+              <label class="star-1" for="star1"></label>
+              <input class="star-2" type="radio" name="star" id="star2">
+              <label class="star-2" for="star2"></label>
+              <input class="star-3" type="radio" name="star" id="star3">
+              <label class="star-3" for="star3"></label>
+              <input class="star-4" type="radio" name="star" id="star4">
+              <label class="star-4" for="star4"></label>
+              <input class="star-5" type="radio" name="star" id="star5">
+              <label class="star-5" for="star5"></label><span></span>
+            </div>     
+            </form>
+          </div>
+        </div>
+        <div class="order-btn" style="display: flex;">
+         <a class="btn w-50" href="order-returnD">Return</a>
+         <a class="btn w-50" href="order-exchangeD">Exchange</a>
+       </div>
+ 
+      </div>
+    </div>
+  </div>
+  <!-- row end-->
+</div>
 
-              </div>
-            </div>
-          </div>
-         
-        </div>
- <!-- card ends-->
 
-          <div class="card w-100" id="orderCard">
-          <div class="card-body p-2">
-            <div class="single-order-status active" id="order-head">
-              <div class="order-text">
-              <h6>Ready to ship</h6><span>Will be shipped by 30 Jul 2021.</span><span>Order Id: 12345</span>
-              </div>
-               
-            </div>
-             <div style="float: right;">
-                <a href="contact"><i class="lni lni-headphone-alt"></i></a>
-              </div>
+<div class="weekly-best-seller-area pt-3 mb-2"> 
+    <div class="row g-3">
+       <div class="col-12 col-md-12">
+        <div class="card weekly-product-card" id="cart-card">
+         <div class="card-body d-flex align-items-center">
+          <div class="product-thumbnail-side" id="image-side">
+            <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
+            <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+              <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
           </div>
-            <div class="row g-3">
-          
-            <div class="col-12 col-md-12">
-              <div class="card weekly-product-card">   
-             <div class="card-body d-flex align-items-center">  
-                <div class="product-thumbnail-side" id="image-side">
-                  <a class="product-thumbnail d-block" href=" ">
-                    <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt="">
-                  </a>
-                </div>
-                <div class="product-description">
-                  <a class="product-title d-block">Levi's Jeans</a>
-                   <span>Product Description</span>
-               
-              </div>
-              </div>
-              <div class="order-btn">
-               <a class="btn w-100" href="order-cancel">Cancel</a>
-             </div>
-              </div>
-            </div>
-          </div>   
-        </div>
-        <!-- card ends-->
-          <div class="card w-100" id="orderCard">
-          <div class="card-body p-2">
-            <div class="single-order-status active" id="order-head">
-              <div class="order-text">
-              <h6>Shipped</h6><span>On 31 Jul 2021 – Estd. Delivery 2 Aug 2021.</span><span>Order Id: 12345</span>
-              </div>
-               
-            </div>
-             <div style="float: right;">
-                <a href="contact"><i class="lni lni-headphone-alt"></i></a>
-              </div>
-          </div>
-            <div class="row g-3">
-          
-            <div class="col-12 col-md-12">
-              <div class="card weekly-product-card">   
-             <div class="card-body d-flex align-items-center">  
-                <div class="product-thumbnail-side" id="image-side">
-                  <a class="product-thumbnail d-block" href=" ">
-                    <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt="">
-                  </a>
-                </div>
-                <div class="product-description">
-                  <a class="product-title d-block">Levi's Jeans</a>
-                   <span>Product Description</span>
-               
-              </div>
-              </div>
-              <div class="order-btn" style="display: flex;">
-               <a class="btn w-50" href="track-order">Track</a>
-               <a class="btn w-50" href="order-cancel">Cancel</a>
-             </div>
-              </div>
-            </div>
-          </div>   
-        </div>
-        <!-- card ends-->
-         <div class="card w-100" id="orderCard">
-          <div class="card-body p-2">
-            <div class="single-order-status active" id="order-head">
-              <div class="order-text">
-              <h6>Delivered</h6><span>On 21 Jul 2021</span><span>Order Id: 12345</span>
-              </div>
-               
-            </div>
-             <div style="float: right;">
-                <a href="contact"><i class="lni lni-headphone-alt"></i></a>
-              </div>
-          </div>
-            <div class="row g-3">
-          
-            <div class="col-12 col-md-12">
-              <div class="card weekly-product-card">   
-             <div class="card-body d-flex align-items-center">  
-                <div class="product-thumbnail-side" id="image-side">
-                  <a class="product-thumbnail d-block" href=" ">
-                    <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt="">
-                  </a>
-                </div>
-                <div class="product-description">
-                  <a class="product-title d-block">Levi's Jeans</a>
-                   <span>Product Description</span>
-                  
-              </div>
-              </div>
-               <div class="ratings-submit-form bg-white pt-2 pb-3 px-3">
-              <div class="container" style="display:inline-flex;">
-                <p id="rateP">Rate Product</p>
-                <form action="#" method="">
-                  <div class="stars">
-                    <input class="star-1" type="radio" name="star" id="star1">
-                    <label class="star-1" for="star1"></label>
-                    <input class="star-2" type="radio" name="star" id="star2">
-                    <label class="star-2" for="star2"></label>
-                    <input class="star-3" type="radio" name="star" id="star3">
-                    <label class="star-3" for="star3"></label>
-                    <input class="star-4" type="radio" name="star" id="star4">
-                    <label class="star-4" for="star4"></label>
-                    <input class="star-5" type="radio" name="star" id="star5">
-                    <label class="star-5" for="star5"></label><span></span>
-                  </div>     
-                  </form>
-                </div>
-              </div>
-              <div class="order-btn" style="display: flex;">
-               <a class="btn w-50" href="order-returnD">Return</a>
-               <a class="btn w-50" href="order-exchangeD">Exchange</a>
-             </div>
-              </div>
-            </div>
-          </div>   
-        </div>
-        <!-- card ends-->
-        <a href="order-exchange">
-          <div class="card w-100" id="orderCard">
-          <div class="card-body p-2">
-            <div class="single-order-status active" id="order-head">
-              <div class="order-text">
-              <h6 id="exchange">Exchange Requested</h6><span>On 2 Aug 2021.</span><span>Order Id: 12345</span>
-              </div>
-               
-            </div>
-             <div style="float: right;">
-                <a href="contact"><i class="lni lni-headphone-alt"></i></a>
-              </div>
-          </div>
-            <div class="row g-3">
-          
-            <div class="col-12 col-md-12">
-              <div class="card weekly-product-card">   
-             <div class="card-body d-flex align-items-center">  
-                <div class="product-thumbnail-side" id="image-side">
-                  <a class="product-thumbnail d-block" href=" ">
-                    <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt="">
-                  </a>
-                </div>
-                <div class="product-description">
-                  <a class="product-title d-block">Levi's Jeans</a>
-                   <span>Product Description</span>
-               
-              </div>
-              </div>
-              <div class="order-btn">
-               <a class="btn w-100" href="cancel-exchange">Cancel</a>
-             </div>
-              </div>
-            </div>
-          </div>   
+          <div class="product-description" id="cartDescription">
+             <a href="order-exchange">
+           <div class="single-order-status active">
+          <div class="order-text">    
+          <h6 id="exchange">Exchange Requested</h6><span style="font-size: 9px;">On 1 Sep 2021</span>
+          <br>
+          <span>Order Id: 1234.</span>
+          <br>       
+          </div>        
         </div>
       </a>
-        <!-- card ends-->
-        <a href="order-return">
-        <div class="card w-100" id="orderCard">
-          <div class="card-body p-2">
-            <div class="single-order-status active" id="order-head">
-              <div class="order-text">
-              <h6 id="exchange">Return Requested</h6><span>On 3 Aug 2021.</span><span>Order Id: 12345</span>
-              </div>
-               
-            </div>
-             <div style="float: right;">
-                <a href="contact"><i class="lni lni-headphone-alt"></i></a>
-              </div>
+        <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+          <span>10 sep 2021</span>
+          <br>
+          <span>₹1595</span>
+      </div>
+    </div>
+        <div class="order-btn">
+         <a class="btn w-100" href="cancel-exchange">Cancel</a>
+       </div>
+ 
+      </div>
+    </div>
+  </div>
+  <!-- row end-->
+</div>
+
+
+<div class="weekly-best-seller-area pt-3 mb-2"> 
+    <div class="row g-3">
+       <div class="col-12 col-md-12">
+        <div class="card weekly-product-card" id="cart-card">
+         <div class="card-body d-flex align-items-center">
+          <div class="product-thumbnail-side" id="image-side">
+            <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
+            <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+              <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
           </div>
-            <div class="row g-3">
-          
-            <div class="col-12 col-md-12">
-              <div class="card weekly-product-card">   
-             <div class="card-body d-flex align-items-center">  
-                <div class="product-thumbnail-side" id="image-side">
-                  <a class="product-thumbnail d-block" href=" ">
-                    <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt="">
-                  </a>
-                </div>
-                <div class="product-description">
-                  <a class="product-title d-block">Levi's Jeans</a>
-                   <span>Product Description</span>
-              
-              </div>
-              </div>
-              <div class="order-btn">
-               <a class="btn w-100" href="order-cancel">Cancel</a>
-             </div>
-              </div>
-            </div>
-          </div>   
-        </div>
-        </a>
-        <!-- card ends-->
-        <a href="exchange-accepted">
-          <div class="card w-100" id="orderCard">
-          <div class="card-body p-2">
-            <div class="single-order-status active" id="order-head">
-              <div class="order-text">
-              <h6>Exchange Accepted</h6><span>On 2 Aug 2021.</span><span>Order Id: 12345</span>
-              </div>
-               
-            </div>
-             <div style="float: right;">
-                <a href="contact"><i class="lni lni-headphone-alt"></i></a>
-              </div>
-          </div>
-            <div class="row g-3">
-          
-            <div class="col-12 col-md-12">
-              <div class="card weekly-product-card">   
-             <div class="card-body d-flex align-items-center">  
-                <div class="product-thumbnail-side" id="image-side">
-                  <a class="product-thumbnail d-block" href=" ">
-                    <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt="">
-                  </a>
-                </div>
-                <div class="product-description">
-                  <a class="product-title d-block">Levi's Jeans</a>
-                   <span>Product Description</span>
-                
-              </div>
-              </div>
-              <div class="order-btn">
-               <a class="btn w-100" href="order-cancel">Cancel</a>
-             </div>
-              </div>
-            </div>
-          </div>   
+          <div class="product-description" id="cartDescription">
+             <a href="order-return">
+           <div class="single-order-status active">
+          <div class="order-text">    
+          <h6 id="exchange">Return Requested</h6><span style="font-size: 9px;">On 1 Sep 2021</span>
+          <br>
+          <span>Order Id: 1234.</span>
+          <br>       
+          </div>        
         </div>
       </a>
-      <!--card end-->
-        <a href="exchange-rejected">
-          <div class="card w-100" id="orderCard">
-          <div class="card-body p-2">
-            <div class="single-order-status active" id="order-head">
-              <div class="order-text">
-              <h6 id="cancelled">Exchange Rejected</h6><span>On 2 Aug 2021.</span><span>Order Id: 12345</span>
-              </div>
-               
-            </div>
-             <div style="float: right;">
-                <a href="contact"><i class="lni lni-headphone-alt"></i></a>
-              </div>
+        <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+          <span>10 sep 2021</span>
+          <br>
+          <span>₹1595</span>
+      </div>
+    </div>
+        <div class="order-btn">
+         <a class="btn w-100" href="order-cancel">Cancel</a>
+       </div>
+ 
+      </div>
+    </div>
+  </div>
+  <!-- row end-->
+</div>
+       
+    <div class="weekly-best-seller-area pt-3 mb-2"> 
+    <div class="row g-3">
+       <div class="col-12 col-md-12">
+        <div class="card weekly-product-card" id="cart-card">
+         <div class="card-body d-flex align-items-center">
+          <div class="product-thumbnail-side" id="image-side">
+            <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
+            <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+              <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
           </div>
-            <div class="row g-3">
-          
-            <div class="col-12 col-md-12">
-              <div class="card weekly-product-card">   
-             <div class="card-body d-flex align-items-center">  
-                <div class="product-thumbnail-side" id="image-side">
-                  <a class="product-thumbnail d-block" href=" ">
-                    <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt="">
-                  </a>
-                </div>
-                <div class="product-description">
-                  <a class="product-title d-block">Levi's Jeans</a>
-                   <span>Product Description</span>
-                
-              </div>
-              </div>
-              <div class="order-btn">
-               <a class="btn w-100" href="cancel-exchange">Cancel</a>
-             </div>
-              </div>
-            </div>
-          </div>   
+          <div class="product-description" id="cartDescription">
+             <a href="exchange-accepted">
+           <div class="single-order-status active">
+          <div class="order-text">    
+          <h6 id="exchange">Exchange Accepted</h6><span style="font-size: 9px;">On 1 Sep 2021</span>
+          <br>
+          <span>Order Id: 1234.</span>
+          <br>       
+          </div>        
         </div>
       </a>
-      <!--card end-->
-        <a href="refund-rejected">
-          <div class="card w-100" id="orderCard">
-          <div class="card-body p-2">
-            <div class="single-order-status active" id="order-head">
-              <div class="order-text">
-              <h6 id="cancelled">Refund Rejected</h6><span>On 2 Aug 2021.</span><span>Order Id: 12345</span>
-              </div>
-               
-            </div>
-             <div style="float: right;">
-               <a href="contact"><i class="lni lni-headphone-alt"></i></a>
-              </div>
+        <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+          <span>10 sep 2021</span>
+          <br>
+          <span>₹1595</span>
+      </div>
+    </div>
+        <div class="order-btn">
+         <a class="btn w-100" href="order-cancel">Cancel</a>
+       </div>
+      </div>
+    </div>
+  </div>
+  <!-- row end-->
+</div>
+  
+  <div class="weekly-best-seller-area pt-3 mb-2"> 
+    <div class="row g-3">
+       <div class="col-12 col-md-12">
+        <div class="card weekly-product-card" id="cart-card">
+         <div class="card-body d-flex align-items-center">
+          <div class="product-thumbnail-side" id="image-side">
+            <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
+            <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+              <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
           </div>
-            <div class="row g-3">
-          
-            <div class="col-12 col-md-12">
-              <div class="card weekly-product-card">   
-             <div class="card-body d-flex align-items-center">  
-                <div class="product-thumbnail-side" id="image-side">
-                  <a class="product-thumbnail d-block" href=" ">
-                    <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt="">
-                  </a>
-                </div>
-                <div class="product-description">
-                  <a class="product-title d-block">Levi's Jeans</a>
-                   <span>Product Description</span>
-               
-              </div>
-              </div>
-              <div class="order-btn">
-               <a class="btn w-100" href="cancel-exchange">Cancel</a>
-             </div>
-              </div>
-            </div>
-          </div>   
+          <div class="product-description" id="cartDescription">
+             <a href="exchange-rejected">
+           <div class="single-order-status active">
+          <div class="order-text">    
+          <h6 id="exchange">Exchange Rejected</h6><span style="font-size: 9px;">On 1 Sep 2021</span>
+          <br>
+          <span>Order Id: 1234.</span>
+          <br>       
+          </div>        
         </div>
       </a>
-      <!--card end-->
-      <a href="exchanged-order">
-        <div class="card w-100" id="orderCard">
-          <div class="card-body p-2">
-            <div class="single-order-status active" id="order-head">
-              <div class="order-text">
-              <h6>Exchanged</h6><span>On 24 Jul 2021.</span><span>Order Id: 12345</span>
-              </div>
-               
-            </div>
-             <div style="float: right;">
-                <a href="contact"><i class="lni lni-headphone-alt"></i></a>
-              </div>
+        <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+          <span>10 sep 2021</span>
+          <br>
+          <span>₹1595</span>
+      </div>
+    </div>
+        <div class="order-btn">
+         <a class="btn w-100" href="cancel-exchange">Cancel</a>
+       </div>
+ 
+      </div>
+    </div>
+  </div>
+  <!-- row end-->
+</div>
+
+  <div class="weekly-best-seller-area pt-3 mb-2"> 
+    <div class="row g-3">
+       <div class="col-12 col-md-12">
+        <div class="card weekly-product-card" id="cart-card">
+         <div class="card-body d-flex align-items-center">
+          <div class="product-thumbnail-side" id="image-side">
+            <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
+            <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+              <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
           </div>
-            <div class="row g-3">
-          
-            <div class="col-12 col-md-12">
-              <div class="card weekly-product-card">   
-             <div class="card-body d-flex align-items-center">  
-                <div class="product-thumbnail-side" id="image-side">
-                  <a class="product-thumbnail d-block" href=" ">
-                    <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt="">
-                  </a>
-                </div>
-                <div class="product-description">
-                  <a class="product-title d-block">Levi's Jeans</a>
-                   <span>Product Description</span>
-                
-              </div>
-              </div>
-              <ul>
-                <li>Exchange/Return window closed</li>
-              </ul>
+          <div class="product-description" id="cartDescription">
+             <a href="refund-rejected">
+           <div class="single-order-status active">
+          <div class="order-text">    
+          <h6 id="exchange">Refund Rejected</h6><span style="font-size: 9px;">On 1 Sep 2021</span>
+          <br>
+          <span>Order Id: 1234.</span>
+          <br>       
+          </div>        
+        </div>
+      </a>
+        <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+          <span>10 sep 2021</span>
+          <br>
+          <span>₹1595</span>
+      </div>
+    </div>
+        <div class="order-btn">
+         <a class="btn w-100" href="cancel-exchange">Cancel</a>
+       </div>
+ 
+      </div>
+    </div>
+  </div>
+  <!-- row end-->
+</div>
+
+  <div class="weekly-best-seller-area pt-3 mb-2"> 
+    <div class="row g-3">
+       <div class="col-12 col-md-12">
+        <div class="card weekly-product-card" id="cart-card">
+         <div class="card-body d-flex align-items-center">
+          <div class="product-thumbnail-side" id="image-side">
+            <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
+            <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+              <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
+          </div>
+          <div class="product-description" id="cartDescription">
+             <a href="exchanged-order">
+           <div class="single-order-status active">
+          <div class="order-text">    
+          <h6>Exchanged</h6><span style="font-size: 9px;">On 1 Sep 2021</span>
+          <br>
+          <span>Order Id: 1234.</span>
+          <br>       
+          </div>        
+        </div>
+      </a>
+        <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+          <span>10 sep 2021</span>
+          <br>
+          <span>₹1595</span>
+      </div>
+    </div>
+    <ul>
+        <li>Exchange/Return window closed</li>
+      </ul>
           <div class="ratings-submit-form bg-white pt-2 pb-3 px-3">
         <div class="container" style="display:inline-flex;">
           <p id="rateP">Rate Product</p>
@@ -776,199 +655,180 @@
             </form>
           </div>
         </div>
-              <div class="order-btn">
-               <a class="btn w-100" href="#">Return</a>
-             </div>
-              </div>
-            </div>
-          </div>   
+ 
+      </div>
+    </div>
+  </div>
+  <!-- row end-->
+</div>
+
+  <div class="weekly-best-seller-area pt-3 mb-2"> 
+    <div class="row g-3">
+       <div class="col-12 col-md-12">
+        <div class="card weekly-product-card" id="cart-card">
+         <div class="card-body d-flex align-items-center">
+          <div class="product-thumbnail-side" id="image-side">
+            <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
+            <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+              <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
+          </div>
+          <div class="product-description" id="cartDescription">
+             <a href="undelivered-order">
+           <div class="single-order-status active">
+          <div class="order-text">    
+          <h6 id="cancelled">Undelivered</h6><span style="font-size: 9px;">On 1 Sep 2021</span>
+          <br>
+          <span>Order Id: 1234.</span>
+          <br>       
+          </div>        
         </div>
-        </a>
-        <!-- card ends-->
-        <a href="undelivered-order">
-          <div class="card w-100" id="orderCard">
-          <div class="card-body p-2">
-            <div class="single-order-status active" id="order-head">
-              <div class="order-text">
-              <h6 id="cancelled">Undelivered</h6><span>On 10 May 2021 by You.</span><span>Order Id: 12345</span>
-              </div>
-               
-            </div>
-             <div style="float: right;">
-                <a href="contact"><i class="lni lni-headphone-alt"></i></a>
-              </div>
-          </div>
-            <div class="row g-3">
-            <div class="col-12 col-md-12">
-              <div class="card weekly-product-card">   
-             <div class="card-body d-flex align-items-center">  
-                <div class="product-thumbnail-side" id="image-side">
-                  <a class="product-thumbnail d-block" href=" ">
-                    <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt="">
-                  </a>
-                </div>
-                <div class="product-description">
-                  <a class="product-title d-block">Levi's Jeans</a>
-                   <span>Product Description</span>
-                 
-              </div>
-              </div>
+      </a>
+        <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+          <span>10 sep 2021</span>
+          <br>
+          <span>₹1595</span>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
+  <!-- row end-->
+</div>
 
-              </div>
-            </div>
+    <div class="weekly-best-seller-area pt-3 mb-2"> 
+    <div class="row g-3">
+       <div class="col-12 col-md-12">
+        <div class="card weekly-product-card" id="cart-card">
+         <div class="card-body d-flex align-items-center">
+          <div class="product-thumbnail-side" id="image-side">
+            <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
+            <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+              <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
           </div>
-         
+          <div class="product-description" id="cartDescription">
+             <a href="refund-completed">
+           <div class="single-order-status active">
+          <div class="order-text">    
+          <h6>Refund Completed</h6><span style="font-size: 9px;">On 1 Sep 2021</span>
+          <br>
+          <span>Order Id: 1234.</span>
+          <br>       
+          </div>        
         </div>
-        </a>
- <!-- card ends-->
-         <a href="refund-completed">
-          <div class="card w-100" id="orderCard">
-          <div class="card-body p-2">
-            <div class="single-order-status active" id="order-head">
-              <div class="order-text">
-              <h6>Refund Completed</h6><span>On 10 Jul 2021</span><span>Order Id: 12345</span>
-              </div>
-               
-            </div>
-             <div style="float: right;">
-                <a href="contact"><i class="lni lni-headphone-alt"></i></a>
-              </div>
+      </a>
+        <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+          <span>10 sep 2021</span>
+          <br>
+          <span>₹1595</span>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
+  <!-- row end-->
+</div>
+       
+    <div class="weekly-best-seller-area pt-3 mb-2"> 
+    <div class="row g-3">
+       <div class="col-12 col-md-12">
+        <div class="card weekly-product-card" id="cart-card">
+         <div class="card-body d-flex align-items-center">
+          <div class="product-thumbnail-side" id="image-side">
+            <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
+            <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+              <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
           </div>
-            <div class="row g-3">
-            <div class="col-12 col-md-12">
-              <div class="card weekly-product-card">   
-             <div class="card-body d-flex align-items-center">  
-                <div class="product-thumbnail-side" id="image-side">
-                  <a class="product-thumbnail d-block" href=" ">
-                    <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt="">
-                  </a>
-                </div>
-                <div class="product-description">
-                  <a class="product-title d-block">Levi's Jeans</a>
-                   <span>Product Description</span>
-                
-              </div>
-              </div>
-
-              </div>
-            </div>
-          </div>
-         
+          <div class="product-description" id="cartDescription">
+             <a href="refund-accepted">
+           <div class="single-order-status active">
+          <div class="order-text">    
+          <h6>Refund Accepted</h6><span style="font-size: 9px;">On 1 Sep 2021</span>
+          <br>
+          <span>Order Id: 1234.</span>
+          <br>       
+          </div>        
         </div>
-        </a>
-   <!-- card ends-->
+      </a>
+        <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+          <span>10 sep 2021</span>
+          <br>
+          <span>₹1595</span>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
+  <!-- row end-->
+</div>
 
-         <a href="refund-accepted">
-          <div class="card w-100" id="orderCard">
-          <div class="card-body p-2">
-            <div class="single-order-status active" id="order-head">
-              <div class="order-text">
-              <h6>Refund Accepted</h6><span>On 10 Jul 2021</span><span>Order Id: 12345</span>
-              </div>
-               
-            </div>
-             <div style="float: right;">
-                <a href="contact"><i class="lni lni-headphone-alt"></i></a>
-              </div>
-          </div>
-            <div class="row g-3">
-            <div class="col-12 col-md-12">
-              <div class="card weekly-product-card">   
-             <div class="card-body d-flex align-items-center">  
-                <div class="product-thumbnail-side" id="image-side">
-                  <a class="product-thumbnail d-block" href=" ">
-                    <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt="">
-                  </a>
-                </div>
-                <div class="product-description">
-                  <a class="product-title d-block">Levi's Jeans</a>
-                   <span>Product Description</span>
-                
-              </div>
-              </div>
 
-              </div>
-            </div>
+  <div class="weekly-best-seller-area pt-3 mb-2"> 
+    <div class="row g-3">
+       <div class="col-12 col-md-12">
+        <div class="card weekly-product-card" id="cart-card">
+         <div class="card-body d-flex align-items-center">
+          <div class="product-thumbnail-side" id="image-side">
+            <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
+            <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+              <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
           </div>
-         
+          <div class="product-description" id="cartDescription">
+             <a href="refund-initiated">
+           <div class="single-order-status active">
+          <div class="order-text">    
+          <h6>Refund Initiated</h6><span style="font-size: 9px;">On 1 Sep 2021</span>
+          <br>
+          <span>Order Id: 1234.</span>
+          <br>       
+          </div>        
         </div>
-        </a>
-   <!-- card ends-->
+      </a>
+        <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+          <span>10 sep 2021</span>
+          <br>
+          <span>₹1595</span>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
+  <!-- row end-->
+</div>
 
-       <a href="refund-initiated">
-          <div class="card w-100" id="orderCard">
-          <div class="card-body p-2">
-            <div class="single-order-status active" id="order-head">
-              <div class="order-text">
-              <h6>Refund Initiated</h6><span>On 10 Jul 2021</span><span>Order Id: 12345</span>
-              </div>
-               
-            </div>
-             <div style="float: right;">
-                <a href="contact"><i class="lni lni-headphone-alt"></i></a>
-              </div>
-          </div>
-            <div class="row g-3">
-            <div class="col-12 col-md-12">
-              <div class="card weekly-product-card">   
-             <div class="card-body d-flex align-items-center">  
-                <div class="product-thumbnail-side" id="image-side">
-                  <a class="product-thumbnail d-block" href=" ">
-                    <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt="">
-                  </a>
-                </div>
-                <div class="product-description">
-                  <a class="product-title d-block">Levi's Jeans</a>
-                   <span>Product Description</span>
-                 
-              </div>
-              </div>
 
-              </div>
-            </div>
+  <div class="weekly-best-seller-area pt-3 mb-2"> 
+    <div class="row g-3">
+       <div class="col-12 col-md-12">
+        <div class="card weekly-product-card" id="cart-card">
+         <div class="card-body d-flex align-items-center">
+          <div class="product-thumbnail-side" id="image-side">
+            <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
+            <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+              <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
           </div>
-         
+          <div class="product-description" id="cartDescription">
+             <a href="refund-accepted">
+           <div class="single-order-status active">
+          <div class="order-text">    
+          <h6>Return Accepted</h6><span style="font-size: 9px;">On 1 Sep 2021</span>
+          <br>
+          <span>Order Id: 1234.</span>
+          <br>       
+          </div>        
         </div>
-        </a>
-   <!-- card ends-->
-
-          <a href="return-accepted">
-          <div class="card w-100" id="orderCard">
-          <div class="card-body p-2">
-            <div class="single-order-status active" id="order-head">
-              <div class="order-text">
-              <h6>Refund Accepted</h6><span>On 10 Jul 2021</span><span>Order Id: 12345</span>
-              </div>
-               
-            </div>
-             <div style="float: right;">
-                <a href="contact"><i class="lni lni-headphone-alt"></i></a>
-              </div>
-          </div>
-            <div class="row g-3">
-            <div class="col-12 col-md-12">
-              <div class="card weekly-product-card">   
-             <div class="card-body d-flex align-items-center">  
-                <div class="product-thumbnail-side" id="image-side">
-                  <a class="product-thumbnail d-block" href=" ">
-                    <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt="">
-                  </a>
-                </div>
-                <div class="product-description">
-                  <a class="product-title d-block">Levi's Jeans</a>
-                   <span>Product Description</span>
-                   
-              </div>
-              </div>
-
-              </div>
-            </div>
-          </div>
-         
-        </div>
-        </a>
-   <!-- card ends-->
-        </div>
+      </a>
+        <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+          <span>10 sep 2021</span>
+          <br>
+          <span>₹1595</span>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
+  <!-- row end-->
+</div>
+</div>
         
       </div>
     </div>
