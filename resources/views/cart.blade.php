@@ -208,7 +208,7 @@
             success:function(data){
               if(data=='Success'){
                 // alert(data);
-                window.location.href = "{{url('/cartWithAddress')}}";
+                window.location.href = "{{url('/addAddress')}}";
                 // window.location.href = "http://34.72.9.224/quickWebsite/b2c/public/checkout";
               }
       }
