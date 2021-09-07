@@ -90,7 +90,7 @@
               <div class="col-4">
                 <div class="card top-product-card">
                 <a class="product-thumbnail d-block" href="category/{{$value->id}}">
-                  <img class="mb-2" id="cat" src="http://34.72.9.224/quickcell/{{$value->img}}" alt="">
+                  <img class="mb-2" id="cat" src="http://34.72.9.224/quickWebsite/b2c_admin/public/{{$value->img}}" alt="">
                   <span id="catSpan">{{$value->title}}</span>
                 </a>
                   
