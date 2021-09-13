@@ -129,7 +129,7 @@ class HomeController extends Controller
         // echo $discount;
         // die();
 
-        $data=category::where('parent_id','=','0')->where('aid',$aid)
+        $data=category::where('parent_id','=','0')->where('aid',$aid)->where('status','A')
             ->get();
 
         $discount = DB::table('banner')
