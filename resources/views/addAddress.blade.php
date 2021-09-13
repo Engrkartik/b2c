@@ -274,7 +274,16 @@
 function myFunction() {
   document.getElementById("addaddress").style.display = "block";
   document.getElementById("1stBox").style.display = "none";
+ 
 }
+
+document.addEventListener('mouseup', function(e) {
+  var container = document.getElementById('addaddress');
+  if (!container.contains(e.target)) {
+    container.style.display = 'none';
+    document.getElementById("1stBox").style.display = "block";
+  }
+});
  </script>
 
 @stop
