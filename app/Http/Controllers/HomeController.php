@@ -208,14 +208,14 @@ class HomeController extends Controller
         $data = DB::table('product')
             ->select('product.*',DB::raw("(SELECT prod_img.img_url FROM prod_img WHERE prod_img.img_id=product.img ORDER BY prod_img.id ASC LIMIT 1) as img_url"),DB::raw("(SELECT IF(COUNT(*)>0,'true','false') FROM `wishlist` WHERE product.id=wishlist.pid AND wishlist.aid='".$aid."' AND wishlist.cid='".$cid."') AS wishlist"))
             ->where([['product.aid','=',$aid],['product.sub_cat','=',$id]])
-            ->orderBy('product.id','DESC')
+            ->orderBy('product.id','ASC')
             ->get();
         }
         else{
             $data = DB::table('product')
             ->select('product.*',DB::raw("(SELECT prod_img.img_url FROM prod_img WHERE prod_img.img_id=product.img ORDER BY prod_img.id ASC LIMIT 1) as img_url"))
             ->where([['product.aid','=',$aid],['product.sub_cat','=',$id]])
-            ->orderBy('product.id','DESC')
+            ->orderBy('product.id','ASC')
             ->get();
         }
 
