@@ -3,13 +3,13 @@
 
     <div class="page-content-wrapper">
       <!-- Catagory Single Image-->
-      <!-- <div class="pt-3">
-        <div class="container">
+      <div class="pt-3">
+        <!-- <div class="container">
           @foreach($cat as $key=>$vale)
-          <div class="catagory-single-img pt-3" style="background-image: url('http://34.72.9.224/quickcell/{{$vale->img}}')"></div>
+          <div class="catagory-single-img pt-3" style="background-image: url('http://34.72.9.224/quickWebsite/b2c_admin/public/{{$vale->img}}')"></div>
           @endforeach
-        </div>
-      </div> -->
+        </div> -->
+      </div>
 
       <div class="top-products-area pb-3 pt-3">
         <div class="container">
@@ -21,14 +21,12 @@
             @foreach($products as $key=>$value)
             <div class="col-3 col-md-4 col-lg-3">
               <div class="card top-product-card">
-                
-                  <a class="product-thumbnail d-block" href="shop-product/{{$value->id}}">
-                  <img class="mb-0" id="cat" src="http://34.72.9.224/quickcell/{{$value->img}}" alt="">
-               
-                <span id="catSpan">{{$value->title}}</span>
-                  <!-- <p class="sale-price">{{$value->title}}<span>{{$value->mrp}}</span></p> -->
-                  </a>
-               
+                <div class="card-body">
+                  <a class="product-thumbnail d-block" href="shop-product/{{$value->id}}"><img class="mb-2" src="http://34.72.9.224/quickWebsite/b2c_admin/public/{{$value->img}}" alt=""></a>
+                  <a class="product-title d-block" href="shop-product"></a>
+                  <p class="sale-price">{{$value->title}}<span>{{$value->mrp}}</span></p>
+                 
+                </div>
               </div>
             </div>
             @endforeach

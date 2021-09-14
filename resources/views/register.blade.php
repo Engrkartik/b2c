@@ -38,26 +38,26 @@
                  <div class="row mb-4">
                   <div class="col-sm-6" id="leftreg">
                      <label for="email"><i class="lni lni-envelope"></i></label>
-                     <span>Email</span>
+                     <span class="required">Email</span>
                  
                   </div>
                   <div class="col-sm" id="rightreg">
-                   <input class="form-control" id="email" type="email" name="email" placeholder="Enter Email Id" pattern="([-!#-'*+/-9=?A-Z^-~]+(\.[-!#-'*+/-9=?A-Z^-~]+)*|([]!#-[^-~ \t]|(\\[\t -~]))+)@[0-9A-Za-z]([0-9A-Za-z-]{0,61}[0-9A-Za-z])?(\.[0-9A-Za-z]([0-9A-Za-z-]{0,61}[0-9A-Za-z])?)+">
+                   <input class="form-control" id="email" type="email" name="email" placeholder="Enter Email Id" pattern="([-!#-'*+/-9=?A-Z^-~]+(\.[-!#-'*+/-9=?A-Z^-~]+)*|([]!#-[^-~ \t]|(\\[\t -~]))+)@[0-9A-Za-z]([0-9A-Za-z-]{0,61}[0-9A-Za-z])?(\.[0-9A-Za-z]([0-9A-Za-z-]{0,61}[0-9A-Za-z])?)+" required="required">
                   </div>
                   
                 </div>
                  <div class="row mb-4">
                   <div class="col-sm-6" id="leftreg">
                     <label for="gender"><i class="fa fa-transgender-alt"></i></label>
-                     <span>Gender</span>
+                     <span class="required">Gender</span>
                   
                   </div>
                   <div class="col-sm" id="rightreg" style="margin-top: 13px;padding-left: 17px;">
-                    <input class="form-check-input" id="male" type="radio" name="gender" value="M">
+                    <input class="form-check-input" id="male" type="radio" name="gender" value="M" required="required">
                     <label class="form-check-label" id="genders" for="male">M</label>
-                    <input class="form-check-input" id="female" type="radio" name="gender" value="F">
+                    <input class="form-check-input" id="female" type="radio" name="gender" value="F" required="required">
                     <label class="form-check-label" for="female" id="genders">F</label>
-                    <input class="form-check-input" id="other" type="radio" name="gender" value="O">
+                    <input class="form-check-input" id="other" type="radio" name="gender" value="O" required="required">
                     <label class="form-check-label" for="other" id="genders">Other</label>
                   </div>
                   
@@ -118,6 +118,7 @@
     }
    })
  }
+
  </script>
 
     @stop
