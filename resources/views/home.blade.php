@@ -70,7 +70,7 @@
               <div class="col-3">
                 <div class="card top-product-card">
                 <a class="product-thumbnail d-block" href="category/{{$value->id}}">
-                  <img class="mb-0" id="cat" src="http://34.72.9.224/quickcell/{{$value->img}}" alt="">
+                  <img class="mb-2" id="cat" src="{{Config::get('global.base_url')}}{{$value->img}}" alt="">
                   <span id="catSpan">{{$value->title}}</span>
                 </a>
                   
@@ -79,7 +79,7 @@
               </div>
               @endforeach
   
-              <!-- end -- >
+              <!-- end -->
             </div>            
           </div>
         </div>
@@ -112,7 +112,7 @@
                     @else
                       <a class="wishlist-btn" onclick="addtowish2('{{$val4->id}}')"><i class="lni lni-heart"></i></a>
                     @endif
-                    <a class="product-thumbnail d-block" href="category/shop-product/single-product/{{$val4->id}}"><img src="http://34.72.9.224/quickWebsite/b2c_admin/{{$val4->img_url}}" alt=""></a>
+                    <a class="product-thumbnail d-block" href="category/shop-product/single-product/{{$val4->id}}"><img src="{{Config::get('global.base_url')}}{{$val4->img_url}}" alt=""></a>
                  
                   <div class="product-description">
                     <a class="product-title d-block" href="category/shop-product/single-product/{{$val4->id}}">{{$val4->item_name}}</a>
@@ -149,7 +149,7 @@
                     @else
                       <a class="wishlist-btn" onclick="addtowish2('{{$val3->id}}')"><i class="lni lni-heart"></i></a>
                     @endif
-                    <a class="product-thumbnail d-block" href="category/shop-product/single-product/{{$val3->id}}"><img src="http://34.72.9.224/quickWebsite/b2c_admin/{{$val3->img_url}}" alt=""></a>
+                    <a class="product-thumbnail d-block" href="category/shop-product/single-product/{{$val3->id}}"><img src="{{Config::get('global.base_url')}}{{$val3->img_url}}" alt=""></a>
                  
                   <div class="product-description">
                     <a class="product-title d-block" href="category/shop-product/single-product/{{$val3->id}}">{{$val3->item_name}}</a>
@@ -185,7 +185,7 @@
           @foreach($video as $key=>$val1)
            <!--  <iframe src="http://34.72.9.224/quickWebsite/b2c_admin/{{$val1->img}}" frameborder="0" height="240" width="100%" controls></iframe> -->
          
-           <video src="http://34.72.9.224/quickWebsite/b2c_admin/{{$val1->img}}" controls disablepictureinpicture controlslist="nodownload" id="my_video" frameborder="0" height="240" width="100%" style="border: 1px solid black;"></video>
+           <video src="{{Config::get('global.base_url')}}{{$val1->img}}" controls disablepictureinpicture controlslist="nodownload" id="my_video" frameborder="0" height="240" width="100%" style="border: 1px solid black;"></video>
       
           @endforeach
         </div>
@@ -218,7 +218,7 @@
                     @else
                       <a class="wishlist-btn" onclick="addtowish('{{$val2->id}}')"><i class="lni lni-heart"></i></a>
                     @endif
-                    <a class="product-thumbnail d-block" href="category/shop-product/single-product/{{$val2->id}}"><img src="http://34.72.9.224/quickWebsite/b2c_admin/{{$val2->img_url}}" alt=""></a>
+                    <a class="product-thumbnail d-block" href="category/shop-product/single-product/{{$val2->id}}"><img src="{{Config::get('global.base_url')}}{{$val2->img_url}}" alt=""></a>
                   </div>
                  
                   <div class="product-description">
@@ -248,7 +248,7 @@
           <div class="cta-area">
         <div class="container">
          @foreach($discount as $key=>$val3)
-           <div class="cta-text p-4 p-lg-5" style="background-image: url(http://34.72.9.224/quickWebsite/b2c_admin/{{$val3->img}})">
+           <div class="cta-text p-4 p-lg-5" style="background-image: url({{Config::get('global.base_url')}}{{$val3->img}})">
           @endforeach  
             <!-- <h4>End of season sale</h4>
             <p>For a multibrand, creative &amp; <br>modern products</p> -->
@@ -285,7 +285,7 @@
                     @else
                       <a class="wishlist-btn" onclick="addtowish1('{{$top->id}}')"><i class="lni lni-heart"></i></a>
                     @endif
-                    <a class="product-thumbnail d-block" href="category/shop-product/single-product/{{$top->id}}"><img src="http://34.72.9.224/quickWebsite/b2c_admin/{{$top->img_url}}" alt=""></a>
+                    <a class="product-thumbnail d-block" href="category/shop-product/single-product/{{$top->id}}"><img src="{{Config::get('global.base_url')}}{{$top->img_url}}" alt=""></a>
                
                   <div class="product-description">
                     <a class="product-title d-block" href="category/shop-product/single-product/{{$top->id}}">{{$top->item_name}}</a>

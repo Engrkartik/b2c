@@ -19,7 +19,7 @@ use compact;
 
 class CartController extends Controller
 {
-    //
+    //hello
     /////////////////////////////////////////////////////cart////////////////////////////////////////////////
     public function cart()
     {
@@ -46,17 +46,17 @@ class CartController extends Controller
             // die();
             $totalamt = add_cart::where('cid',$cid)
             			->select(DB::raw('sum(qty * price) as total'))
-            			->get(); 
-            
+            			->get();
+
             $totalmrp = add_cart::where('cid',$cid)
                         ->select(DB::raw('sum(add_cart.qty * product.mrp) as totalmrp'))
                         ->leftJoin('product','add_cart.pid','=','product.id')
-                        ->get(); 
+                        ->get();
 
             $totaldsc = add_cart::where('cid',$cid)
                         ->select(DB::raw('sum(add_cart.qty * product.discount) as totaldsc'))
                         ->leftJoin('product','add_cart.pid','=','product.id')
-                        ->get(); 
+                        ->get();
             // if($countcart>0){
     		  return View::make('cart',compact('getaddcart','totalamt','totalmrp','totaldsc','countcart'));
             // }
@@ -85,12 +85,12 @@ class CartController extends Controller
 
      //        $totalamt = add_cart::where('cid',$cid)
      //        			->select(DB::raw('sum(qty * price) as total'))
-     //        			->get();  
+     //        			->get();
      //        // echo $getaddcart->sale_price*$getaddcart->qty;
      //        // die();
     	// }
 		// return view('cart');
-        
+
     }
 
 /////////////////////////////////////////////////////add to cart//////////////////////////////////////////////////////////
@@ -214,7 +214,7 @@ class CartController extends Controller
             $userDetails = EndUser::where('users.id',$cid)->where('address.default_add','Y')
                         ->leftJoin('address','address.cid','=','users.id')
                         ->get();
-            
+
             $getaddcart = add_cart::where('add_cart.cid',$cid)
                         ->select('product.id','product.item_name','prod_img.img_url','product.sale_price','product.mrp','product.discount','product.tax','add_cart.qty','add_cart.color','add_cart.size','add_cart.id AS cart_id','set_details_whole.qty AS sqty')->groupBy('add_cart.id')
                         ->leftJoin('product', function($join) {
