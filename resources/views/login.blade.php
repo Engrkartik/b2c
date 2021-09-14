@@ -1,6 +1,6 @@
 @extends('layouts.default3')
 @section('content')
-
+ 
 <?php
       if(session()->has('urlval'))
       {
@@ -8,7 +8,9 @@
       }else{
         $urlval = '';
       }
-      echo $urlval;
+      // echo $urlval;
+      // $dddc = url()->current();
+      // echo $dddc;
 ?>
 <!-- Login Wrapper Area-->
 <div class="login-wrapper d-flex align-items-center justify-content-center text-center">
@@ -121,7 +123,7 @@
     // console.log('ehlo');
     $.ajax({
       type: 'POST',
-      url: 'check_login',
+      url: '{{url("check_login")}}',
       data: {
         'mobile': mobile
       },
@@ -200,7 +202,7 @@
 
         $.ajax({
           type: 'POST',
-          url: 'chk_otp',
+          url: '{{url("chk_otp")}}',
           data: {
             'mobile': mobile,
             'otp': otp
@@ -214,10 +216,9 @@
             if (result == "success") {
               // window.location.reload();
               if(urlvalue==''){
-                window.location.href = "{{url('/')}}";
-               // window.location.href = "http://34.72.9.224/quickWebsite/b2c/public/";
-                // window.history.back();
-              }
+              // window.location.href = 'url.intended';
+                // window.location.href = result.redirect;
+                window.history.back();}
               else{
                 window.location.href = urlvalue;
               }
