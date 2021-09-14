@@ -264,7 +264,7 @@
       <div class="top-products-area clearfix py-3">
         <div class="container">
           <div class="section-heading d-flex align-items-center justify-content-between">
-            <h6>Best Sellers</h6><a class="btn btn-warning btn-sm" href="top-products">View All</a>
+            <h6>Best Sellers</h6><a class="btn btn-success btn-sm" href="top-products">View All</a>
           </div>
 
           <div  id="error1" class="alert" style="display: none;">Removed from wishlist</div>

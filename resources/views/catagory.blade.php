@@ -21,12 +21,14 @@
             @foreach($products as $key=>$value)
             <div class="col-3 col-md-4 col-lg-3">
               <div class="card top-product-card">
-                <div class="card-body">
-                  <a class="product-thumbnail d-block" href="shop-product/{{$value->id}}"><img class="mb-2" src="http://34.72.9.224/quickWebsite/b2c_admin/public/{{$value->img}}" alt=""></a>
-                  <a class="product-title d-block" href="shop-product"></a>
-                  <p class="sale-price">{{$value->title}}<span>{{$value->mrp}}</span></p>
-                 
-                </div>
+                
+                  <a class="product-thumbnail d-block" href="shop-product/{{$value->id}}">
+                  <img class="mb-0" id="cat" src="http://34.72.9.224/quickcell/{{$value->img}}" alt="">
+               
+                <span id="catSpan">{{$value->title}}</span>
+                  <!-- <p class="sale-price">{{$value->title}}<span>{{$value->mrp}}</span></p> -->
+                  </a>
+               
               </div>
             </div>
             @endforeach

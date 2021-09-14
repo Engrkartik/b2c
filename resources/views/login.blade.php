@@ -216,10 +216,9 @@
             if (result == "success") {
               // window.location.reload();
               if(urlvalue==''){
-                // window.location.href = 'url.intended';
+              // window.location.href = 'url.intended';
                 // window.location.href = result.redirect;
-                window.history.back();
-              }
+                window.history.back();}
               else{
                 window.location.href = urlvalue;
               }
