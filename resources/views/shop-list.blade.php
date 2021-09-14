@@ -105,7 +105,7 @@
                   @else<i class="lni lni-heart"></i>@endif
                 </a>
                 <a class="product-thumbnail d-block" href="single-product/{{$value->id}}">
-                <img src="http://34.72.9.224/quickWebsite/b2c_admin/{{$value->img_url}}" alt=""></a>
+                <img src="{{Config('global.base_url')}}{{$value->img_url}}" alt=""></a>
               
                   <div class="product-description"><a class="product-title d-block" href="single-product/{{$value->id}}">{{$value->item_name}}
                     <p class="sale-price">₹{{$value->sale_price}}&nbsp;&nbsp;<span>₹{{$value->mrp}}</span></p></a>
@@ -135,7 +135,7 @@
           var id=document.getElementById('hide').value;
             $.ajax({
                type:'POST',
-               url:'/quickWebsite/b2c/public/sort/{val1}/{id}',
+               url:'{{url("/sort/{val1}/{id}")}}',
                data: {val1:val1,id:id},
               //  beforeSend: function (request) {
               //     return request.setRequestHeader('X-CSRF-Token', $("meta[name='csrf-token']").attr('content'));
@@ -158,7 +158,7 @@
     
       $.ajax({
             type:'POST',
-            url:'/quickWebsite/b2c/public/wishlist',
+            url:'{{url("/wishlist")}}',
             data: {'td':td},
               //  beforeSend: function (request) {
               //     return request.setRequestHeader('X-CSRF-Token', $("meta[name='csrf-token']").attr('content'));
@@ -169,7 +169,7 @@
             success:function(data){
               // alert(data);
               if(data=="login"){
-                window.location.href = "http://34.72.9.224/quickWebsite/b2c/public/login"; 
+                window.location.href = "{{url('/login')}}"; 
              }
              else if(data=="success"){
               console.log(data);

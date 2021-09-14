@@ -324,7 +324,7 @@
     
       $.ajax({
             type:'POST',
-            url:'/quickWebsite/b2c/public/wishlist',
+            url:'{{url("/wishlist")}}',
             data: {'td':td},
               //  beforeSend: function (request) {
               //     return request.setRequestHeader('X-CSRF-Token', $("meta[name='csrf-token']").attr('content'));
@@ -335,7 +335,7 @@
             success:function(data){
               // alert(data);
               if(data=="login"){
-                window.location.href = "http://34.72.9.224/quickWebsite/b2c/public/login"; 
+                window.location.href = "{{url('/login')}}"; 
              }
              else if(data=="success"){
               console.log(data);
@@ -364,7 +364,7 @@
     
       $.ajax({
             type:'POST',
-            url:'/quickWebsite/b2c/public/wishlist',
+            url:'{{url("/wishlist")}}',
             data: {'td':td},
               //  beforeSend: function (request) {
               //     return request.setRequestHeader('X-CSRF-Token', $("meta[name='csrf-token']").attr('content'));
@@ -375,7 +375,7 @@
             success:function(data){
               // alert(data);
               if(data=="login"){
-                window.location.href = "http://34.72.9.224/quickWebsite/b2c/public/login"; 
+                window.location.href = "{{url('/login')}}"; 
              }
              else if(data=="success"){
               console.log(data);
@@ -402,7 +402,7 @@
      function addtowish2(td){
       $.ajax({
             type:'POST',
-            url:'/quickWebsite/b2c/public/wishlist',
+            url:'{{url("/wishlist")}}',
             data: {'td':td},
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -410,7 +410,7 @@
             success:function(data){
               // alert(data);
               if(data=="login"){
-                window.location.href = "http://34.72.9.224/quickWebsite/b2c/public/login"; 
+                window.location.href = "{{url('/login')}}"; 
              }
              else if(data=="success"){
               console.log(data);
@@ -438,7 +438,7 @@
       // alert(typ);
       $.ajax({
             type:'POST',
-            url:'/quickWebsite/b2c/public/removeWishlisthome',
+            url:'{{url("/removeWishlisthome")}}',
             data: {'ht':ht,'typ':typ},
               //  beforeSend: function (request) {
               //     return request.setRequestHeader('X-CSRF-Token', $("meta[name='csrf-token']").attr('content'));
