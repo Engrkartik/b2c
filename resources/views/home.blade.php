@@ -59,7 +59,7 @@
       <div class="product-catagories-wrapper py-3">
         <div class="container">
           <div class="section-heading">
-            <h6>Product Categories</h6>
+            <h6>Product Category</h6>
           </div>
           <div class="product-catagory-wrap">
             
@@ -72,9 +72,10 @@
                 <a class="product-thumbnail d-block" href="category/{{$value->id}}">
                   <img class="mb-2" id="cat" src="{{Config::get('global.base_url')}}{{$value->img}}" alt="">
                   <span id="catSpan">{{$value->title}}</span>
+                  <!-- kdkdkdkdkd -->
                 </a>
-                  
-                </div>
+                   
+                </div> 
         
               </div>
               @endforeach
@@ -119,7 +120,7 @@
                     <p class="sale-price">₹{{$val4->sale_price}}<span>₹{{$val4->mrp}}</span></p>
                   </div>
                   <div class="weekly-product-card">
-            <div class="product-description">
+            <div class="product-description"> 
               <div class="product-rating">
             <i class="lni lni-star-filled"></i><i class="lni lni-star-filled"></i><i class="lni lni-star-filled"></i><i class="lni lni-star-filled" id="emptyStar"></i>
             <i class="lni lni-star-filled" id="emptyStar"></i>
@@ -218,7 +219,7 @@
                     @else
                       <a class="wishlist-btn" onclick="addtowish('{{$val2->id}}')"><i class="lni lni-heart"></i></a>
                     @endif
-                    <a class="product-thumbnail d-block" href="category/shop-product/single-product/{{$val2->id}}"><img src="{{Config::get('global.base_url')}}{{$val2->img_url}}" alt=""></a>
+                    <a class="product-thumbnail d-block" href="category/shop-product/single-product/{{$val2->id}}"><img src="{{config('global.base_url')}}{{$val2->img_url}}" alt=""></a>
                   </div>
                  
                   <div class="product-description">
@@ -248,7 +249,7 @@
           <div class="cta-area">
         <div class="container">
          @foreach($discount as $key=>$val3)
-           <div class="cta-text p-4 p-lg-5" style="background-image: url({{Config::get('global.base_url')}}{{$val3->img}})">
+           <div class="cta-text p-4 p-lg-5" style="background-image: url({{config('global.base_url')}}{{$val3->img}})">
           @endforeach  
             <!-- <h4>End of season sale</h4>
             <p>For a multibrand, creative &amp; <br>modern products</p> -->
