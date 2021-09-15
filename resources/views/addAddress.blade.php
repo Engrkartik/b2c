@@ -25,18 +25,21 @@
 
               <div class="row" style="width: 100%;">
                 <div class="col-10">
+                <input class="form-check-input" id="radiobtn2" type="radio" name="address" style="position: absolute;" checked>
+                <label for="radiobtn1" id="addressRadio">
               <div class="user-info">
                 <p class="mb-0"><strong style="color: #00A79D;">Priya Saraogi</strong></p>
                 <p class="mb-0">B-141, Ram Vihar, New Delhi</p>
                 <p>Mobile: <strong style="color: #00A79D;">8860283929</strong></p>
               </div>
+                </label>
             
             </div>
             <div class="col-2">
              <ul class="donate-now">
               <li>
                 <input type="radio" id="default" name="address" />
-                <label for="default">Default</label>
+                <label for="default">Home</label>
               </li> 
             </ul>
              <div id="button">
@@ -141,7 +144,7 @@
                   
                   </div>
                   <div class="col-sm" id="rightregg" style="margin-top: 13px;padding-left: 17px;" required="required">
-                    <input class="form-check-input" id="Home" type="radio" name="type">
+                    <input class="form-check-input" id="Home" type="radio" name="type" checked>
                     <label class="form-check-label" id="type" for="Home">Home</label>
                     <input class="form-check-input" id="Office" type="radio" name="type">
                     <label class="form-check-label" for="Office" id="type">Office</label>

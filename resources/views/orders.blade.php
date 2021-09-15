@@ -16,16 +16,17 @@
              
           <div class="section-heading d-flex align-items-center justify-content" id="suhaNavbarToggler">
            
-           <div class="card cart-amount-area" style="width:35%; border-radius:0;">
-            <div class="card-body d-flex align-items-center justify-content-center"> 
-            <p id="order-sort">Showing: <strong>All Orders</strong></p>
+           <div class="card cart-amount-area" style="width:70%; border-radius:0;">
+            <div class="card-body d-flex align-items-center justify-content-around"> 
+            <p id="order-sort">Showing: <strong style="color: #00A79D;">All Orders</strong></p>
+            <p id="order-sort">Within:<strong style="color: #00A79D;">Last 6 Months</strong></p>
              </div>
               </div>
-             <div class="card cart-amount-area" style="width:35%;border-radius:0;" id="filter">
+             <!-- <div class="card cart-amount-area" style="width:35%;border-radius:0;" id="filter">
             <div class="card-body d-flex align-items-center justify-content-center">
-              <p id="order-sort">Within:<strong>Last 6 Months</strong></p>
+              <p id="order-sort">Within:<strong style="color: #00A79D;">Last 6 Months</strong></p>
              </div>
-           </div>
+           </div> -->
 
           <div class="card cart-amount-area" style="width:30%;border-radius:0;">
             <div class="card-body d-flex align-items-center justify-content-center" id="filter-order">
@@ -58,9 +59,9 @@
               </div>        
             </div>
             <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
-              <span>03 sep 2021</span>
+              <span>Order Date: 03 sep 2021</span>
               <br>
-              <span>₹1595</span>
+              <span> ₹1595</span>
           </div>
         </div>
         <div class="order-btn">
@@ -96,7 +97,7 @@
               </div>        
             </div>
             <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
-              <span>03 sep 2021</span>
+              <span>Order Date: 03 sep 2021</span>
               <br>
               <span>₹1595</span>
           </div>
@@ -133,7 +134,7 @@
               </div>        
             </div>
             <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
-              <span>03 sep 2021</span>
+              <span>Order Date: 03 sep 2021</span>
               <br>
               <span>₹1595</span>
           </div>
@@ -191,7 +192,7 @@
               </div>        
             </div>
             <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
-              <span>03 sep 2021</span>
+              <span>Order Date: 03 sep 2021</span>
               <br>
               <span>₹1595</span>
           </div>
@@ -247,7 +248,7 @@
               </div>        
             </div>
             <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
-              <span>03 sep 2021</span>
+              <span>Order Date: 03 sep 2021</span>
               <br>
               <span>₹1595</span>
           </div>
@@ -281,7 +282,7 @@
         </div>
       </a>
         <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
-          <span>03 sep 2021</span>
+          <span>Order Date: 03 sep 2021</span>
           <br>
           <span>₹1595</span>
       </div>
@@ -314,7 +315,7 @@
           </div>        
         </div>
         <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
-          <span>10 sep 2021</span>
+          <span>Order Date: 10 sep 2021</span>
           <br>
           <span>₹1595</span>
       </div>
@@ -349,7 +350,7 @@
           </div>        
         </div>
         <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
-          <span>10 sep 2021</span>
+          <span>Order Date: 10 sep 2021</span>
           <br>
           <span>₹1595</span>
       </div>
@@ -385,7 +386,7 @@
           </div>
         </div>
         <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
-          <span>10 sep 2021</span>
+          <span>Order Date: 10 sep 2021</span>
           <br>
           <span>₹1595</span>
       </div>
@@ -443,7 +444,7 @@
         </div>
       </a>
         <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
-          <span>10 sep 2021</span>
+          <span>Order Date: 10 sep 2021</span>
           <br>
           <span>₹1595</span>
       </div>
@@ -481,7 +482,7 @@
         </div>
       </a>
         <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
-          <span>10 sep 2021</span>
+          <span>Order Date: 10 sep 2021</span>
           <br>
           <span>₹1595</span>
       </div>
@@ -518,7 +519,7 @@
         </div>
       </a>
         <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
-          <span>10 sep 2021</span>
+          <span>Order Date: 10 sep 2021</span>
           <br>
           <span>₹1595</span>
       </div>
@@ -554,7 +555,7 @@
         </div>
       </a>
         <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
-          <span>10 sep 2021</span>
+          <span>Order Date: 10 sep 2021</span>
           <br>
           <span>₹1595</span>
       </div>
@@ -591,7 +592,7 @@
         </div>
       </a>
         <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
-          <span>10 sep 2021</span>
+          <span>Order Date: 10 sep 2021</span>
           <br>
           <span>₹1595</span>
       </div>
@@ -628,7 +629,7 @@
         </div>
       </a>
         <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
-          <span>10 sep 2021</span>
+          <span>Order Date: 10 sep 2021</span>
           <br>
           <span>₹1595</span>
       </div>
@@ -684,7 +685,7 @@
         </div>
       </a>
         <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
-          <span>10 sep 2021</span>
+          <span>Order Date: 10 sep 2021</span>
           <br>
           <span>₹1595</span>
       </div>
@@ -717,7 +718,7 @@
         </div>
       </a>
         <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
-          <span>10 sep 2021</span>
+          <span>Order Date: 10 sep 2021</span>
           <br>
           <span>₹1595</span>
       </div>
@@ -750,7 +751,7 @@
         </div>
       </a>
         <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
-          <span>10 sep 2021</span>
+          <span>Order Date: 10 sep 2021</span>
           <br>
           <span>₹1595</span>
       </div>
@@ -784,7 +785,7 @@
         </div>
       </a>
         <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
-          <span>10 sep 2021</span>
+          <span>Order Date: 10 sep 2021</span>
           <br>
           <span>₹1595</span>
       </div>
@@ -818,7 +819,7 @@
         </div>
       </a>
         <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
-          <span>10 sep 2021</span>
+          <span>Order Date: 10 sep 2021</span>
           <br>
           <span>₹1595</span>
       </div>

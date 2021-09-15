@@ -84,13 +84,13 @@
               <form action="" method="">
                 <div class="d-flex justify-content-between mb-4" id="clear">
                   <input class="form-control" id="codeBox1" type="text" maxlength="1" onkeyup="onKeyUpEvent(1, event)"
-                    onfocus="onFocusEvent(1)" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
+                    onfocus="onFocusEvent(1)" onclick="this.select()" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
                   <input class="form-control" id="codeBox2" type="text" maxlength="1" onkeyup="onKeyUpEvent(2, event)"
-                    onfocus="onFocusEvent(2)" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
+                    onfocus="onFocusEvent(2)" onclick="this.select()" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
                   <input class="form-control" id="codeBox3" type="text" maxlength="1" onkeyup="onKeyUpEvent(3, event)"
-                    onfocus="onFocusEvent(3)" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
+                    onfocus="onFocusEvent(3)" onclick="this.select()" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
                   <input class="form-control" id="codeBox4" type="text" maxlength="1" onkeyup="onKeyUpEvent(4, event)"
-                    onfocus="onFocusEvent(4)" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
+                    onfocus="onFocusEvent(4)" onclick="this.select()" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
                 </div>
               </form>
             </div>
@@ -181,6 +181,7 @@
     if (getCodeBoxElement(index).value.length === 1) {
       if (index !== 4) {
         getCodeBoxElement(index + 1).focus();
+        getCodeBoxElement(index + 1).select();
       } else {
         getCodeBoxElement(index).blur();
         // Submit code
@@ -237,6 +238,7 @@
     }
     if (eventCode === 8 && index !== 1) {
      getCodeBoxElement(index - 1).focus();
+     getCodeBoxElement(index - 1).select();
       
     }
 
