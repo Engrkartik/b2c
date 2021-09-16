@@ -99,7 +99,7 @@
             @foreach($selectnew as $key=>$val4)
            
             <div class="col-6 col-md-4 col-lg-3">
-              <div class="card top-product-card">
+              <div class="card top-product-card mb-2">
                 <div class="card-body">
                   <span class="badge badge-blue">New</span>
                   
@@ -136,7 +136,7 @@
             @foreach($new as $key=>$val3)
            
             <div class="col-6 col-md-4 col-lg-3">
-              <div class="card top-product-card">
+              <div class="card top-product-card mb-2">
                 <div class="card-body">
                   <span class="badge badge-blue">New</span>
                   
@@ -206,7 +206,7 @@
           @foreach($feature as $key=>$val2)
            
             <div class="col-6 col-md-4 col-lg-3">
-              <div class="card featured-product-card">
+              <div class="card featured-product-card mb-2">
                 <div class="card-body"><span class="badge badge-warning custom-badge"><i class="lni lni-star"></i></span>
                    <div class="product-thumbnail-side">
                     @if(session()->has('uid'))

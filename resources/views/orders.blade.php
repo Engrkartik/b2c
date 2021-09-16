@@ -14,7 +14,7 @@
       <div class="top-products-area py-3">
         <div class="container">
              
-          <div class="section-heading d-flex align-items-center justify-content" id="suhaNavbarToggler">
+          <div class="section-heading d-flex align-items-center justify-content mb-0" id="suhaNavbarToggler">
            
            <div class="card cart-amount-area" style="width:70%; border-radius:0;">
             <div class="card-body d-flex align-items-center justify-content-around"> 
@@ -31,13 +31,13 @@
           <div class="card cart-amount-area" style="width:30%;border-radius:0;">
             <div class="card-body d-flex align-items-center justify-content-center" id="filter-order">
               <i class="fa fa-filter" id="sortIcons"></i>
-            <p>Filter</p>
+            <p style="color: #00A79D;">Filter</p>
              </div>
            </div> 
           </div>
           <!-- orders cards-->
 
-      <div class="weekly-best-seller-area pt-3 mb-2"> 
+      <div class="weekly-best-seller-area pt-3"> 
         <div class="row g-3">
             <div class="col-12 col-md-12">
              
@@ -75,7 +75,7 @@
 </div>
 
           <!-- new design end-->
-      <div class="weekly-best-seller-area pt-3 mb-2"> 
+      <div class="weekly-best-seller-area pt-3"> 
         <div class="row g-3">
             <div class="col-12 col-md-12">
              
@@ -112,7 +112,7 @@
 
 </div>
 
- <div class="weekly-best-seller-area pt-3 mb-2"> 
+ <div class="weekly-best-seller-area pt-3"> 
         <div class="row g-3">
             <div class="col-12 col-md-12">
              
@@ -170,7 +170,7 @@
 
 
 
- <div class="weekly-best-seller-area pt-3 mb-2"> 
+ <div class="weekly-best-seller-area pt-3"> 
         <div class="row g-3">
             <div class="col-12 col-md-12">
              
@@ -226,7 +226,7 @@
 
 </div>
 
- <div class="weekly-best-seller-area pt-3 mb-2"> 
+ <div class="weekly-best-seller-area pt-3"> 
         <div class="row g-3">
             <div class="col-12 col-md-12">
              
@@ -260,7 +260,7 @@
 
 </div>
 
- <div class="weekly-best-seller-area pt-3 mb-2"> 
+ <div class="weekly-best-seller-area pt-3"> 
     <div class="row g-3">
        <div class="col-12 col-md-12">
         <div class="card weekly-product-card" id="cart-card">
@@ -295,7 +295,7 @@
 </div>
 
 
- <div class="weekly-best-seller-area pt-3 mb-2"> 
+ <div class="weekly-best-seller-area pt-3"> 
     <div class="row g-3">
        <div class="col-12 col-md-12">
         <div class="card weekly-product-card" id="cart-card">
@@ -330,7 +330,7 @@
   <!-- row end-->
 </div>
 
- <div class="weekly-best-seller-area pt-3 mb-2"> 
+ <div class="weekly-best-seller-area pt-3"> 
     <div class="row g-3">
        <div class="col-12 col-md-12">
         <div class="card weekly-product-card" id="cart-card">
@@ -366,7 +366,7 @@
   <!-- row end-->
 </div>
 
-<div class="weekly-best-seller-area pt-3 mb-2"> 
+<div class="weekly-best-seller-area pt-3"> 
     <div class="row g-3">
        <div class="col-12 col-md-12">
         <div class="card weekly-product-card" id="cart-card">
@@ -422,7 +422,7 @@
 </div>
 
 
-<div class="weekly-best-seller-area pt-3 mb-2"> 
+<div class="weekly-best-seller-area pt-3"> 
     <div class="row g-3">
        <div class="col-12 col-md-12">
         <div class="card weekly-product-card" id="cart-card">
@@ -460,7 +460,7 @@
 </div>
 
 
-<div class="weekly-best-seller-area pt-3 mb-2"> 
+<div class="weekly-best-seller-area pt-3"> 
     <div class="row g-3">
        <div class="col-12 col-md-12">
         <div class="card weekly-product-card" id="cart-card">
@@ -497,7 +497,7 @@
   <!-- row end-->
 </div>
        
-    <div class="weekly-best-seller-area pt-3 mb-2"> 
+    <div class="weekly-best-seller-area pt-3"> 
     <div class="row g-3">
        <div class="col-12 col-md-12">
         <div class="card weekly-product-card" id="cart-card">
@@ -533,7 +533,7 @@
   <!-- row end-->
 </div>
   
-  <div class="weekly-best-seller-area pt-3 mb-2"> 
+  <div class="weekly-best-seller-area pt-3"> 
     <div class="row g-3">
        <div class="col-12 col-md-12">
         <div class="card weekly-product-card" id="cart-card">
@@ -570,7 +570,7 @@
   <!-- row end-->
 </div>
 
-  <div class="weekly-best-seller-area pt-3 mb-2"> 
+  <div class="weekly-best-seller-area pt-3"> 
     <div class="row g-3">
        <div class="col-12 col-md-12">
         <div class="card weekly-product-card" id="cart-card">
@@ -607,7 +607,7 @@
   <!-- row end-->
 </div>
 
-  <div class="weekly-best-seller-area pt-3 mb-2"> 
+  <div class="weekly-best-seller-area pt-3"> 
     <div class="row g-3">
        <div class="col-12 col-md-12">
         <div class="card weekly-product-card" id="cart-card">
@@ -663,7 +663,7 @@
   <!-- row end-->
 </div>
 
-  <div class="weekly-best-seller-area pt-3 mb-2"> 
+  <div class="weekly-best-seller-area pt-3"> 
     <div class="row g-3">
        <div class="col-12 col-md-12">
         <div class="card weekly-product-card" id="cart-card">
@@ -696,7 +696,7 @@
   <!-- row end-->
 </div>
 
-    <div class="weekly-best-seller-area pt-3 mb-2"> 
+    <div class="weekly-best-seller-area pt-3"> 
     <div class="row g-3">
        <div class="col-12 col-md-12">
         <div class="card weekly-product-card" id="cart-card">
@@ -729,7 +729,7 @@
   <!-- row end-->
 </div>
        
-    <div class="weekly-best-seller-area pt-3 mb-2"> 
+    <div class="weekly-best-seller-area pt-3"> 
     <div class="row g-3">
        <div class="col-12 col-md-12">
         <div class="card weekly-product-card" id="cart-card">
@@ -763,7 +763,7 @@
 </div>
 
 
-  <div class="weekly-best-seller-area pt-3 mb-2"> 
+  <div class="weekly-best-seller-area pt-3"> 
     <div class="row g-3">
        <div class="col-12 col-md-12">
         <div class="card weekly-product-card" id="cart-card">
@@ -797,7 +797,7 @@
 </div>
 
 
-  <div class="weekly-best-seller-area pt-3 mb-2"> 
+  <div class="weekly-best-seller-area pt-3"> 
     <div class="row g-3">
        <div class="col-12 col-md-12">
         <div class="card weekly-product-card" id="cart-card">

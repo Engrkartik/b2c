@@ -3,7 +3,7 @@
 input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
-#filter-order{padding:11px;}
+#filter-order{padding:11px; color:#00a79d;}
 
 #orderCard{margin-bottom:13px;}
 #button{padding-top: 10%;
@@ -700,7 +700,7 @@ right: -8.5rem !important;
 
 #button{ padding-top:30%; }
 
-#filter-order{padding:8px;}
+#filter-order{padding:8.5px;}
 
 #cart-img{ top:-9px;}
 
@@ -710,7 +710,7 @@ right: -8.5rem !important;
 
 .donate-now label{ font-size:13px; padding:3px; right:14px;}
 
-#order-sort{font-size:7px;}
+#order-sort{font-size:9px;}
 
 .cart-quantity-input{ font-size:10px !important;}
 

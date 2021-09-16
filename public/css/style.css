@@ -325,10 +325,12 @@ font-size: 15px;  }
   z-index: 1;
   margin-bottom: 1rem;
   line-height: 1; }
+
   .section-heading h6 {
     margin-bottom: 0 !important;
     color: #020310;
     line-height: 1; }
+    
   .section-heading p {
     margin-bottom: 0; }
 
