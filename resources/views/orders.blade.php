@@ -19,7 +19,7 @@
            <div class="card cart-amount-area" style="width:70%; border-radius:0;">
             <div class="card-body d-flex align-items-center justify-content-around"> 
             <p id="order-sort">Showing: <strong style="color: #00A79D;">All Orders</strong></p>
-            <p id="order-sort">Within:<strong style="color: #00A79D;">Last 6 Months</strong></p>
+            <p id="order-sort">Within: <strong style="color: #00A79D;">Last 6 Months</strong></p>
              </div>
               </div>
              <!-- <div class="card cart-amount-area" style="width:35%;border-radius:0;" id="filter">
@@ -358,6 +358,7 @@
    <div class="order-btn" style="display: flex;">
      <a class="btn w-50" href="track-order">Track</a>
      <a class="btn w-50" href="order-cancel">Cancel</a>
+     
    </div>
  
       </div>   

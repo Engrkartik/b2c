@@ -87,118 +87,211 @@
           <a class="widget-title accordion">Order Status <!-- (<small class="counter"></small>) --></a>
 
           <div class="widget-desc panel">
-            <!-- Single Checkbox-->
-           <div class="form-check" style="border-bottom:1px solid #ccc;padding-bottom:8px;">
+          <ul>
+  <li>
+    <input type="checkbox" name="all" id="all" onclick="selectAll()">
+    <label for="all">All Orders</label>
+
+    <ul id="filterOptions">
+      <li>
+        <input type="checkbox" name="Order Placed" id="OrderPlaced">
+        <label for="OrderPlaced">Order Placed</label>
+      </li>
+      <li>
+        <input type="checkbox" name="Order Accepted" id="OrderAccepted">
+        <label for="OrderAccepted">Order Accepted</label>
+      </li>
+      <li>
+        <input type="checkbox" name="Delivered" id="Delivered">
+        <label for="Delivered">Delivered – in return/exchange period</label>
+      </li>
+      <li>
+        <input type="checkbox" name="Delivered" id="Delivered-no-return">
+        <label for="Delivered-no-return">Delivered – out of return period</label>
+      </li>
+      <li>
+        <input type="checkbox" name="cancelledBySeller" id="cancelledBySeller">
+        <label for="cancelledBySeller">Cancelled by seller</label>
+      </li>
+      <li>
+        <input type="checkbox" name="CancelledBySelf" id="CancelledBySelf">
+        <label for="CancelledBySelf">Cancelled by self</label>
+      </li>
+      <li>
+        <input type="checkbox" name="ReadyToShip" id="ReadyToShip">
+        <label for="ReadyToShip">Ready to Ship</label>
+      </li>
+      <li>
+        <input type="checkbox" name="Shipped" id="Shipped">
+        <label for="Shipped">Shipped</label>
+      </li>
+      <li>
+        <input type="checkbox" name="ExchangeRequested" id="ExchangeRequested">
+        <label for="ExchangeRequested">Exchange Requested</label>
+      </li>
+      <li>
+        <input type="checkbox" name="ReturnRequested" id="ReturnRequested">
+        <label for="ReturnRequested">Return Requested</label>
+      </li>
+      <li>
+        <input type="checkbox" name="ExchangeAccepted" id="ExchangeAccepted">
+        <label for="ExchangeAccepted">Exchange Accepted</label>
+      </li>
+      <li>
+        <input type="checkbox" name="ReturnAccepted" id="ReturnAccepted">
+        <label for="ReturnAccepted">Return Accepted</label>
+      </li>
+      <li>
+        <input type="checkbox" name="ExchangeRejected" id="ExchangeRejected">
+        <label for="ExchangeRejected">Exchange Rejected</label>
+      </li>
+      <li>
+        <input type="checkbox" name="ReturnRejected" id="ReturnRejected">
+        <label for="ReturnRejected">Return Rejected</label>
+      </li>
+      <li>
+        <input type="checkbox" name="Exchanged" id="Exchanged">
+        <label for="Exchanged">Exchanged</label>
+      </li>
+      <li>
+        <input type="checkbox" name="Returned" id="Returned">
+        <label for="Returned">Returned</label>
+      </li>
+      <li>
+        <input type="checkbox" name="RefundRejected" id="RefundRejected">
+        <label for="RefundRejected">Refund Rejected</label>
+      </li>
+      <li>
+        <input type="checkbox" name="RefundAccepted" id="RefundAccepted">
+        <label for="RefundAccepted">Refund Accepted</label>
+      </li>
+      <li>
+        <input type="checkbox" name="RefundInitiated" id="RefundInitiated">
+        <label for="RefundInitiated">Refund Initiated</label>
+      </li>
+      <li>
+        <input type="checkbox" name="RefundCompleted" id="RefundCompleted">
+        <label for="RefundCompleted">Refund Completed</label>
+      </li>
+      <li>
+        <input type="checkbox" name="Undelivered" id="Undelivered">
+        <label for="Undelivered">Undelivered – Refused to accept/not available</label>
+      </li>
+    </ul>
+  </li>
+</ul>
+            
+           <!-- <div class="form-check" style="border-bottom:1px solid #ccc;padding-bottom:8px;">
               <input class="form-check-input brands" id="selectAll" type="checkbox" onclick="selectAll()">
               <label class="form-check-label font-weight-bold" for="selectAll">All Orders</label>
             </div>
              
-            <!-- Single Checkbox-->
+          
             <div class="form-check">
               <input class="form-check-input brands" id="zara" type="checkbox" name="brands[]">
               <label class="form-check-label font-weight-bold" for="zara">Order Placed</label>
             </div>
-            <!-- Single Checkbox-->
+         
             <div class="form-check">
               <input class="form-check-input brands" id="Gucci" type="checkbox" name="brands[]">
               <label class="form-check-label font-weight-bold" for="Gucci">Order Accepted</label>
             </div>
-            <!-- Single Checkbox-->
+         
             <div class="form-check">
               <input class="form-check-input brands" id="Addidas" type="checkbox" name="brands[]">
               <label class="form-check-label font-weight-bold" for="Addidas">Delivered – in return/exchange period</label>
             </div>
-            <!-- Single Checkbox-->
+           
             <div class="form-check">
               <input class="form-check-input brands" id="Nike" type="checkbox" name="brands[]">
               <label class="form-check-label font-weight-bold" for="Nike">Delivered – out of return period</label>
             </div>
-              <!-- Single Checkbox-->
+             
             <div class="form-check">
               <input class="form-check-input brands" id="Nike" type="checkbox" name="brands[]">
               <label class="form-check-label font-weight-bold" for="Nike">Cancelled by seller</label>
             </div>
-             <!-- Single Checkbox-->
+            
              <div class="form-check">
               <input class="form-check-input brands" id="Nike" type="checkbox" name="brands[]">
               <label class="form-check-label font-weight-bold" for="Nike">Cancelled by self</label>
             </div>
-              <!-- Single Checkbox-->
+             
             <div class="form-check">
               <input class="form-check-input brands" id="Nike" type="checkbox" name="brands[]">
               <label class="form-check-label font-weight-bold" for="Nike">Ready to Ship</label>
             </div>
-              <!-- Single Checkbox-->
+             
             <div class="form-check">
               <input class="form-check-input brands" id="Nike" type="checkbox" name="brands[]">
               <label class="form-check-label font-weight-bold" for="Nike">Shipped</label>
             </div>
-              <!-- Single Checkbox-->
+             
             <div class="form-check">
               <input class="form-check-input brands" id="Nike" type="checkbox" name="brands[]">
               <label class="form-check-label font-weight-bold" for="Nike">Exchange Requested</label>
             </div>
-              <!-- Single Checkbox-->
+             
             <div class="form-check">
               <input class="form-check-input brands" id="Nike" type="checkbox" name="brands[]">
               <label class="form-check-label font-weight-bold" for="Nike">Return Requested </label>
             </div>
-              <!-- Single Checkbox-->
+             
             <div class="form-check">
               <input class="form-check-input brands" id="Nike" type="checkbox" name="brands[]">
               <label class="form-check-label font-weight-bold" for="Nike">Exchange Accepted</label>
             </div>
-              <!-- Single Checkbox-->
+             
             <div class="form-check">
               <input class="form-check-input brands" id="Nike" type="checkbox" name="brands[]">
               <label class="form-check-label font-weight-bold" for="Nike">Return Accepted</label>
             </div>
-              <!-- Single Checkbox-->
+             
             <div class="form-check">
               <input class="form-check-input brands" id="Nike" type="checkbox" name="brands[]">
               <label class="form-check-label font-weight-bold" for="Nike">Exchange Rejected</label>
             </div>
-              <!-- Single Checkbox-->
+             
             <div class="form-check">
               <input class="form-check-input brands" id="Nike" type="checkbox" name="brands[]">
               <label class="form-check-label font-weight-bold" for="Nike">Return Rejected </label>
             </div>
-              <!-- Single Checkbox-->
+             
             <div class="form-check">
               <input class="form-check-input brands" id="Nike" type="checkbox" name="brands[]">
               <label class="form-check-label font-weight-bold" for="Nike">Exchanged</label>
             </div>
-              <!-- Single Checkbox-->
+             
             <div class="form-check">
               <input class="form-check-input brands" id="Nike" type="checkbox" name="brands[]">
               <label class="form-check-label font-weight-bold" for="Nike">Returned</label>
             </div>
-              <!-- Single Checkbox-->
+             
             <div class="form-check">
               <input class="form-check-input brands" id="Nike" type="checkbox" name="brands[]">
               <label class="form-check-label font-weight-bold" for="Nike">Refund Rejected</label>
             </div>
-              <!-- Single Checkbox-->
+             
             <div class="form-check">
               <input class="form-check-input brands" id="Nike" type="checkbox" name="brands[]">
               <label class="form-check-label font-weight-bold" for="Nike">Refund Accepted</label>
             </div>
-              <!-- Single Checkbox-->
+             
             <div class="form-check">
               <input class="form-check-input brands" id="Nike" type="checkbox" name="brands[]">
               <label class="form-check-label font-weight-bold" for="Nike">Refund Initiated</label>
             </div>
-              <!-- Single Checkbox-->
+             
             <div class="form-check">
               <input class="form-check-input brands" id="Nike" type="checkbox" name="brands[]">
               <label class="form-check-label font-weight-bold" for="Nike">Refund Completed </label>
             </div>
-             <!-- Single Checkbox-->
+            
             <div class="form-check">
               <input class="form-check-input brands" id="Denim" type="checkbox" name="brands[]">
               <label class="form-check-label font-weight-bold" for="Denim">Undelivered – Refused to accept/not available</label>
             </div>
-          </div>
+          </div> -->
         </div>
       
         <!-- Color-->
@@ -206,27 +299,26 @@
           <a class="widget-title accordion">Timeline</a>
           <div class="widget-desc panel">
           
-            <!-- Single Checkbox-->
             <div class="">
              <input type="radio" id="Last 30 days" name="timeline" value="">
             <label for="Last 30 days">Last 30 days</label><br>
             </div>
-            <!-- Single Checkbox-->
+           
             <div class="">
             <input type="radio" id="Last 3 months" name="timeline" value="">
             <label for="Last 3 months">Last 3 months</label><br>
             </div>
-            <!-- Single Checkbox-->
+           
             <div class="">
             <input type="radio" id="Last 6 months" name="timeline" value="">
             <label for="Last 6 months">Last 6 months</label><br>
             </div>
-            <!-- Single Checkbox-->
+           
             <div class="">
             <input type="radio" id="Last Year" name="timeline" value="">
             <label for="Last Year">Last Year</label><br>
             </div>
-            <!-- Single Checkbox-->
+           
             <div class="">
             <input type="radio" id="2020" name="timeline" value="">
             <label for="2020">2020</label><br>
@@ -234,45 +326,9 @@
           </div>
         </div>
         </div>
-   
-        <!-- Apply Filter-->
         
       </div>
-      <!-- Sidenav Profile-->
-      <!-- <div class="sidenav-profile">
-        <div class="user-profile"><img src="img/bg-img/9.jpg" alt=""></div>
-        <div class="user-info">
-          <h6 class="user-name mb-0">Customer Name</h6>
-          </div>
-      </div>
- -->      <!-- Sidenav Nav-->
-      <!-- <ul class="sidenav-nav ps-0"> -->
-        <!-- <li><a href="profile"><i class="lni lni-user"></i>My Profile</a></li> -->
-      <!--   <li><a href="notifications.php"><i class="lni lni-alarm lni-tada-effect"></i>Notifications<span class="ms-3 badge badge-warning">3</span></a></li> -->
-       <!--  <li class="suha-dropdown-menu"><a href="#"><i class="lni lni-cart"></i>Shop Pages</a>
-          <ul>
-            <li><a href="shop-grid.php">- Shop Grid</a></li>
-            <li><a href="shop-list.php">- Shop List</a></li>
-            <li><a href="single-product.php">- Product Details</a></li>
-            <li><a href="featured-products.php">- Featured Products</a></li>
-            <li><a href="flash-sale.php">- Flash Sale</a></li>
-          </ul>
-        </li>
-        <li><a href="pages.php"><i class="lni lni-empty-file"></i>All Pages</a></li>
-        <li class="suha-dropdown-menu"><a href="wishlist-grid.php"><i class="lni lni-heart"></i>My Wishlist</a>
-          <ul>
-            <li><a href="wishlist-grid.php">- Wishlist Grid</a></li>
-            <li><a href="wishlist-list.php">- Wishlist List</a></li>
-          </ul>
-        </li> -->
-       
-       
-        <!-- <li><a href="feedback"><i class="lni lni-comments"></i>Feedback Us</a></li> -->
-         <!-- <li><a class="btn btn-warning" href="login"><i class="lni lni-power-switch"></i>Sign In</a></li> -->
 
-      <!-- </ul> -->
-      <!-- Go Back Button-->
-      <!-- <div class="go-home-btn" id="goHomeBtn"><i class="lni lni-arrow-left"></i></div> -->
     </div>
     <script type="text/javascript">
 
@@ -315,21 +371,70 @@ for (i = 0; i < acc.length; i++) {
 }
 
 function selectAll() {
-        var blnChecked = document.getElementById("selectAll").checked;
-        var check_invoices = document.getElementsByClassName("brands");
-        var intLength = check_invoices.length;
-        for(var i = 0; i < intLength; i++) {
-            var check_invoice = check_invoices[i];
-            check_invoice.checked = blnChecked;
-        }
+  $('input[type="checkbox"]').change(function(e) {
+
+var checked = $(this).prop("checked"),
+    container = $(this).parent(),
+    siblings = container.siblings();
+
+container.find('input[type="checkbox"]').prop({
+  indeterminate: false,
+  checked: checked
+});
+
+function checkSiblings(el) {
+
+  var parent = el.parent().parent(),
+      all = true;
+
+  el.siblings().each(function() {
+    let returnValue = all = ($(this).children('input[type="checkbox"]').prop("checked") === checked);
+    return returnValue;
+  });
+  
+  if (all && checked) {
+
+    parent.children('input[type="checkbox"]').prop({
+      indeterminate: false,
+      checked: checked
+    });
+
+    checkSiblings(parent);
+
+  } else if (all && !checked) {
+
+    parent.children('input[type="checkbox"]').prop("checked", checked);
+    parent.children('input[type="checkbox"]').prop("indeterminate", (parent.find('input[type="checkbox"]:checked').length > 0));
+    checkSiblings(parent);
+
+  } else {
+
+    el.parents("li").children('input[type="checkbox"]').prop({
+      indeterminate: true,
+      checked: false
+    });
+
+  }
+
+}
+
+checkSiblings(container);
+});
+        // var blnChecked = document.getElementById("selectAll").checked;
+        // var check_invoices = document.getElementsByClassName("brands");
+        // var intLength = check_invoices.length;
+        // for(var i = 0; i < intLength; i++) {
+        //     var check_invoice = check_invoices[i];
+        //     check_invoice.checked = blnChecked;
+        // }
     }
     
 
-    var $brandcheckboxes = $('.brands input[type="checkbox"]');
+    // var $brandcheckboxes = $('.brands input[type="checkbox"]');
         
-    $brandcheckboxes.change(function(){
-        var countCheckedCheckboxes = $brandcheckboxes.filter(':checked').length;
-        $('.counter').text(countCheckedCheckboxes);
-    });
+    // $brandcheckboxes.change(function(){
+    //     var countCheckedCheckboxes = $brandcheckboxes.filter(':checked').length;
+    //     $('.counter').text(countCheckedCheckboxes);
+    // });
 
     </script>
