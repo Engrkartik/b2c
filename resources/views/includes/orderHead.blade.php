@@ -88,8 +88,8 @@
 
           <div class="widget-desc panel">
           <ul>
-  <li>
-    <input type="checkbox" name="all" id="all" onclick="selectAll()">
+  <li onmouseup="selectAll()">
+    <input type="checkbox" name="all" id="all">
     <label for="all">All Orders</label>
 
     <ul id="filterOptions">
@@ -180,121 +180,9 @@
     </ul>
   </li>
 </ul>
-            
-           <!-- <div class="form-check" style="border-bottom:1px solid #ccc;padding-bottom:8px;">
-              <input class="form-check-input brands" id="selectAll" type="checkbox" onclick="selectAll()">
-              <label class="form-check-label font-weight-bold" for="selectAll">All Orders</label>
-            </div>
-             
-          
-            <div class="form-check">
-              <input class="form-check-input brands" id="zara" type="checkbox" name="brands[]">
-              <label class="form-check-label font-weight-bold" for="zara">Order Placed</label>
-            </div>
-         
-            <div class="form-check">
-              <input class="form-check-input brands" id="Gucci" type="checkbox" name="brands[]">
-              <label class="form-check-label font-weight-bold" for="Gucci">Order Accepted</label>
-            </div>
-         
-            <div class="form-check">
-              <input class="form-check-input brands" id="Addidas" type="checkbox" name="brands[]">
-              <label class="form-check-label font-weight-bold" for="Addidas">Delivered – in return/exchange period</label>
-            </div>
-           
-            <div class="form-check">
-              <input class="form-check-input brands" id="Nike" type="checkbox" name="brands[]">
-              <label class="form-check-label font-weight-bold" for="Nike">Delivered – out of return period</label>
-            </div>
-             
-            <div class="form-check">
-              <input class="form-check-input brands" id="Nike" type="checkbox" name="brands[]">
-              <label class="form-check-label font-weight-bold" for="Nike">Cancelled by seller</label>
-            </div>
-            
-             <div class="form-check">
-              <input class="form-check-input brands" id="Nike" type="checkbox" name="brands[]">
-              <label class="form-check-label font-weight-bold" for="Nike">Cancelled by self</label>
-            </div>
-             
-            <div class="form-check">
-              <input class="form-check-input brands" id="Nike" type="checkbox" name="brands[]">
-              <label class="form-check-label font-weight-bold" for="Nike">Ready to Ship</label>
-            </div>
-             
-            <div class="form-check">
-              <input class="form-check-input brands" id="Nike" type="checkbox" name="brands[]">
-              <label class="form-check-label font-weight-bold" for="Nike">Shipped</label>
-            </div>
-             
-            <div class="form-check">
-              <input class="form-check-input brands" id="Nike" type="checkbox" name="brands[]">
-              <label class="form-check-label font-weight-bold" for="Nike">Exchange Requested</label>
-            </div>
-             
-            <div class="form-check">
-              <input class="form-check-input brands" id="Nike" type="checkbox" name="brands[]">
-              <label class="form-check-label font-weight-bold" for="Nike">Return Requested </label>
-            </div>
-             
-            <div class="form-check">
-              <input class="form-check-input brands" id="Nike" type="checkbox" name="brands[]">
-              <label class="form-check-label font-weight-bold" for="Nike">Exchange Accepted</label>
-            </div>
-             
-            <div class="form-check">
-              <input class="form-check-input brands" id="Nike" type="checkbox" name="brands[]">
-              <label class="form-check-label font-weight-bold" for="Nike">Return Accepted</label>
-            </div>
-             
-            <div class="form-check">
-              <input class="form-check-input brands" id="Nike" type="checkbox" name="brands[]">
-              <label class="form-check-label font-weight-bold" for="Nike">Exchange Rejected</label>
-            </div>
-             
-            <div class="form-check">
-              <input class="form-check-input brands" id="Nike" type="checkbox" name="brands[]">
-              <label class="form-check-label font-weight-bold" for="Nike">Return Rejected </label>
-            </div>
-             
-            <div class="form-check">
-              <input class="form-check-input brands" id="Nike" type="checkbox" name="brands[]">
-              <label class="form-check-label font-weight-bold" for="Nike">Exchanged</label>
-            </div>
-             
-            <div class="form-check">
-              <input class="form-check-input brands" id="Nike" type="checkbox" name="brands[]">
-              <label class="form-check-label font-weight-bold" for="Nike">Returned</label>
-            </div>
-             
-            <div class="form-check">
-              <input class="form-check-input brands" id="Nike" type="checkbox" name="brands[]">
-              <label class="form-check-label font-weight-bold" for="Nike">Refund Rejected</label>
-            </div>
-             
-            <div class="form-check">
-              <input class="form-check-input brands" id="Nike" type="checkbox" name="brands[]">
-              <label class="form-check-label font-weight-bold" for="Nike">Refund Accepted</label>
-            </div>
-             
-            <div class="form-check">
-              <input class="form-check-input brands" id="Nike" type="checkbox" name="brands[]">
-              <label class="form-check-label font-weight-bold" for="Nike">Refund Initiated</label>
-            </div>
-             
-            <div class="form-check">
-              <input class="form-check-input brands" id="Nike" type="checkbox" name="brands[]">
-              <label class="form-check-label font-weight-bold" for="Nike">Refund Completed </label>
-            </div>
-            
-            <div class="form-check">
-              <input class="form-check-input brands" id="Denim" type="checkbox" name="brands[]">
-              <label class="form-check-label font-weight-bold" for="Denim">Undelivered – Refused to accept/not available</label>
-            </div>
-          </div> -->
-        </div>
+</div>
       
-        <!-- Color-->
+       
         <div class="widget color">
           <a class="widget-title accordion">Timeline</a>
           <div class="widget-desc panel">
@@ -376,7 +264,7 @@ function selectAll() {
 var checked = $(this).prop("checked"),
     container = $(this).parent(),
     siblings = container.siblings();
-
+   
 container.find('input[type="checkbox"]').prop({
   indeterminate: false,
   checked: checked
@@ -420,21 +308,7 @@ function checkSiblings(el) {
 
 checkSiblings(container);
 });
-        // var blnChecked = document.getElementById("selectAll").checked;
-        // var check_invoices = document.getElementsByClassName("brands");
-        // var intLength = check_invoices.length;
-        // for(var i = 0; i < intLength; i++) {
-        //     var check_invoice = check_invoices[i];
-        //     check_invoice.checked = blnChecked;
-        // }
-    }
-    
 
-    // var $brandcheckboxes = $('.brands input[type="checkbox"]');
-        
-    // $brandcheckboxes.change(function(){
-    //     var countCheckedCheckboxes = $brandcheckboxes.filter(':checked').length;
-    //     $('.counter').text(countCheckedCheckboxes);
-    // });
+}
 
     </script>

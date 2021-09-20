@@ -83,7 +83,7 @@
 
 
             <div class="otp-verify-form mt-4 px-4" style="margin-right: 2.5rem;margin-left: -2.5rem">
-              <form action="" method="">
+              <form action="" method="" class="otpform">
                 <div class="d-flex justify-content-between mb-4" id="clear">
                   <input class="form-control" id="codeBox1" type="text" maxlength="1" onkeyup="onKeyUpEvent(1, event)"
                     onfocus="onFocusEvent(1)" onclick="this.select()" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
@@ -229,6 +229,8 @@
             }
              else {
               alert("OTP did not match");
+              document.getElementById('codeBox1').focus();
+              $('.otpform input[type="text"]').val('');
 
             }
             console.log(result);
