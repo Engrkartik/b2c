@@ -46,7 +46,7 @@
                 <div class="card-body d-flex align-items-center">
                   <div class="product-thumbnail-side" id="image-side">
                     <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
-                    <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+                    <a class="product-thumbnail d-block" id="order-img">
                       <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
                   </div>
                   <div class="product-description" id="cartDescription">
@@ -58,7 +58,7 @@
               <br>       
               </div>        
             </div>
-            <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+            <a class="product-title d-block">Levi's Jeans</a>
               <span>Order Date: 03 sep 2021</span>
               <br>
               <span> ₹1595</span>
@@ -84,7 +84,7 @@
                 <div class="card-body d-flex align-items-center">
                   <div class="product-thumbnail-side" id="image-side">
                     <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
-                    <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+                    <a class="product-thumbnail d-block" id="order-img">
                       <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
                   </div>
                   <div class="product-description" id="cartDescription">
@@ -96,7 +96,7 @@
               <br>       
               </div>        
             </div>
-            <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+            <a class="product-title d-block">Levi's Jeans</a>
               <span>Order Date: 03 sep 2021</span>
               <br>
               <span>₹1595</span>
@@ -121,7 +121,7 @@
                 <div class="card-body d-flex align-items-center">
                   <div class="product-thumbnail-side" id="image-side">
                     <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
-                    <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+                    <a class="product-thumbnail d-block" id="order-img">
                       <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
                   </div>
                   <div class="product-description" id="cartDescription">
@@ -133,13 +133,13 @@
               <br>       
               </div>        
             </div>
-            <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+            <a class="product-title d-block">Levi's Jeans</a>
               <span>Order Date: 03 sep 2021</span>
               <br>
               <span>₹1595</span>
           </div>
         </div>
-     <div class="ratings-submit-form bg-white pt-0 pb-1 px-3">
+     <div class="ratings-submit-form bg-white">
         <div class="container" style="display:inline-flex;">
           <p id="rateP">Rate Product</p>
           <form action="#" method="">
@@ -179,7 +179,7 @@
                 <div class="card-body d-flex align-items-center">
                   <div class="product-thumbnail-side" id="image-side">
                     <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
-                    <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+                    <a class="product-thumbnail d-block" id="order-img">
                       <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
                   </div>
                   <div class="product-description" id="cartDescription">
@@ -191,13 +191,13 @@
               <br>       
               </div>        
             </div>
-            <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+            <a class="product-title d-block">Levi's Jeans</a>
               <span>Order Date: 03 sep 2021</span>
               <br>
               <span>₹1595</span>
           </div>
         </div>
-     <div class="ratings-submit-form bg-white pt-0 pb-1 px-3">
+     <div class="ratings-submit-form bg-white">
         <div class="container" style="display:inline-flex;">
           <p id="rateP">Rate Product</p>
           <form action="#" method="">
@@ -235,7 +235,7 @@
                 <div class="card-body d-flex align-items-center">
                   <div class="product-thumbnail-side" id="image-side">
                     <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
-                    <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+                    <a class="product-thumbnail d-block" id="order-img">
                       <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
                   </div>
                   <div class="product-description" id="cartDescription">
@@ -247,7 +247,7 @@
               <br>       
               </div>        
             </div>
-            <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+            <a class="product-title d-block">Levi's Jeans</a>
               <span>Order Date: 03 sep 2021</span>
               <br>
               <span>₹1595</span>
@@ -267,7 +267,7 @@
          <div class="card-body d-flex align-items-center">
           <div class="product-thumbnail-side" id="image-side">
             <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
-            <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+            <a class="product-thumbnail d-block" id="order-img">
               <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
           </div>
           <div class="product-description" id="cartDescription">
@@ -281,7 +281,7 @@
           </div>        
         </div>
       </a>
-        <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+        <a class="product-title d-block">Levi's Jeans</a>
           <span>Order Date: 03 sep 2021</span>
           <br>
           <span>₹1595</span>
@@ -302,7 +302,7 @@
          <div class="card-body d-flex align-items-center">
           <div class="product-thumbnail-side" id="image-side">
             <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
-            <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+            <a class="product-thumbnail d-block" id="order-img">
               <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
           </div>
           <div class="product-description" id="cartDescription">
@@ -314,7 +314,7 @@
           <br>       
           </div>        
         </div>
-        <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+        <a class="product-title d-block">Levi's Jeans</a>
           <span>Order Date: 10 sep 2021</span>
           <br>
           <span>₹1595</span>
@@ -337,7 +337,7 @@
          <div class="card-body d-flex align-items-center">
           <div class="product-thumbnail-side" id="image-side">
             <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
-            <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+            <a class="product-thumbnail d-block" id="order-img">
               <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
           </div>
           <div class="product-description" id="cartDescription">
@@ -349,14 +349,14 @@
           <br>       
           </div>        
         </div>
-        <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+        <a class="product-title d-block">Levi's Jeans</a>
           <span>Order Date: 10 sep 2021</span>
           <br>
           <span>₹1595</span>
       </div>
     </div>
    <div class="order-btn" style="display: flex;">
-     <a class="btn w-50" href="track-order">Track</a>
+     <a class="btn" id="leftBtn" href="track-order">Track</a>
      <a class="btn w-50" href="order-cancel">Cancel</a>
      
    </div>
@@ -367,6 +367,7 @@
   <!-- row end-->
 </div>
 
+
 <div class="weekly-best-seller-area pt-3"> 
     <div class="row g-3">
        <div class="col-12 col-md-12">
@@ -374,7 +375,7 @@
          <div class="card-body d-flex align-items-center">
           <div class="product-thumbnail-side" id="image-side">
             <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
-            <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+            <a class="product-thumbnail d-block" id="order-img">
               <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
           </div>
           <div class="product-description" id="cartDescription">
@@ -386,13 +387,13 @@
           <br>       
           </div>
         </div>
-        <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+        <a class="product-title d-block">Levi's Jeans</a>
           <span>Order Date: 10 sep 2021</span>
           <br>
           <span>₹1595</span>
       </div>
     </div>
-        <div class="ratings-submit-form bg-white pt-2 pb-3 px-3">
+        <div class="ratings-submit-form bg-white">
         <div class="container" style="display:inline-flex;">
           <p id="rateP">Rate Product</p>
           <form action="#" method="">
@@ -412,7 +413,7 @@
           </div>
         </div>
         <div class="order-btn" style="display: flex;">
-         <a class="btn w-50" href="order-returnD">Return</a>
+         <a class="btn" id="leftBtn" href="order-returnD">Return</a>
          <a class="btn w-50" href="order-exchangeD">Exchange</a>
        </div>
  
@@ -430,7 +431,7 @@
          <div class="card-body d-flex align-items-center">
           <div class="product-thumbnail-side" id="image-side">
             <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
-            <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+            <a class="product-thumbnail d-block" id="order-img">
               <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
           </div>
           <div class="product-description" id="cartDescription">
@@ -444,7 +445,7 @@
           </div>        
         </div>
       </a>
-        <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+        <a class="product-title d-block">Levi's Jeans</a>
           <span>Order Date: 10 sep 2021</span>
           <br>
           <span>₹1595</span>
@@ -468,7 +469,7 @@
          <div class="card-body d-flex align-items-center">
           <div class="product-thumbnail-side" id="image-side">
             <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
-            <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+            <a class="product-thumbnail d-block" id="order-img">
               <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
           </div>
           <div class="product-description" id="cartDescription">
@@ -482,7 +483,7 @@
           </div>        
         </div>
       </a>
-        <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+        <a class="product-title d-block">Levi's Jeans</a>
           <span>Order Date: 10 sep 2021</span>
           <br>
           <span>₹1595</span>
@@ -505,7 +506,7 @@
          <div class="card-body d-flex align-items-center">
           <div class="product-thumbnail-side" id="image-side">
             <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
-            <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+            <a class="product-thumbnail d-block" id="order-img">
               <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
           </div>
           <div class="product-description" id="cartDescription">
@@ -519,7 +520,7 @@
           </div>        
         </div>
       </a>
-        <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+        <a class="product-title d-block">Levi's Jeans</a>
           <span>Order Date: 10 sep 2021</span>
           <br>
           <span>₹1595</span>
@@ -541,7 +542,7 @@
          <div class="card-body d-flex align-items-center">
           <div class="product-thumbnail-side" id="image-side">
             <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
-            <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+            <a class="product-thumbnail d-block" id="order-img">
               <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
           </div>
           <div class="product-description" id="cartDescription">
@@ -555,7 +556,7 @@
           </div>        
         </div>
       </a>
-        <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+        <a class="product-title d-block">Levi's Jeans</a>
           <span>Order Date: 10 sep 2021</span>
           <br>
           <span>₹1595</span>
@@ -578,7 +579,7 @@
          <div class="card-body d-flex align-items-center">
           <div class="product-thumbnail-side" id="image-side">
             <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
-            <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+            <a class="product-thumbnail d-block" id="order-img">
               <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
           </div>
           <div class="product-description" id="cartDescription">
@@ -592,7 +593,7 @@
           </div>        
         </div>
       </a>
-        <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+        <a class="product-title d-block">Levi's Jeans</a>
           <span>Order Date: 10 sep 2021</span>
           <br>
           <span>₹1595</span>
@@ -615,7 +616,7 @@
          <div class="card-body d-flex align-items-center">
           <div class="product-thumbnail-side" id="image-side">
             <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
-            <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+            <a class="product-thumbnail d-block" id="order-img">
               <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
           </div>
           <div class="product-description" id="cartDescription">
@@ -629,7 +630,7 @@
           </div>        
         </div>
       </a>
-        <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+        <a class="product-title d-block">Levi's Jeans</a>
           <span>Order Date: 10 sep 2021</span>
           <br>
           <span>₹1595</span>
@@ -638,7 +639,7 @@
     <ul>
         <li>Exchange/Return window closed</li>
       </ul>
-          <div class="ratings-submit-form bg-white pt-2 pb-3 px-3">
+          <div class="ratings-submit-form bg-white">
         <div class="container" style="display:inline-flex;">
           <p id="rateP">Rate Product</p>
           <form action="#" method="">
@@ -671,7 +672,7 @@
          <div class="card-body d-flex align-items-center">
           <div class="product-thumbnail-side" id="image-side">
             <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
-            <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+            <a class="product-thumbnail d-block" id="order-img">
               <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
           </div>
           <div class="product-description" id="cartDescription">
@@ -685,7 +686,7 @@
           </div>        
         </div>
       </a>
-        <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+        <a class="product-title d-block">Levi's Jeans</a>
           <span>Order Date: 10 sep 2021</span>
           <br>
           <span>₹1595</span>
@@ -704,7 +705,7 @@
          <div class="card-body d-flex align-items-center">
           <div class="product-thumbnail-side" id="image-side">
             <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
-            <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+            <a class="product-thumbnail d-block" id="order-img">
               <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
           </div>
           <div class="product-description" id="cartDescription">
@@ -718,7 +719,7 @@
           </div>        
         </div>
       </a>
-        <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+        <a class="product-title d-block">Levi's Jeans</a>
           <span>Order Date: 10 sep 2021</span>
           <br>
           <span>₹1595</span>
@@ -737,7 +738,7 @@
          <div class="card-body d-flex align-items-center">
           <div class="product-thumbnail-side" id="image-side">
             <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
-            <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+            <a class="product-thumbnail d-block" id="order-img">
               <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
           </div>
           <div class="product-description" id="cartDescription">
@@ -751,7 +752,7 @@
           </div>        
         </div>
       </a>
-        <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+        <a class="product-title d-block">Levi's Jeans</a>
           <span>Order Date: 10 sep 2021</span>
           <br>
           <span>₹1595</span>
@@ -771,7 +772,7 @@
          <div class="card-body d-flex align-items-center">
           <div class="product-thumbnail-side" id="image-side">
             <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
-            <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+            <a class="product-thumbnail d-block" id="order-img">
               <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
           </div>
           <div class="product-description" id="cartDescription">
@@ -785,7 +786,7 @@
           </div>        
         </div>
       </a>
-        <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+        <a class="product-title d-block">Levi's Jeans</a>
           <span>Order Date: 10 sep 2021</span>
           <br>
           <span>₹1595</span>
@@ -805,7 +806,7 @@
          <div class="card-body d-flex align-items-center">
           <div class="product-thumbnail-side" id="image-side">
             <a class="help-btn" href="contact"><i class="fa fa-headphones"></i></a>
-            <a class="product-thumbnail d-block" href="category/shop-product/single-product/909" id="order-img">
+            <a class="product-thumbnail d-block" id="order-img">
               <img src="http://34.72.9.224/quickWebsite/b2c_admin/public/images/item/levi.jpeg.webp" alt=""></a>
           </div>
           <div class="product-description" id="cartDescription">
@@ -819,7 +820,7 @@
           </div>        
         </div>
       </a>
-        <a href="category/shop-product/single-product/909" class="product-title d-block">Levi's Jeans</a>
+        <a class="product-title d-block">Levi's Jeans</a>
           <span>Order Date: 10 sep 2021</span>
           <br>
           <span>₹1595</span>

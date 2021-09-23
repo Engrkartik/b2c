@@ -137,6 +137,21 @@
           // alert('Mobile not registered');
           alert('Enter mobile number first');
         } else {
+           // :: OTP Code resend Timer
+           var count = 60;
+                var counter = setInterval(timer, 1000);
+
+                function timer() {
+                    count = count - 1;
+                    if (count <= 0) {
+                        clearInterval(counter);
+                        document.getElementById("resendOTP").innerHTML =
+                            ' <button class="btn btn-success btn-lg w-100" onclick="resendotp()"> Resend OTP</button>';
+                    } else {
+                        document.getElementById("resendOTP").innerHTML =
+                            '<p class="d-flex align-items-center"> Wait ' + count + ' secs</p>';
+                    }
+                }
           $('#old').hide();
           $('#new').show();
           $('#fil').html(mobile);
@@ -151,6 +166,30 @@
 
     });
   }
+
+  function resendotp() {
+
+// Clearing OTP 
+$('.otpform input[type="text"]').val('');
+$('#codeBox1').focus();
+myotp();
+
+// :: OTP Code resend Timer
+var count = 60;
+var counter = setInterval(timer, 1000);
+
+function timer() {
+    count = count - 1;
+    if (count <= 0) {
+        clearInterval(counter);
+        document.getElementById("resendOTP").innerHTML =
+            ' <button class="btn btn-success btn-lg w-100" onclick="resendotp()"> Resend OTP</button>';
+    } else {
+        document.getElementById("resendOTP").innerHTML =
+            '<p class="d-flex align-items-center"> Wait ' + count + ' secs</p>';
+    }
+}
+}
 
   function changeNo() {
     $('#old').show();
