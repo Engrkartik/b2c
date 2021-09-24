@@ -165,7 +165,7 @@ class Test extends Controller
     }
     public function contactUs()
     {
-        return view('blankPages/contact_blank');
+        return view('contact');
     }
     public function faqBlank()
     {
