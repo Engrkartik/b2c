@@ -193,6 +193,16 @@ font-size: 15px;  }
  }
 
 /* Shortcodes CSS */
+
+@media (min-width: 400px) and (max-width:1920px) {
+  .order{
+    height:0.75em;
+    width: 0.75em;
+    margin-top:0.5em;
+  }
+}
+
+
 .h-100vh {
   height: 100vh !important; }
 
@@ -4007,6 +4017,12 @@ text-decoration:line-through; }
 @media(width:320px)
 {
 
+  .order{
+    height:1em !important;
+    width: 1em !important;
+    margin-top:0.25em !important;
+  }
+
   .widget .form-check-label {
     font-size: 11px; }
 
@@ -4080,6 +4096,11 @@ text-decoration:line-through; }
 
 @media(min-width: 220px) and (max-width: 310px)
 {
+  .order{
+    height:1em !important;
+    width: 1em !important;
+    margin-top:0.25em !important;
+  }
 
   .suha-sidenav-wrapper {width:231px !important;}
 

@@ -15,9 +15,12 @@
       <!-- User Meta Data-->
       <div class="col-12" style="text-align: left;">
           <br>
+          <div class="edit-profile-btn">
+              <a class="btn" href="#editAddress" style="background-color: white;" onclick="myFunction()">ADD ADDRESS</a>
+            </div>
           <!-- <form action="updateProfile" method="post"> -->
-          <h5>Default Address</h5>
-          <div class="profile-wrapper-area pb-3" id="1stBox">
+          <p>Default Address</p>
+          <div class="profile-wrapper-area pb-1" id="1stBox">
 
           <div class="card bg-white">
              
@@ -54,7 +57,7 @@
           </div>          
         </div>
         <!-- profile area div end-->
-            <div class="register-form px-4 pt-4 bg-white" id="addaddress" style="height: 93%;">
+            <div class="register-form px-4 pt-4 bg-white" id="addaddress" style="height: 85%;">
             <!--    <h5 class="mb-6">Fill your Details</h5> -->
               <form action=" " method="post" id="editAddress">
 
@@ -154,10 +157,24 @@
                 </div>
                 <div class="row mb-4">
                   <div class="col-sm-6">
+                  <div>
+                  <input type="checkbox" name="default" id="make" onclick="onlyOne(this)">
+                  <!-- <input class="form-check-input" id="make" type="radio" name="default"> -->
+                <label for="make" id="defaultLabel"> Make Default</label>
+              </div>
+                  </div>
+                </div>
+                <div class="row mb-4">
+                  <div class="col-sm-6">
                     <div class="back-button">
-                    <a><button class="btn btn-success">Save & Next</button></a>
+                    <a><button class="btn btn-success">Save</button></a>
                   </div>  
                   </div> 
+                  <!-- <div class="col-sm-6">
+                    <div class="back-button">
+                    <a><button class="btn btn-danger">Cancel</button></a>
+                  </div>  
+                  </div>  -->
                 </div>
               
               </form>

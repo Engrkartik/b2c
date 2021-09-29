@@ -84,7 +84,7 @@
                   </div>
                 </div>
                 <input type="text" name="product_id" value="{{$value->cart_id}}" hidden="">
-             <div class="container">
+             <div class="container mb-2">
             <form class="cart-form" action="#" method="" id="myform">
               <div class="order-plus-minus d-flex align-items-center" id="quantity">
                 <span id="qtyLabel" style="padding-right: 10%;">Qty</span>
@@ -95,7 +95,7 @@
                             
             </form>
           </div>
-          <br>
+      
           @if($value->sqty<2)
           <p id="cart-p">Undeliverable</p>
           @else
