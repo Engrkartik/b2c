@@ -233,7 +233,7 @@ class Login extends Controller
         return $otp;
         // return view('login');
     }
-
+/////////////////////////////////////////////check otp//////////////////////////////////////////////////////
     public function chk_otp()
     {
         $mobile = $_POST['mobile'];
@@ -256,7 +256,7 @@ class Login extends Controller
         }
         return $success;
     }
-
+///////////////////////////////////////////login//////////////////////////////////////////////////////////////////
     public function login()
     {
     	return View::make('login');
@@ -270,7 +270,7 @@ class Login extends Controller
         // return View::make('otp-confirm', compact('mobile'));
         return View::make('otp-confirm',compact('mobile'));
     }
-
+/////////////////////////////////////////////////save registration////////////////////////////////////////////
     public function save_registeration(Request $req)
     {	
     	$name = $_POST['username'];
@@ -294,13 +294,14 @@ class Login extends Controller
       	return redirect()->back()->with('message', $name.' You registered Successfully, Go to login ');
       }
     }
+/////////////////////////////////////////////logout////////////////////////////////////////////////////////
     public function logout()
     {
         Session::flush();
         return redirect('/');
 
     }
-
+/////////////////////////////////////////////////updateProfile/////////////////////////////////////////////
     public function updateProfile(Request $req)
     {
         $uid = Session::get('uid');

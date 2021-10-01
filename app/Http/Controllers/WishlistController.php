@@ -492,4 +492,85 @@ class WishlistController extends Controller
         // $msg = "Successfully Removed from wishlist";
         return $html2;
     }
+////////////////////////////////////////////add wish dynamic////////////////////////////////////////////////
+    public function addwishdyna()
+    {
+      $html ='';
+      
+        if(session()->has('uid'))
+        {
+          // if(session()->has('hwt')){
+          //   $id = Session::get('hwt');
+          // }else{
+            $id = $_POST['ht'];
+          // }
+          $cid = Session::get('uid');
+          $product = product::find($id);
+          $aid = $product->aid;
+          $sub_cat = $product->sub_cat;
+
+            $findprod = WishList::where('cid','=',$cid)->where('pid','=',$id)->count();
+
+            if($findprod>0){
+
+                $html = "exist";
+            }
+            else{
+                $wish = new WishList;
+
+                $wish->aid = $aid;
+                $wish->cid = $cid;
+                $wish->pid = $id;
+
+                $wish->save();
+            
+                $data = DB::table('product')
+                  ->select('product.*',DB::raw("(SELECT prod_img.img_url FROM prod_img WHERE prod_img.img_id=product.img ORDER BY prod_img.id ASC LIMIT 1) as img_url"),DB::raw("(SELECT IF(COUNT(*)>0,'true','false') FROM `wishlist` WHERE product.id=wishlist.pid AND wishlist.aid='".$aid."' AND wishlist.cid='".$cid."') AS wishlist"))
+                  ->where([['product.aid','=',$aid],['product.sub_cat','=',$sub_cat]])
+                  ->orderBy('product.id','ASC')
+                  ->get();
+
+                // $html = "hello";
+                foreach ($data as $key => $value) {
+                    $html .= '<div class="col-6 col-md-4 col-lg-3">
+                                <div class="card top-product-card">
+                                  <div class="card-body">
+                                    <span class="badge badge-success">Sale</span>
+                                    <a class="wishlist-btn" onclick="addwishdyna('.$value->id.')">';
+                                      if(session()->has('uid')){
+                            
+                                      if($value->wishlist=="false"){
+                                       $html .= '<i class="lni lni-heart"></i>';
+                                      }
+                                      else{
+                                        $html .= '<i class="lni lni-heart-filled"></i>';
+                                      } }
+                                      else{
+                                        $html .= '<i class="lni lni-heart"></i>';
+                                      }
+          
+                      $html .= '</a>
+                                <a class="product-thumbnail d-block" href="single-product/'.$value->id.'">
+                                <img src="'.Config('global.base_url').$value->img_url.'" alt=""></a>
+                              
+                                  <div class="product-description"><a class="product-title d-block" href="single-product/'.$value->id.'">'.$value->item_name.'
+                                    <p class="sale-price">₹'.$value->sale_price.'&nbsp;&nbsp;<span>₹'.$value->mrp.'</span></p></a>
+                                    <input type="text" value="'.$value->id.'" id="product'.$value->id.'" name="product-id" hidden="">
+                                    <div class="product-rating"><i class="lni lni-star-filled"></i><i class="lni lni-star-filled"></i><i class="lni lni-star-filled"></i><i class="lni lni-star-filled"></i><i class="lni lni-star-filled" id="emptyStar"></i></div>
+                                  </div>
+                                </div> 
+                              </div>
+                            </div>';
+                  }
+            }
+        }
+        else{
+          $hwt = $_POST['ht'];
+          $html = "login";
+          Session::put('hwt',$hwt);
+        }
+        
+        return $html;
+    }
+
 }

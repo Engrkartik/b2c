@@ -89,7 +89,7 @@
           </div>
           <div  id="error" class="alert" style="display: none;">Already exist in wishlist</div>
           <div id="insert" class="alert success" style="display: none;">Added in wishlist</div>
-          <div class="row g-3" id="msg">
+          <div class="row g-3" id="oldP">
               
             <!-- Single Weekly Product Card-->
           @foreach($data as $key=>$value)
@@ -97,7 +97,9 @@
               <div class="card top-product-card">
                 <div class="card-body">
                   <span class="badge badge-success">Sale</span>
-                  <a class="wishlist-btn" onclick="addtowish('{{$value->id}}')">
+                  <!-- <a class="wishlist-btn" onclick="addtowish('{{$value->id}}')"> -->
+                  <a class="wishlist-btn" onclick="addwishdyna('{{$value->id}}')">
+                  
                   @if(session()->has('uid'))
                   
                   @if($value->wishlist=="false")<i class="lni lni-heart"></i>
@@ -115,11 +117,12 @@
                   </div>
                 </div> 
               </div>
-              </div>
+            </div>
            
          @endforeach
-           
           </div>
+          <div class="row g-3" id="newP">
+           </div>
         <!-- <div id="msg">hello</div> -->
         </div>
       </div>
@@ -129,7 +132,40 @@
         <input type="hidden" name="" id="hide" value="{{$valu->id}}">
       @endforeach
     </div>
-     <script>
+    
+<script>
+
+  function addwishdyna(ht){
+      // alert(typ);
+      $.ajax({
+            type:'POST',
+            url:'{{url("/addtowishdyna")}}',
+            data: {'ht':ht},
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            success:function(data){
+              // if(data=='Successfully Removed from wishlist'){
+                if(data=="login"){
+                  console.log(data);
+                  window.location.href = "{{url('/login')}}";
+                }
+                else if(data=="exist"){
+                  console.log(data);
+                  alert("Product is already exist in Wishlist");
+                }
+              else{
+                  console.log(data);
+                  $("#oldP").hide();
+                  $("#newP").html(data);
+                
+              }
+            }
+      });
+      
+    }
+
+
          function myfunction() {
           var val1=document.getElementById('selectProductCatagory').value;
           var id=document.getElementById('hide').value;

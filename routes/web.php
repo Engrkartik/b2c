@@ -33,7 +33,7 @@ Route::post('/updateProfile','App\Http\Controllers\Login@updateProfile')->middle
 Route::get('/edit-profile','App\Http\Controllers\HomeController@editProfile')->middleware(checkSession::class);
 
 Route::post('/selectCity','App\Http\Controllers\HomeController@selectCity');
-
+ 
 //view category and products
 Route::get('/category/shop-product/{id}','App\Http\Controllers\HomeController@shopProduct');
 
@@ -70,6 +70,8 @@ Route::get('/logout','App\Http\Controllers\Login@logout');
 Route::get('/otp-confirm','App\Http\Controllers\Login@otpConfirm');
 
 //cart and wishlist
+Route::any('/addtowishdyna','App\Http\Controllers\WishlistController@addwishdyna');
+
 Route::post('/removeWishlist','App\Http\Controllers\WishlistController@removeWishlist');
 
 Route::post('/removeWishlisthome','App\Http\Controllers\WishlistController@removeWishlisthome');
