@@ -157,7 +157,7 @@
                 </div>
                 <div class="row mb-4">
                   <div class="col-sm-6">
-                  <div>
+                  <div class="makeDefault">
                   <input type="checkbox" name="default" id="make" onclick="onlyOne(this)">
                   <!-- <input class="form-check-input" id="make" type="radio" name="default"> -->
                 <label for="make" id="defaultLabel"> Make Default</label>

@@ -50,7 +50,6 @@
               <!-- <p class="mt-3">Didn't have an account?<a class="mx-1" href="register" style="color: #353232;">Register Now</a></p> -->
 
             </div>
-
           </div>
         </div>
         <div class="register-form mt-5 px-4">
