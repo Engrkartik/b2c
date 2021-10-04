@@ -50,7 +50,6 @@
               <!-- <p class="mt-3">Didn't have an account?<a class="mx-1" href="register" style="color: #353232;">Register Now</a></p> -->
 
             </div>
-
           </div>
         </div>
         <div class="register-form mt-5 px-4">
@@ -83,16 +82,16 @@
 
 
             <div class="otp-verify-form mt-4 px-4" style="margin-right: 2.5rem;margin-left: -2.5rem">
-              <form action="" method="">
+              <form action="" method="" class="otpform">
                 <div class="d-flex justify-content-between mb-4" id="clear">
                   <input class="form-control" id="codeBox1" type="text" maxlength="1" onkeyup="onKeyUpEvent(1, event)"
-                    onfocus="onFocusEvent(1)" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
+                    onfocus="onFocusEvent(1)" onclick="this.select()" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
                   <input class="form-control" id="codeBox2" type="text" maxlength="1" onkeyup="onKeyUpEvent(2, event)"
-                    onfocus="onFocusEvent(2)" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
+                    onfocus="onFocusEvent(2)" onclick="this.select()" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
                   <input class="form-control" id="codeBox3" type="text" maxlength="1" onkeyup="onKeyUpEvent(3, event)"
-                    onfocus="onFocusEvent(3)" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
+                    onfocus="onFocusEvent(3)" onclick="this.select()" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
                   <input class="form-control" id="codeBox4" type="text" maxlength="1" onkeyup="onKeyUpEvent(4, event)"
-                    onfocus="onFocusEvent(4)" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
+                    onfocus="onFocusEvent(4)" onclick="this.select()" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
                 </div>
               </form>
             </div>
@@ -137,6 +136,21 @@
           // alert('Mobile not registered');
           alert('Enter mobile number first');
         } else {
+           // :: OTP Code resend Timer
+           var count = 60;
+                var counter = setInterval(timer, 1000);
+
+                function timer() {
+                    count = count - 1;
+                    if (count <= 0) {
+                        clearInterval(counter);
+                        document.getElementById("resendOTP").innerHTML =
+                            ' <button class="btn btn-success btn-lg w-100" onclick="resendotp()"> Resend OTP</button>';
+                    } else {
+                        document.getElementById("resendOTP").innerHTML =
+                            '<p class="d-flex align-items-center"> Wait ' + count + ' secs</p>';
+                    }
+                }
           $('#old').hide();
           $('#new').show();
           $('#fil').html(mobile);
@@ -151,6 +165,30 @@
 
     });
   }
+
+  function resendotp() {
+
+// Clearing OTP 
+$('.otpform input[type="text"]').val('');
+$('#codeBox1').focus();
+myotp();
+
+// :: OTP Code resend Timer
+var count = 60;
+var counter = setInterval(timer, 1000);
+
+function timer() {
+    count = count - 1;
+    if (count <= 0) {
+        clearInterval(counter);
+        document.getElementById("resendOTP").innerHTML =
+            ' <button class="btn btn-success btn-lg w-100" onclick="resendotp()"> Resend OTP</button>';
+    } else {
+        document.getElementById("resendOTP").innerHTML =
+            '<p class="d-flex align-items-center"> Wait ' + count + ' secs</p>';
+    }
+}
+}
 
   function changeNo() {
     $('#old').show();
@@ -183,6 +221,7 @@
     if (getCodeBoxElement(index).value.length === 1) {
       if (index !== 4) {
         getCodeBoxElement(index + 1).focus();
+        getCodeBoxElement(index + 1).select();
       } else {
         getCodeBoxElement(index).blur();
         // Submit code
@@ -230,6 +269,8 @@
             }
              else {
               alert("OTP did not match");
+              document.getElementById('codeBox1').focus();
+              $('.otpform input[type="text"]').val('');
 
             }
             console.log(result);
@@ -240,6 +281,7 @@
     }
     if (eventCode === 8 && index !== 1) {
      getCodeBoxElement(index - 1).focus();
+     getCodeBoxElement(index - 1).select();
       
     }
 

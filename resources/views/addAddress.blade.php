@@ -15,9 +15,12 @@
       <!-- User Meta Data-->
       <div class="col-12" style="text-align: left;">
           <br>
+          <div class="edit-profile-btn">
+              <a class="btn" href="#editAddress" style="background-color: white;" onclick="myFunction()">ADD ADDRESS</a>
+            </div>
           <!-- <form action="updateProfile" method="post"> -->
-          <h5>Default Address</h5>
-          <div class="profile-wrapper-area pb-3" id="1stBox">
+          <p>Default Address</p>
+          <div class="profile-wrapper-area pb-1" id="1stBox">
 
           <div class="card bg-white">
              
@@ -25,18 +28,21 @@
 
               <div class="row" style="width: 100%;">
                 <div class="col-10">
+                <input class="form-check-input" id="radiobtn2" type="radio" name="address" style="position: absolute;" checked>
+                <label for="radiobtn1" id="addressRadio">
               <div class="user-info">
                 <p class="mb-0"><strong style="color: #00A79D;">Priya Saraogi</strong></p>
                 <p class="mb-0">B-141, Ram Vihar, New Delhi</p>
                 <p>Mobile: <strong style="color: #00A79D;">8860283929</strong></p>
               </div>
+                </label>
             
             </div>
             <div class="col-2">
              <ul class="donate-now">
               <li>
                 <input type="radio" id="default" name="address" />
-                <label for="default">Default</label>
+                <label for="default">Home</label>
               </li> 
             </ul>
              <div id="button">
@@ -51,7 +57,7 @@
           </div>          
         </div>
         <!-- profile area div end-->
-            <div class="register-form px-4 pt-4 bg-white" id="addaddress" style="height: 93%;">
+            <div class="register-form px-4 pt-4 bg-white" id="addaddress" style="height: 85%;">
             <!--    <h5 class="mb-6">Fill your Details</h5> -->
               <form action=" " method="post" id="editAddress">
 
@@ -141,7 +147,7 @@
                   
                   </div>
                   <div class="col-sm" id="rightregg" style="margin-top: 13px;padding-left: 17px;" required="required">
-                    <input class="form-check-input" id="Home" type="radio" name="type">
+                    <input class="form-check-input" id="Home" type="radio" name="type" checked>
                     <label class="form-check-label" id="type" for="Home">Home</label>
                     <input class="form-check-input" id="Office" type="radio" name="type">
                     <label class="form-check-label" for="Office" id="type">Office</label>
@@ -151,10 +157,24 @@
                 </div>
                 <div class="row mb-4">
                   <div class="col-sm-6">
+                  <div class="makeDefault">
+                  <input type="checkbox" name="default" id="make" onclick="onlyOne(this)">
+                  <!-- <input class="form-check-input" id="make" type="radio" name="default"> -->
+                <label for="make" id="defaultLabel"> Make Default</label>
+              </div>
+                  </div>
+                </div>
+                <div class="row mb-4">
+                  <div class="col-sm-6">
                     <div class="back-button">
-                    <a><button class="btn btn-success">Save & Next</button></a>
+                    <a><button class="btn btn-success">Save</button></a>
                   </div>  
                   </div> 
+                  <!-- <div class="col-sm-6">
+                    <div class="back-button">
+                    <a><button class="btn btn-danger">Cancel</button></a>
+                  </div>  
+                  </div>  -->
                 </div>
               
               </form>

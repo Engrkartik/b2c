@@ -193,6 +193,16 @@ font-size: 15px;  }
  }
 
 /* Shortcodes CSS */
+
+@media (min-width: 400px) and (max-width:1920px) {
+  .order{
+    height:0.75em;
+    width: 0.75em;
+    margin-top:0.5em;
+  }
+}
+
+
 .h-100vh {
   height: 100vh !important; }
 
@@ -325,10 +335,12 @@ font-size: 15px;  }
   z-index: 1;
   margin-bottom: 1rem;
   line-height: 1; }
+
   .section-heading h6 {
     margin-bottom: 0 !important;
     color: #020310;
     line-height: 1; }
+    
   .section-heading p {
     margin-bottom: 0; }
 
@@ -965,7 +977,7 @@ font-size: 15px;  }
      transition-duration: 400ms;
     position: fixed;
     top: 3px;
-    left: 8px;
+    left: 14px;
     /*background-color: #00b894;*/
     width: 0px;
     height: 40px;
@@ -4005,6 +4017,12 @@ text-decoration:line-through; }
 @media(width:320px)
 {
 
+  .order{
+    height:1em !important;
+    width: 1em !important;
+    margin-top:0.25em !important;
+  }
+
   .widget .form-check-label {
     font-size: 11px; }
 
@@ -4078,6 +4096,17 @@ text-decoration:line-through; }
 
 @media(min-width: 220px) and (max-width: 310px)
 {
+  .order{
+    height:1em !important;
+    width: 1em !important;
+    margin-top:0.25em !important;
+  }
+
+  .suha-sidenav-wrapper {width:231px !important;}
+
+  .suha-sidenav-wrapper .apply-filter-btn {left:163px !important;}
+
+  .catagory-sidebar-area{padding:2rem 2rem;}
 
   .widget .form-check-label {
     font-size: 11px; }

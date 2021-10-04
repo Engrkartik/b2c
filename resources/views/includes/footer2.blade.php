@@ -13,7 +13,7 @@
     <script src="{{ asset('js/default/dark-mode-switch.js') }}"></script>
     <script src="{{ asset('js/default/no-internet.js') }}"></script>
     <script src="{{ asset('js/default/active.js') }}"></script>
-    <script src="{{ asset('js/default/otp-timer.js') }}"></script>
+    <!-- <script src="{{ asset('js/default/otp-timer.js') }}"></script> -->
     <script src="{{ asset('js/pwa.js') }}"></script>
     <script src="{{ asset('js/script.js') }}"></script>
   </body>

@@ -10,6 +10,16 @@
           <div class="col-12 col-sm-9 col-md-7 col-lg-6 col-xl-6" style="text-align: left;">
             <img class="big-logo" src="img/core-img/ssslogo.png" alt="" style="padding-left: 26px;">
             <h5 class="mb-4 mt-5" style="padding-left: 26px;">Fill Your Details</h5>
+            <div class="otp-form mt-5" style="margin-right: 4.5rem; margin-left: 1.5rem;">
+            <div class="mb-4 d-flex">
+                <select class="form-select" name="" disabled="disabled">
+                  <option value="">+91</option>
+                </select>
+                <input class="form-control ps-3" id="filled" type="text" name="mobile" maxlength="10" minlength="10"
+                   style="height: 50px;" disabled="disabled" value="">
+              </div>
+            </div>
+            <a href="{{url('/login')}}" onclick="changeNo()" style="color: black;text-decoration: underline;padding-left:26px;">Change Number</a>
             <!-- Register Form-->
             @if(session()->has('message'))
                 <div class="alert alert-success">
@@ -73,26 +83,6 @@
                   </div>
                   
                 </div>
-               
-            <!--     <div class="form-group text-start mb-4">
-                  <span>Name</span>
-                  <label for="username"><i class="lni lni-user"></i></label>
-                  <input class="form-control" id="username" name="username" type="text" placeholder="Enter Name" required="required">
-                </div> 
-                <div class="form-group text-start mb-4"><span>Alternate Mobile No.</span>
-                  <label for="phone"><i class="lni lni-phone"></i></label>
-                  <input class="input-mobile form-control" id="phone" name="phone" type="tel" placeholder="Enter Mobile Number" maxlength="10" minlength="10">
-                </div>
-                <div class="form-group text-start mb-4"><span>Email</span>
-                  <label for="email"><i class="lni lni-envelope"></i></label>
-                  <input class="form-control" id="email" type="email" name="email" placeholder="Enter Email Id">
-                </div>
-                 <div class="form-group text-start mb-4"><span>Gender</span>
-                <input class="form-check-input" id="male" type="radio" name="gender">
-				  <label class="form-check-label" for="male" style="position: initial;">Male</label>
-				  <input class="form-check-input" id="female" type="radio" name="gender">
-				  <label class="form-check-label" for="female" style="position: initial;">Female</label>
-				</div> -->
         
                <button class="btn btn-success btn-lg w-100" type="submit">Submit</button>
               </form>
@@ -108,6 +98,8 @@
  <script>
 
   var phone = document.getElementById('phone').value;
+  
+
    function mobileValidation(phone) {
   //called when key is pressed in textbox
   $("#phone").keypress(function (e) {
@@ -119,6 +111,10 @@
    })
  }
 
+ function changeNo() {
+    
+    window.location.href = "{{url('/login')}}";
+  }
  </script>
 
     @stop

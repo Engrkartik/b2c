@@ -13,7 +13,7 @@
         <div class="container">
              
     <div class="card w-100">
-          <div class="card-body p-4">
+          <div class="card-body p-3">
             <div class="single-order-status active" id="order-head">
               <div class="order-text">    
               <h6>Exchange Request Submitted</h6>       
@@ -36,8 +36,22 @@
                   <a class="product-title d-block">Levi's Jeans</a>
                    <span>Product Description</span>
                    <br>
-                   <span>Size: S</span>
-                   <br>
+                   <div class="choose-color-wrapper">
+                       <!--  <p class="mb-1 font-weight-bold">Color</p> -->
+                        <div class="choose-color-radio d-flex align-items-center" id="cart-color">
+                          <!-- Single Radio Input-->
+                          <div class="mb-0">
+                            <span>Color: </span>
+                            <input class="form-check-input order" style="margin-right: 3px; background-color: #000104
+                            
+                            " value="#f3f1f1" id="color" type="radio" name="colorRadio" disabled="disabled">
+                            <!-- <input class="btn btn-sm" style="background-color: #f3f1f1"  id="color" type="button" name="colorRadio"> --> 
+                          </div>              
+                        </div>
+                      </div>
+                     
+                      <span>Size: S</span>
+                      <br>
                    <span>Order ID: OD10000026</span>
               </div>
               </div>
