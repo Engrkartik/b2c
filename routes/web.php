@@ -72,6 +72,8 @@ Route::get('/otp-confirm','App\Http\Controllers\Login@otpConfirm');
 //cart and wishlist
 Route::any('/addtowishdyna','App\Http\Controllers\WishlistController@addwishdyna');
 
+Route::post('/removeAddtocart','App\Http\Controllers\CartController@removeAddtocart');
+
 Route::post('/removeWishlist','App\Http\Controllers\WishlistController@removeWishlist');
 
 Route::post('/removeWishlisthome','App\Http\Controllers\WishlistController@removeWishlisthome');
@@ -163,11 +165,6 @@ Route::get('/help','App\Http\Controllers\Test@help');
 // new pages in test controller
 
 Route::get('/cartAddress','App\Http\Controllers\Test@cartAddress');
-
-Route::get('/addAddress','App\Http\Controllers\Test@addAddress');
-
-Route::get('/order-summary','App\Http\Controllers\Test@orderSummary');
-
 //Order pages in test controller
 
 Route::get('/order-exchange','App\Http\Controllers\Test@orderExchange');
@@ -205,3 +202,18 @@ Route::get('/exchanged-order','App\Http\Controllers\Test@exchangedOrder');
 Route::get('/exchange-accepted','App\Http\Controllers\Test@exchangeAccepted');
 
 Route::get('/return-accepted','App\Http\Controllers\Test@returnAccepted');
+
+// Address Pages
+
+Route::get('/addAddress','App\Http\Controllers\AddressController@index');
+
+Route::post('/save_address','App\Http\Controllers\AddressController@save_address');
+
+Route::post('/removeAddress','App\Http\Controllers\AddressController@remove_address');
+
+Route::get('/defaultAddress/{id}','App\Http\Controllers\AddressController@default_address');
+
+Route::get('/order-summary','App\Http\Controllers\OrderController@orderSummary');
+
+
+

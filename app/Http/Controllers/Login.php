@@ -329,6 +329,7 @@ class Login extends Controller
 
         // return View::make('profile', compact('user','name'));
         return redirect('/edit-profile')->with('message','Update your profile Successfully');
+
     }
 
     public function uploadImg(Request $req)

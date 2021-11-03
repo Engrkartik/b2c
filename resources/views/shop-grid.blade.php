@@ -82,7 +82,6 @@
               <div class="card top-product-card">
                 <div class="card-body"><span class="badge badge-success">Sale</span><a class="wishlist-btn" onclick="addtowish('{{$value->id}}')">
                   @if(session()->has('uid'))
-                  
                   @if($value->wishlist=="false")<i class="lni lni-heart"></i>
                   @else<i class="lni lni-heart-filled"></i>@endif
                   @else<i class="lni lni-heart"></i>@endif
@@ -135,7 +134,7 @@
     
       $.ajax({
             type:'POST',
-            url:'/quickWebsite/b2c/public/wishlist',
+            url:'{{url("/wishlist")}}',
             data: {'td':td},
               //  beforeSend: function (request) {
               //     return request.setRequestHeader('X-CSRF-Token', $("meta[name='csrf-token']").attr('content'));
@@ -146,7 +145,7 @@
             success:function(data){
               // alert(data);
               if(data=="login"){
-                window.location.href = "http://34.72.9.224/quickWebsite/b2c/public/login"; 
+                window.location.href = "{{url('/login')}}"; 
              }
              else if(data=="success"){
               console.log(data);

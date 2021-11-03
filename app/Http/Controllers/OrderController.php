@@ -438,4 +438,41 @@ class OrderController extends Controller
         // return view('cancel-order2');
         return View::make('cancel-order2',compact('data','product'));
     }
+
+    public function orderSummary()
+    {
+        if(session()->has('uid'))
+        {
+            $cid= Session::get('uid');
+            $aid= 2;
+            $data = session()->all();
+            // print_r($data);
+            // die;
+
+            // $alladdress = DB::table('address')
+            // ->where('aid','=',$aid)
+            // ->where('cid','=',$cid)
+            // ->where('default_add','=','N')
+            // ->select('*')
+            // ->get();
+            $defaultaddress = DB::table('address')
+            ->where('aid','=',$aid)
+            ->where('cid','=',$cid)
+            ->where('default_add','=','Y')
+            ->select('*')
+            ->get();
+            // $cot = count($alladdress);
+            // echo"<pre>";
+            // print_r($alladdress);
+            // echo"</pre>";
+            // print_r($cot);
+            // die;
+            return View::make('order_summary',compact('defaultaddress'));
+        }
+        else{
+
+            return View::make('login');
+        }
+    }
+
 }

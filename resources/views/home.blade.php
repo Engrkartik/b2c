@@ -34,23 +34,26 @@
           <div class="hero-slides owl-carousel">
             <!-- Single Hero Slide-->
             <!-- there will be 5-6 banners-->
-            <a href="single-product">
-            <div class="single-hero-slide" style="background-image: url('img/bg-img/1.jpg')">
-              
+            @foreach($topbanner as $bankey=>$banvalue)
+            <a href="http://localhost/kartikb2c/public/category/shop-product/single-product/39" >
+            <div class="single-hero-slide">
+              <img src="{{Config::get('global.base_urlkartik')}}{{$banvalue->img}}" alt="">
             </div>
             </a>
-               <!-- Single Hero Slide-->
-            <div class="single-hero-slide" style="background-image: url('img/bg-img/3.jpg')">
+            @endforeach
+            
+              
+            <!-- <div class="single-hero-slide" style="background-image: url('img/bg-img/3.jpg')">
               
             </div>
-            <!-- Single Hero Slide-->
+
             <div class="single-hero-slide" style="background-image: url('img/bg-img/2.jpg')">
               
             </div>
-            <!-- Single Hero Slide-->
+     
             <div class="single-hero-slide" style="background-image: url('img/bg-img/3.jpg')">
               
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -70,7 +73,7 @@
               <div class="col-3">
                 <div class="card top-product-card">
                 <a class="product-thumbnail d-block" href="category/{{$value->id}}">
-                  <img class="mb-2" id="cat" src="{{Config::get('global.base_url')}}{{$value->img}}" alt="">
+                  <img class="mb-2" id="cat" src="{{ $value->img ? config('global.base_url').$value->img : url('/img/no-image-icon.png')  }}" alt="">
                   <span id="catSpan">{{$value->title}}</span>
                   <!-- kdkdkdkdkd -->
                 </a>
@@ -113,7 +116,7 @@
                     @else
                       <a class="wishlist-btn" onclick="addtowish2('{{$val4->id}}')"><i class="lni lni-heart"></i></a>
                     @endif
-                    <a class="product-thumbnail d-block" href="category/shop-product/single-product/{{$val4->id}}"><img src="{{Config::get('global.base_url')}}{{$val4->img_url}}" alt=""></a>
+                    <a class="product-thumbnail d-block" href="category/shop-product/single-product/{{$val4->id}}"><img src="{{ $val4->img_url ? config('global.base_url').$val4->img_url : url('/img/no-image-icon.png')  }}" alt=""></a>
                  
                   <div class="product-description">
                     <a class="product-title d-block" href="category/shop-product/single-product/{{$val4->id}}">{{$val4->item_name}}</a>
@@ -150,7 +153,7 @@
                     @else
                       <a class="wishlist-btn" onclick="addtowish2('{{$val3->id}}')"><i class="lni lni-heart"></i></a>
                     @endif
-                    <a class="product-thumbnail d-block" href="category/shop-product/single-product/{{$val3->id}}"><img src="{{Config::get('global.base_url')}}{{$val3->img_url}}" alt=""></a>
+                    <a class="product-thumbnail d-block" href="category/shop-product/single-product/{{$val3->id}}"><img src="{{ $val3->img_url ? config('global.base_url').$val3->img_url : url('/img/no-image-icon.png')  }}" alt=""></a>
                  
                   <div class="product-description">
                     <a class="product-title d-block" href="category/shop-product/single-product/{{$val3->id}}">{{$val3->item_name}}</a>
@@ -186,7 +189,7 @@
           @foreach($video as $key=>$val1)
            <!--  <iframe src="http://34.72.9.224/quickWebsite/b2c_admin/{{$val1->img}}" frameborder="0" height="240" width="100%" controls></iframe> -->
          
-           <video src="{{Config::get('global.base_url')}}{{$val1->img}}" controls disablepictureinpicture controlslist="nodownload" id="my_video" frameborder="0" height="240" width="100%" style="border: 1px solid black;"></video>
+           <video src="{{ $val1->img ? config('global.base_url').$val1->img : url('/img/no-image-icon.png')  }}" controls disablepictureinpicture controlslist="nodownload" id="my_video" frameborder="0" height="240" width="100%" style="border: 1px solid black;"></video>
       
           @endforeach
         </div>
@@ -219,7 +222,7 @@
                     @else
                       <a class="wishlist-btn" onclick="addtowish('{{$val2->id}}')"><i class="lni lni-heart"></i></a>
                     @endif
-                    <a class="product-thumbnail d-block" href="category/shop-product/single-product/{{$val2->id}}"><img src="{{config('global.base_url')}}{{$val2->img_url}}" alt=""></a>
+                    <a class="product-thumbnail d-block" href="category/shop-product/single-product/{{$val2->id}}"><img src="{{ $val2->img_url ? config('global.base_url').$val2->img_url : url('/img/no-image-icon.png')  }}" alt=""></a>
                   </div>
                  
                   <div class="product-description">

@@ -67,7 +67,7 @@
                           <!-- Single Radio Input-->
                           <div class="mb-0">
                             <span id="colorLabel">Color: </span>
-                            <input class="form-check-input" style="margin-right: 3px; background-color: {{$value->color}}" value="{{$value->color}}" id="color" type="radio" name="colorRadio" disabled="disabled">
+                            <input class="form-check-input" style="opacity:1;margin-right: 3px; background-color: {{$value->color}}" value="{{$value->color}}" id="color" type="radio" name="colorRadio" disabled="disabled">
                             <!-- <input class="btn btn-sm" style="background-color: {{$value->color}}"  id="color" type="button" name="colorRadio"> -->
                           </div>              
                         </div>
@@ -103,7 +103,7 @@
           @endif
           <!-- if out of stock-->
             <!-- <p id="stockOut-p">Cannot Be Delivered</p> -->
-          <a href="" id="cart-btn" onclick="addtowish('{{$value->id}}')">MOVE TO WISHLIST</a>
+          <a href="" id="cart-btn" onclick="addtowish({{$value->id}},{{$value->cart_id}})">MOVE TO WISHLIST</a>
           </div>
         </div>         
       </div>   
@@ -138,12 +138,13 @@
 
 </div>
 <script>
-  function addtowish(td){
-    // alert(td);
-      $.ajax({
+  function addtowish(td,id){
+  // alert(td);
+  // alert(id);
+  $.ajax({
             type:'POST',
             url:'{{url("/wishlist")}}',
-            data: {'td':td},
+            data: {'td':td,'id':id},
               //  beforeSend: function (request) {
               //     return request.setRequestHeader('X-CSRF-Token', $("meta[name='csrf-token']").attr('content'));
               // },
@@ -158,15 +159,8 @@
 
              }
              else if(data=="success"){
-              console.log(data);
-              $("#insert").show();
-              location.reload();
-              // document.getElementById("success").innerHTML = data;
-
-              setTimeout(function(){
-                $("#insert").hide();
-                  // document.getElementById("success").innerHTML = '';
-              }, 1500);
+              //  alert('yes');
+              removeAddtocart(id);
             }
             else if(data=="exist"){
               console.log(data);
@@ -179,6 +173,23 @@
           }
       });
     }
+
+    function removeAddtocart(ht){
+    $.ajax({
+            type:'POST',
+            url:'{{url("/removeAddtocart")}}',
+            data: {'ht':ht},
+            success:function(data){
+              if(data=='Successfully Removed from Addtocart'){
+                alert('Deleted');
+                window.location.href = '{{url("/cart")}}'; 
+              }
+              else{
+                alert(data);
+              }
+            }
+      });
+  }
 
   function cartdata(){
     var color = document.getElementById("color").value;

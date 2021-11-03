@@ -14,7 +14,7 @@
            <div class="card user-info-card bg-white" id="profileCard">
             <div class="card-body p-4 d-flex align-items-center justify-content-center">
               <div class="user-profile me-3">
-                <img src="http://34.72.9.224/quickWebsite/b2c/public/img/{{$value->img_path}}" id="preview_img" alt="" style="width: 100px; height: 100px;">
+                <img src="{{url('/img').'/'.$value->img_path}}" id="preview_img" alt="" style="width: 100px; height: 100px;">
                 <div class="change-user-thumb">
                   <!-- <form> -->
                     <input class="form-control-file" type="file" name="image" id="profile_image" onchange="loadPreview(this);">

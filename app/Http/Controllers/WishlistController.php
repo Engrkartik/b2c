@@ -26,25 +26,28 @@ class WishlistController extends Controller
         {
             $cid = Session::get('uid');
             $id = $_POST['td'];
+            $cart_id = $_POST['id'];
 
             $product = product::find($id);
             $aid = $product->aid;
+            echo $aid;
+            die;
 
             $findprod = WishList::where('cid','=',$cid)->where('pid','=',$id)->count();
 
             if($findprod>0){
-
+              // $delete=add_cart::where('cid','=',$cid)->where('pid','=',$id);
+              // $delete->delete();
                 return "exist";
             }
             else{
                 $wish = new WishList;
-
                 $wish->aid = $aid;
                 $wish->cid = $cid;
                 $wish->pid = $id;
 
                 $wish->save();
-
+               
                 return "success";
             }
         }
@@ -74,7 +77,6 @@ class WishlistController extends Controller
             $total = WishList::where('cid',$cid)->count();  
 
         return View::make('wishlist-list',compact('getaddwish','total'));
-            
         }
         else{
              $protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
@@ -92,8 +94,9 @@ class WishlistController extends Controller
         if(session()->has('uid'))
         {
             $cid = Session::get('uid');
+            $aid = 2;
 
-            $getaddwish = WishList::where('wishlist.cid',$cid)
+            $getaddwish = WishList::where('wishlist.cid',$cid)->where('wishlist.aid',$aid)
                         ->select('product.id','product.item_name','prod_img.img_url','product.sale_price','product.mrp','product.discount','product.tax')->groupBy('wishlist.id')
                         ->leftJoin('product', function($join) {
                           $join->on('wishlist.pid', '=', 'product.id');
@@ -235,7 +238,7 @@ class WishlistController extends Controller
 /////////////////////////////////////////////////////wishlist remove////////////////////////////////////////////////
     public function removeWishlist()
     {
-        $id = $_POST['ht'];
+        $id = $_POST['id'];
         $cid = Session::get('uid');
 		// $id = $req->cart_id;
 		$delete=WishList::where('cid',$cid)->where('pid',$id);
@@ -513,7 +516,9 @@ class WishlistController extends Controller
 
             if($findprod>0){
 
-                $html = "exist";
+              $delete=WishList::where('cid',$cid)->where('pid',$id);
+              $delete->delete();
+               $html = "exist";
             }
             else{
                 $wish = new WishList;
@@ -529,14 +534,15 @@ class WishlistController extends Controller
                   ->where([['product.aid','=',$aid],['product.sub_cat','=',$sub_cat]])
                   ->orderBy('product.id','ASC')
                   ->get();
-
+// echo $data;
+// die;
                 // $html = "hello";
                 foreach ($data as $key => $value) {
                     $html .= '<div class="col-6 col-md-4 col-lg-3">
                                 <div class="card top-product-card">
                                   <div class="card-body">
                                     <span class="badge badge-success">Sale</span>
-                                    <a class="wishlist-btn" onclick="addwishdyna('.$value->id.')">';
+                                    <a class="wishlist-btn" id="wish'.$value->id.'" onclick="addwishdyna('.$value->id.')">';
                                       if(session()->has('uid')){
                             
                                       if($value->wishlist=="false"){

@@ -60,7 +60,7 @@
             @foreach($pro_img as $key=>$val)
               <!-- <div class="single-hero-slide" id="myImg" style="background-image: url('http://34.72.9.224/quickWebsite/b2c_admin/{{$val->img_url}}')"></div> -->
             <div class="product-slides owl-carousel">       
-        <div class="single-product-slide" id="myImg" style="background-image: url('http://34.72.9.224/quickWebsite/b2c_admin/{{$val->img_url}}')"></div>
+        <div class="single-product-slide" id="myImg" style="background-image: url('{{config('global.base_url')}}{{$val->img_url}}')"></div>
       </div>
             @endforeach 
 
@@ -504,7 +504,7 @@ function removeWishlist(ht){
     }
   }
   function addtowish(td){
-    // alert(td);
+    
       $.ajax({
             type:'POST',
             url:'{{url("/wishlist")}}',
@@ -540,7 +540,11 @@ function removeWishlist(ht){
                 $("#error").hide();
               }, 1500);
             }
-          }
+          },
+            error: function (jqXHR, textStatus, errorThrown) { 
+                console.log(JSON.stringify(jqXHR));
+                console.log("AJAX error: " + textStatus + ' : ' + errorThrown);
+            }
       });
     }
   // Get the modal

@@ -185,15 +185,15 @@ class Test extends Controller
         return view('cartAddress');
     }
 
-    public function addAddress()
-    {
-        return view('addAddress');
-    }
+    // public function addAddress()
+    // {
+    //     return view('addAddress');
+    // }
 
-     public function orderSummary()
-    {
-        return view('order_summary');
-    }
+    //  public function orderSummary()
+    // {
+    //     return view('order_summary');
+    // }
 
     public function orderReturn()
     {

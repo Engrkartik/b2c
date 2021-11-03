@@ -55,7 +55,7 @@
                     @else
                       <a class="wishlist-btn" onclick="addtowish('{{$top->id}}')"><i class="lni lni-heart"></i></a>
                     @endif
-                    <a class="product-thumbnail d-block" href="category/shop-product/single-product/{{$top->id}}"><img src="http://34.72.9.224/quickWebsite/b2c_admin/{{$top->img_url}}" alt=""></a>
+                    <a class="product-thumbnail d-block" href="category/shop-product/single-product/{{$top->id}}"><img src="{{config('global.base_url')}}{{$top->img_url}}" alt=""></a>
                   </div>
                   <div class="product-description">
                     <a class="product-title d-block" href="category/shop-product/single-product/{{$top->id}}">{{$top->item_name}}</a>

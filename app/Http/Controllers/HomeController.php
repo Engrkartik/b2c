@@ -77,7 +77,7 @@ class HomeController extends Controller
             ->get();   
         $cot = count($new);
         $actualcount = 4-$cot;
-        // echo $cot;
+        // echo $feature;
         // die();
 
         $selectnew = DB::table('product')
@@ -139,7 +139,25 @@ class HomeController extends Controller
                 ->where('title','=','Discount Banner')
                 ->get();
 
-        return View::make('home', compact('data','video','feature','top','discount','new','selectnew','actualcount'));
+        $topbanner = DB::table('banner')
+        ->select('img')
+        ->where('aid','=',$aid)
+        ->where('status','=','A')
+        ->where('title', 'like', '%Top Banner%')
+        ->get();
+        // echo'<pre>';
+        // print_r($banner);
+        // die();
+        // echo'</pre>';
+        // echo $feature;
+        // echo $top;
+        // echo $countnew;
+        // echo $topbanner;
+        // die();
+        
+
+
+        return View::make('home', compact('data','topbanner','video','feature','top','discount','new','selectnew','actualcount'));
     }
 
 /////////////////////////////////////////////////////single product////////////////////////////////////////////////
@@ -231,6 +249,10 @@ class HomeController extends Controller
         //             ->get();
 
         // return view('shop-list');
+        // echo "<pre>"; 
+        // echo $data;
+        
+        // echo"</pre>";
         return View::make('shop-list',compact('data','cat_img'));
     }
 
@@ -335,18 +357,29 @@ class HomeController extends Controller
 /////////////////////////////////////////////////////categary////////////////////////////////////////////////
     public function category(Request $req)
     {
-        $aid=$req->id;
-        $products=category::where('parent_id','=',$aid)
+        $aid=2;
+        $pid=$req->id;
+        // $data = session()->all();
+        // echo"<pre>";
+        // print_r($data);
+        // die;
+        // echo"</pre>";
+        
+        // $products=category::where('parent_id','=',$pid)
         // $products=DB::table('product')
         // ->where('cat_id','=',$aid)
-        ->get(); 
+        // ->get(); 
 
         $cat = DB::table('category')
-            ->select('title','img')
-            ->where('id','=',$aid)
+            ->select('id','title','img')
+            ->where('aid','=',$aid)
+            ->where('parent_id','=',$pid)
+            ->where('status','=','A')
             ->get();
+            // echo $cat;
+            // die;
 
-        return View::make('catagory', compact('cat','products'));
+        return View::make('catagory', compact('cat'));
         // return view('catagory');
     }
 
@@ -486,7 +519,7 @@ class HomeController extends Controller
             ->where([['product.aid','=',$aid],['product_order.status','=','A'],['product_order.feature','!=','0'],['product.feature','=','Y']])
             ->orderBy('product_order.feature','ASC')
             ->get();
-            // echo $feature;   
+            // echo $data;   
         }
         else{
         
@@ -504,5 +537,40 @@ class HomeController extends Controller
         return View::make('shop-list', compact('data','cat_img'));
         // return redirect('shop-list')->with(compact('data','cat_img'));
     }
+
+    // FOR HOME PAGE BANNERS
+    public function topbanner()
+    {
+        $aid = 2;
+
+        if(session()->has('uid'))
+        {
+        
+        $cid = Session::get('uid');
+     
+        $data=DB::table('banner')
+            ->select('product.*',DB::raw("(SELECT prod_img.img_url FROM prod_img WHERE prod_img.img_id=product.img ORDER BY prod_img.id ASC LIMIT 1) as img_url"),DB::raw("(SELECT IF(COUNT(*)>0,'true','false') FROM `wishlist` WHERE product.id=wishlist.pid AND wishlist.aid='".$aid."' AND wishlist.cid='".$cid."') AS wishlist"))
+            ->where([['product.aid','=',$aid],['product_order.status','=','A'],['product_order.feature','!=','0'],['product.feature','=','Y']])
+            ->orderBy('product_order.feature','ASC')
+            ->get();
+            // echo $feature;   
+        }
+        else{
+        
+        $data=DB::table('banner')
+            ->select('product.*',DB::raw("(SELECT prod_img.img_url FROM prod_img WHERE prod_img.img_id=product.img ORDER BY prod_img.id ASC LIMIT 1) as img_url"))
+            ->where([['product.aid','=',$aid],['product_order.status','=','A'],['product_order.feature','!=','0'],['product.feature','=','Y']])
+            ->orderBy('product_order.feature','ASC')
+            ->get(); 
+          
+        }
+        $cat_img = array("title"=>"New Arrival","img"=>"kd.jpg");
+        // echo $cat_img['title'];die();
+        // return view('featured-products');
+        return View::make('shop-list', compact('data','cat_img'));
+        // return redirect('shop-list')->with(compact('data','cat_img'));
+    }
+
+
 
 }

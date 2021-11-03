@@ -42,6 +42,7 @@ class CartController extends Controller
                         ->get();
 
             $countcart = count($getaddcart);
+            session(['countcart' => $countcart]);
             // echo $getaddcart;
             // die();
             $totalamt = add_cart::where('cid',$cid)
@@ -57,12 +58,16 @@ class CartController extends Controller
                         ->select(DB::raw('sum(add_cart.qty * product.discount) as totaldsc'))
                         ->leftJoin('product','add_cart.pid','=','product.id')
                         ->get();
+                        // $data = session()->all();
+                        // print_r($data);
+                        // die;
             // if($countcart>0){
     		  return View::make('cart',compact('getaddcart','totalamt','totalmrp','totaldsc','countcart'));
             // }
             // else{
             //     return View::make('cart',compact('countcart'));
             // }
+           
     	}
         else{
 
@@ -202,6 +207,19 @@ class CartController extends Controller
         $delete->delete();
 
         return redirect('cart');
+    }
+
+    public function removeAddtocart()
+    {
+        $id = $_POST['ht'];
+        $cid = Session::get('uid');
+		// $id = $req->cart_id;
+		$delete=add_cart::where('cid',$cid)->where('id',$id);
+        $delete->delete();
+
+        $msg = "Successfully Removed from Addtocart";
+
+        return $msg;
     }
 //////////////////////////////////////////////////cartAddress////////////////////////////////////////////////////////
     public function cartWithAddress()
