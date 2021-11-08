@@ -10,7 +10,6 @@
           @endforeach
         </div> -->
       </div>
-
       <div class="top-products-area pb-3 pt-3">
         <div class="container">
           <div class="section-heading d-flex align-items-center justify-content-between">
@@ -21,14 +20,17 @@
             @foreach($products as $key=>$value)
             <div class="col-3 col-md-4 col-lg-3">
               <div class="card top-product-card">
-                
                   <a class="product-thumbnail d-block" href="shop-product/{{$value->id}}">
+<<<<<<< Updated upstream
                   <img class="mb-0" id="cat" src="http://34.72.9.224/quickcell/{{$value->img}}" alt="">
                
                 <span id="catSpan">{{$value->title}}</span>
                   <!-- <p class="sale-price">{{$value->title}}<span>{{$value->mrp}}</span></p> -->
+=======
+                  <img class="mb-0" id="cat" src="{{ $value->img ? config('global.base_url').$value->img : url('/img/no-image-icon.png')  }}" alt="">
+                <span id="catSpan">{{$value->title}}</span>
+>>>>>>> Stashed changes
                   </a>
-               
               </div>
             </div>
             @endforeach
